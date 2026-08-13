@@ -111,11 +111,13 @@
   .card2 .blk .bb{ font-family:var(--sans); font-weight:300; font-size:14.5px; line-height:1.6; color:var(--ink); }
   .card2 .blk .bb b{ font-weight:600; color:var(--gold-deep); }
   .btn{ pointer-events:auto; cursor:pointer; font-family:var(--sans); font-weight:600; letter-spacing:.16em; text-transform:uppercase; font-size:11px; color:var(--gold-deep); background:none; border:none; display:inline-flex; align-items:center; gap:8px; transition:color .25s, gap .25s; }
+  /* interactive children of hidden overlays must NOT be tap targets — inherit the container's pointer-events (JS toggles it) */
+  #viewer .btn, #thanks .btn{ pointer-events:inherit; }
   .btn:hover{ color:var(--ink); }
   #vback{ position:absolute; top:24px; right:30px; z-index:4; }
   .arrow{ position:absolute; top:50%; transform:translateY(-50%); width:52px;height:52px;border-radius:50%;
      border:1px solid var(--line); background:rgba(253,251,246,.78); color:var(--gold-deep); display:flex;align-items:center;justify-content:center;
-     font-family:var(--serif); font-size:26px; cursor:pointer; pointer-events:auto; transition:all .3s; z-index:4; }
+     font-family:var(--serif); font-size:26px; cursor:pointer; pointer-events:inherit; transition:all .3s; z-index:4; }
   .arrow:hover{ background:#fff; border-color:var(--gold); color:var(--ink); }
   #vprev{ left:-72px; } #vnext{ right:-72px; }
   #vhead{ position:absolute; top:26px; left:0; right:0; text-align:center; pointer-events:none; }
@@ -131,7 +133,7 @@
   /* ---- hub finish control ---- */
   /* placed in the empty centre of the numeral ring so the exit is always obvious */
   #hubdone{ position:absolute; left:50%; top:50%; transform:translate(-50%,88px); text-align:center; opacity:0; transition:opacity .5s; pointer-events:none; z-index:3; }
-  #hubdone .btn{ opacity:1; pointer-events:auto; font-size:12px; transition:color .25s, gap .25s; }
+  #hubdone .btn{ opacity:1; pointer-events:inherit; font-size:12px; transition:color .25s, gap .25s; }
   #hubdone .btn:hover{ gap:12px; }
   #hubdone .btn.ready{ color:var(--ink); }
   #hubdone .prog{ margin-top:7px; font-family:var(--sans); font-weight:400; letter-spacing:.2em; text-transform:uppercase; font-size:9.5px; color:var(--muted); }
@@ -146,7 +148,7 @@
   .tsub{ font-family:var(--serif); font-style:italic; color:var(--gold-deep); font-size:clamp(15px,2vw,20px); margin-top:4px; }
   .qrow{ display:flex; gap:20px; justify-content:center; flex-wrap:wrap; margin-top:34px; }
   .qrcard{ width:180px; display:flex; flex-direction:column; align-items:center; gap:11px; background:#fff; border:1px solid var(--line);
-     border-radius:10px; padding:16px 14px 15px; box-shadow:0 14px 34px rgba(120,100,50,.12); pointer-events:auto; text-decoration:none;
+     border-radius:10px; padding:16px 14px 15px; box-shadow:0 14px 34px rgba(120,100,50,.12); pointer-events:inherit; text-decoration:none;
      transition:transform .3s, box-shadow .3s, border-color .3s; }
   .qrcard:hover{ transform:translateY(-3px); border-color:var(--gold); box-shadow:0 20px 44px rgba(120,100,50,.18); }
   .qwrap{ position:relative; width:132px; height:132px; }
@@ -2911,7 +2913,7 @@ var qrcode = function() {
     gsap.to(hubc,{opacity:1,duration:instant?0:.9,delay:instant?0:.2});
     hubMatOpacity(0); gsap.to({v:0},{v:1,duration:instant?0:1.0,onUpdate:function(){hubMatOpacity(this.targets()[0].v);}});
     gsap.to(uphint,{opacity:1,duration:instant?0:.6,delay:instant?0:.5});
-    updateHubDone(); gsap.to(hubdone,{opacity:1,duration:instant?0:.6,delay:instant?0:.55});
+    hubdone.style.pointerEvents='auto'; updateHubDone(); gsap.to(hubdone,{opacity:1,duration:instant?0:.6,delay:instant?0:.55});
     gsap.to(camera.position,{z:BASE_Z,duration:instant?0:1.0,ease:'expo.out'});
   }
   function hubMatOpacity(v){
@@ -2922,7 +2924,7 @@ var qrcode = function() {
     i=Math.max(0,Math.min(11,i)); curCh=i; state='subpage'; hovered=-1; document.body.style.cursor='default';
     visited.add(i); updateHubDone();
     renderChapter(0);
-    gsap.to(hubc,{opacity:0,duration:instant?0:.35}); gsap.to(uphint,{opacity:0,duration:instant?0:.3}); gsap.to(hubdone,{opacity:0,duration:instant?0:.3});
+    hubdone.style.pointerEvents='none'; gsap.to(hubc,{opacity:0,duration:instant?0:.35}); gsap.to(uphint,{opacity:0,duration:instant?0:.3}); gsap.to(hubdone,{opacity:0,duration:instant?0:.3});
     gsap.to(hubInner.scale,{x:1.08,y:1.08,duration:instant?0:.7,ease:'power2.out'});
     gsap.to({v:1},{v:0,duration:instant?0:.5,onUpdate:function(){hubMatOpacity(this.targets()[0].v);},onComplete:()=>{hub.visible=false;}});
     gsap.to(camera.position,{z:SUB_Z,duration:instant?0:.9,ease:'power2.out'});
@@ -2939,13 +2941,13 @@ var qrcode = function() {
     hubLbl.textContent='The Journey'; hubSub.textContent='Twelve chapters · select a numeral';
     gsap.to(hubc,{opacity:1,duration:instant?0:.7,delay:instant?0:.15});
     gsap.to(uphint,{opacity:1,duration:instant?0:.6,delay:instant?0:.25});
-    updateHubDone(); gsap.to(hubdone,{opacity:1,duration:instant?0:.6,delay:instant?0:.3});
+    hubdone.style.pointerEvents='auto'; updateHubDone(); gsap.to(hubdone,{opacity:1,duration:instant?0:.6,delay:instant?0:.3});
   }
   function returnToIntro(){
     if(state!=='hub') return; state='intro'; hubBack=0; hubFwd=0; overscroll=0; introTarget=introCur=1;
     introEl.style.pointerEvents='auto';
     gsap.to('#intro',{opacity:1,duration:.6}); gsap.to(dotsEl,{opacity:1,duration:.4});
-    gsap.to(hubc,{opacity:0,duration:.3}); gsap.to(brand,{opacity:0,duration:.4}); gsap.to(uphint,{opacity:0,duration:.3}); gsap.to(hubdone,{opacity:0,duration:.3});
+    hubdone.style.pointerEvents='none'; gsap.to(hubc,{opacity:0,duration:.3}); gsap.to(brand,{opacity:0,duration:.4}); gsap.to(uphint,{opacity:0,duration:.3}); gsap.to(hubdone,{opacity:0,duration:.3});
     gsap.to({v:1},{v:0,duration:.5,onUpdate:function(){hubMatOpacity(this.targets()[0].v);},onComplete:()=>{hub.visible=false;}});
   }
   function updateHubDone(){
@@ -2957,7 +2959,7 @@ var qrcode = function() {
   }
   function enterThanks(instant){
     if(state==='thanks') return; state='thanks'; hubFwd=0; hovered=-1; document.body.style.cursor='default'; buildQRs();
-    gsap.to(hubc,{opacity:0,duration:instant?0:.4}); gsap.to(uphint,{opacity:0,duration:instant?0:.3}); gsap.to(hubdone,{opacity:0,duration:instant?0:.3});
+    hubdone.style.pointerEvents='none'; gsap.to(hubc,{opacity:0,duration:instant?0:.4}); gsap.to(uphint,{opacity:0,duration:instant?0:.3}); gsap.to(hubdone,{opacity:0,duration:instant?0:.3});
     gsap.to({v:1},{v:0,duration:instant?0:.5,onUpdate:function(){hubMatOpacity(this.targets()[0].v);},onComplete:()=>{hub.visible=false;}});
     gsap.to(camera.position,{z:9.4,duration:instant?0:1.1,ease:'expo.out'});
     thanksEl.style.pointerEvents='auto'; thanksEl.scrollTop=0;
@@ -2971,7 +2973,7 @@ var qrcode = function() {
     gsap.to(camera.position,{z:BASE_Z,duration:instant?0:.9,ease:'expo.out'});
     hubLbl.textContent='The Journey'; hubSub.textContent='Twelve chapters · select a numeral';
     gsap.to(hubc,{opacity:1,duration:instant?0:.7,delay:instant?0:.15});
-    updateHubDone(); gsap.to(hubdone,{opacity:1,duration:instant?0:.6,delay:instant?0:.2});
+    hubdone.style.pointerEvents='auto'; updateHubDone(); gsap.to(hubdone,{opacity:1,duration:instant?0:.6,delay:instant?0:.2});
     gsap.to(uphint,{opacity:1,duration:instant?0:.6,delay:instant?0:.25});
   }
   /* ---- contacts → QR codes (icon centered, link beneath) ---- */
