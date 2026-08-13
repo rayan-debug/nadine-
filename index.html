@@ -129,11 +129,12 @@
   #uphint .c{ color:var(--gold); font-size:15px; margin-bottom:2px; animation:bob 1.8s ease-in-out infinite; }
 
   /* ---- hub finish control ---- */
-  #hubdone{ position:absolute; left:50%; bottom:60px; transform:translateX(-50%); text-align:center; opacity:0; transition:opacity .5s; pointer-events:none; z-index:3;
-     padding:10px 26px; border-radius:40px; background:radial-gradient(ellipse at center, rgba(253,251,246,.94) 45%, rgba(253,251,246,0) 78%); }
-  #hubdone .btn{ opacity:.42; pointer-events:none; transition:opacity .4s, color .25s, gap .25s; }
-  #hubdone .btn.ready{ opacity:1; pointer-events:auto; }
-  #hubdone .prog{ margin-top:8px; font-family:var(--sans); font-weight:400; letter-spacing:.2em; text-transform:uppercase; font-size:9.5px; color:var(--muted); }
+  /* placed in the empty centre of the numeral ring so the exit is always obvious */
+  #hubdone{ position:absolute; left:50%; top:50%; transform:translate(-50%,88px); text-align:center; opacity:0; transition:opacity .5s; pointer-events:none; z-index:3; }
+  #hubdone .btn{ opacity:1; pointer-events:auto; font-size:12px; transition:color .25s, gap .25s; }
+  #hubdone .btn:hover{ gap:12px; }
+  #hubdone .btn.ready{ color:var(--ink); }
+  #hubdone .prog{ margin-top:7px; font-family:var(--sans); font-weight:400; letter-spacing:.2em; text-transform:uppercase; font-size:9.5px; color:var(--muted); }
 
   /* ---- thank-you closing page ---- */
   #thanks{ position:absolute; inset:0; opacity:0; pointer-events:none; display:flex; align-items:center; justify-content:center;
@@ -180,7 +181,7 @@
     #hint{ bottom:calc(30px + env(safe-area-inset-bottom)); }
     #dots{ bottom:calc(18px + env(safe-area-inset-bottom)); }
     #uphint{ bottom:calc(16px + env(safe-area-inset-bottom)); }
-    #hubdone{ bottom:calc(52px + env(safe-area-inset-bottom)); }
+    #hubdone{ top:50%; bottom:auto; transform:translate(-50%,72px); }
     #thanks{ align-items:flex-start; padding:calc(40px + env(safe-area-inset-top)) 16px calc(30px + env(safe-area-inset-bottom)); }
   }
   @media(max-width:560px){
@@ -209,7 +210,7 @@
 
     <div id="hubc"><div class="lbl" id="hubLbl">The Journey</div><div class="sub" id="hubSub">Twelve chapters · select a numeral</div></div>
     <div id="uphint"><div class="c">⌃</div><div class="t">Scroll up to return</div></div>
-    <div id="hubdone"><button class="btn" id="hubdoneBtn" disabled>Explore all twelve to finish</button><div class="prog" id="hubprog">0 / 12 chapters explored</div></div>
+    <div id="hubdone"><button class="btn" id="hubdoneBtn">Finish · Thank You →</button><div class="prog" id="hubprog">0 / 12 explored</div></div>
 
     <div id="viewer">
       <div id="vhead"><span class="t" id="vheadT"></span></div>
@@ -2950,10 +2951,9 @@ var qrcode = function() {
   function updateHubDone(){
     if(!hubprog) return;
     const done=visited.size>=12;
-    hubprog.textContent=visited.size+' / 12 chapters explored';
+    hubprog.textContent = done ? 'All twelve explored' : (visited.size+' / 12 explored');
     hubdoneBtn.classList.toggle('ready',done);
-    hubdoneBtn.disabled=!done;
-    hubdoneBtn.textContent = done ? 'Finish · Thank You →' : 'Explore all twelve to finish';
+    hubdoneBtn.textContent='Finish · Thank You →';
   }
   function enterThanks(instant){
     if(state==='thanks') return; state='thanks'; hubFwd=0; hovered=-1; document.body.style.cursor='default'; buildQRs();
@@ -3014,7 +3014,7 @@ var qrcode = function() {
       if(introTarget<1) overscroll=0;
     } else if(state==='hub'){
       if(e.deltaY<0){ hubBack+=-e.deltaY; if(hubBack>150) returnToIntro(); hubFwd=0; }
-      else { hubBack=0; if(visited.size>=12){ hubFwd+=e.deltaY; if(hubFwd>150) enterThanks(); } }
+      else { hubBack=0; hubFwd+=e.deltaY; if(hubFwd>150) enterThanks(); }
     }
   }
   window.addEventListener('wheel', onWheel, {passive:false});
@@ -3023,12 +3023,12 @@ var qrcode = function() {
   window.addEventListener('touchmove',e=>{
     if(tY===null) return; const y=e.touches[0].clientY, dy=tY-y; tY=y;
     if(state==='intro'){ if(introTarget>=1&&dy>0){ overscroll+=dy*2; if(overscroll>90) enterHub(); } introTarget=Math.min(1,Math.max(0,introTarget+dy*0.0016)); if(introTarget<1) overscroll=0; }
-    else if(state==='hub'){ if(dy<0){ hubBack+=-dy*2; if(hubBack>80) returnToIntro(); hubFwd=0; } else { hubBack=0; if(visited.size>=12){ hubFwd+=dy*2; if(hubFwd>80) enterThanks(); } } }
+    else if(state==='hub'){ if(dy<0){ hubBack+=-dy*2; if(hubBack>80) returnToIntro(); hubFwd=0; } else { hubBack=0; hubFwd+=dy*2; if(hubFwd>80) enterThanks(); } }
   },{passive:true});
   window.addEventListener('keydown',e=>{
     if(state==='intro'){ if(e.key==='ArrowDown'||e.key===' '){ introTarget=Math.min(1,introTarget+0.2); if(introTarget>=1)setTimeout(enterHub,300);} if(e.key==='ArrowUp') introTarget=Math.max(0,introTarget-0.2); }
     else if(state==='subpage'){ if(e.key==='Escape') backToHub(); if(e.key==='ArrowRight') nextChapter(); if(e.key==='ArrowLeft') prevChapter(); }
-    else if(state==='hub'){ if(e.key==='ArrowUp'||e.key==='Escape') returnToIntro(); else if(e.key==='ArrowDown'&&visited.size>=12) enterThanks(); }
+    else if(state==='hub'){ if(e.key==='ArrowUp'||e.key==='Escape') returnToIntro(); else if(e.key==='ArrowDown') enterThanks(); }
     else if(state==='thanks' && e.key==='Escape') backFromThanks();
   });
 
@@ -3062,7 +3062,7 @@ var qrcode = function() {
   document.getElementById('vback').addEventListener('click',()=>backToHub());
   document.getElementById('vprev').addEventListener('click',prevChapter);
   document.getElementById('vnext').addEventListener('click',nextChapter);
-  hubdoneBtn.addEventListener('click',()=>{ if(state==='hub' && visited.size>=12) enterThanks(); });
+  hubdoneBtn.addEventListener('click',()=>{ if(state==='hub') enterThanks(); });
   document.getElementById('tback').addEventListener('click',()=>backFromThanks());
   brand.addEventListener('click',()=>{ if(state==='subpage') backToHub(); else if(state==='thanks') backFromThanks(); else if(state==='hub') returnToIntro(); });
   hintEl.addEventListener('click',()=>{ if(state==='intro'&&introTarget>=1) enterHub(); });
