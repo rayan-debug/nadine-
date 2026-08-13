@@ -2820,13 +2820,14 @@ var qrcode = function() {
     const g=new THREE.Group(); g.position.set(nx,ny,0); hubInner.add(g);
     const rr=new THREE.Mesh(new THREE.TorusGeometry(0.29,0.013,16,80), new THREE.MeshBasicMaterial({color:GOLD,transparent:true,opacity:0.55})); g.add(rr);
     const spr=new THREE.Mesh(new THREE.PlaneGeometry(0.56,0.56), new THREE.MeshBasicMaterial({map:numTex(ROMAN[i]),transparent:true,depthWrite:false})); g.add(spr);
-    const hit=new THREE.Mesh(new THREE.CircleGeometry(0.46,32), new THREE.MeshBasicMaterial({transparent:true,opacity:0,depthWrite:false})); hit.position.set(nx,ny,0.01); hit.userData.i=i; hubInner.add(hit); hitTargets.push(hit);
+    const hit=new THREE.Mesh(new THREE.CircleGeometry(0.54,32), new THREE.MeshBasicMaterial({transparent:true,opacity:0,depthWrite:false})); hit.position.set(nx,ny,0.01); hit.userData.i=i; hubInner.add(hit); hitTargets.push(hit);
     nodes.push({g,ring:rr,spr,base:{x:nx,y:ny}});
   }
 
   /* ============================ STATE ============================ */
   let state='intro';            // intro | hub | subpage
   let introCur=0, introTarget=0, overscroll=0, hubBack=0;
+  let inputLock=0;              // ignore scroll/swipe until this timestamp — stops one gesture cascading across states
   let curCh=0, hovered=-1;
   const mouse=new THREE.Vector2(0,0), mLerp=new THREE.Vector2(0,0), ray=new THREE.Raycaster(), ndc=new THREE.Vector2();
 
@@ -2903,6 +2904,7 @@ var qrcode = function() {
   /* ============================ TRANSITIONS ============================ */
   function enterHub(instant){
     if(state==='hub') return; state='hub';
+    overscroll=0; hubBack=0; hubFwd=0; inputLock=performance.now()+750;   // fresh gesture required to leave the hub
     gsap.to('#intro',{opacity:0,duration:instant?0:.6,onComplete:()=>{introEl.style.pointerEvents='none';}});
     gsap.to(dotsEl,{opacity:0,duration:instant?0:.4});
     hintEl.style.opacity=0;
@@ -2944,7 +2946,7 @@ var qrcode = function() {
     hubdone.style.pointerEvents='auto'; updateHubDone(); gsap.to(hubdone,{opacity:1,duration:instant?0:.6,delay:instant?0:.3});
   }
   function returnToIntro(){
-    if(state!=='hub') return; state='intro'; hubBack=0; hubFwd=0; overscroll=0; introTarget=introCur=1;
+    if(state!=='hub') return; state='intro'; hubBack=0; hubFwd=0; overscroll=0; introTarget=introCur=1; inputLock=performance.now()+750;
     introEl.style.pointerEvents='auto';
     gsap.to('#intro',{opacity:1,duration:.6}); gsap.to(dotsEl,{opacity:1,duration:.4});
     hubdone.style.pointerEvents='none'; gsap.to(hubc,{opacity:0,duration:.3}); gsap.to(brand,{opacity:0,duration:.4}); gsap.to(uphint,{opacity:0,duration:.3}); gsap.to(hubdone,{opacity:0,duration:.3});
@@ -2958,7 +2960,7 @@ var qrcode = function() {
     hubdoneBtn.textContent='Finish · Thank You →';
   }
   function enterThanks(instant){
-    if(state==='thanks') return; state='thanks'; hubFwd=0; hovered=-1; document.body.style.cursor='default'; buildQRs();
+    if(state==='thanks') return; state='thanks'; hubFwd=0; hubBack=0; overscroll=0; inputLock=performance.now()+750; hovered=-1; document.body.style.cursor='default'; buildQRs();
     hubdone.style.pointerEvents='none'; gsap.to(hubc,{opacity:0,duration:instant?0:.4}); gsap.to(uphint,{opacity:0,duration:instant?0:.3}); gsap.to(hubdone,{opacity:0,duration:instant?0:.3});
     gsap.to({v:1},{v:0,duration:instant?0:.5,onUpdate:function(){hubMatOpacity(this.targets()[0].v);},onComplete:()=>{hub.visible=false;}});
     gsap.to(camera.position,{z:9.4,duration:instant?0:1.1,ease:'expo.out'});
@@ -2966,7 +2968,7 @@ var qrcode = function() {
     gsap.fromTo(thanksEl,{opacity:0},{opacity:1,duration:instant?0:.7});
   }
   function backFromThanks(instant){
-    if(state!=='thanks') return; state='hub'; hubBack=0; hubFwd=0;
+    if(state!=='thanks') return; state='hub'; hubBack=0; hubFwd=0; overscroll=0; inputLock=performance.now()+750;
     gsap.to(thanksEl,{opacity:0,duration:instant?0:.45,onComplete:()=>{thanksEl.style.pointerEvents='none';}});
     hub.visible=true;
     gsap.to({v:0},{v:1,duration:instant?0:.7,onUpdate:function(){hubMatOpacity(this.targets()[0].v);}});
@@ -3009,8 +3011,9 @@ var qrcode = function() {
 
   /* ============================ INPUT ============================ */
   function onWheel(e){
+    if(state==='intro') e.preventDefault();       // keep the page from scrolling under the intro
+    if(performance.now()<inputLock) return;        // swallow the tail of the gesture that just changed state
     if(state==='intro'){
-      e.preventDefault();
       if(introTarget>=1){ if(e.deltaY>0){ overscroll+=e.deltaY; if(overscroll>160) enterHub(); } else overscroll=0; }
       introTarget=Math.min(1,Math.max(0,introTarget + e.deltaY*0.0011));
       if(introTarget<1) overscroll=0;
@@ -3021,9 +3024,10 @@ var qrcode = function() {
   }
   window.addEventListener('wheel', onWheel, {passive:false});
   let tY=null;
-  window.addEventListener('touchstart',e=>{ tY=e.touches[0].clientY; },{passive:true});
+  window.addEventListener('touchstart',e=>{ tY=e.touches[0].clientY; overscroll=0; hubFwd=0; hubBack=0; },{passive:true});
   window.addEventListener('touchmove',e=>{
     if(tY===null) return; const y=e.touches[0].clientY, dy=tY-y; tY=y;
+    if(performance.now()<inputLock) return;        // swallow the tail of the gesture that just changed state
     if(state==='intro'){ if(introTarget>=1&&dy>0){ overscroll+=dy*2; if(overscroll>90) enterHub(); } introTarget=Math.min(1,Math.max(0,introTarget+dy*0.0016)); if(introTarget<1) overscroll=0; }
     else if(state==='hub'){ if(dy<0){ hubBack+=-dy*2; if(hubBack>80) returnToIntro(); hubFwd=0; } else { hubBack=0; hubFwd+=dy*2; if(hubFwd>80) enterThanks(); } }
   },{passive:true});
@@ -3034,15 +3038,17 @@ var qrcode = function() {
     else if(state==='thanks' && e.key==='Escape') backFromThanks();
   });
 
+  // raycast a screen point onto the numeral hit targets → chapter index, or -1
+  function pickNumeral(cx,cy){
+    ndc.x=(cx/innerWidth)*2-1; ndc.y=-(cy/innerHeight)*2+1;
+    ray.setFromCamera(ndc,camera); const hit=ray.intersectObjects(hitTargets,false);
+    return hit.length? hit[0].object.userData.i : -1;
+  }
   window.addEventListener('pointermove',e=>{
     mouse.x=(e.clientX/innerWidth-.5)*2; mouse.y=(e.clientY/innerHeight-.5)*2;
     if(state==='hub'){
-      let h=-1;
-      if(e.target===canvas){ // only the 3D canvas drives hub hover — never DOM overlays (finish button etc.)
-        ndc.x=(e.clientX/innerWidth)*2-1; ndc.y=-(e.clientY/innerHeight)*2+1;
-        ray.setFromCamera(ndc,camera); const hit=ray.intersectObjects(hitTargets,false);
-        h= hit.length? hit[0].object.userData.i : -1;
-      }
+      // only the 3D canvas drives hub hover — never DOM overlays (finish button etc.)
+      const h = (e.target===canvas) ? pickNumeral(e.clientX,e.clientY) : -1;
       if(h!==hovered){ setHover(h); }
     }
   });
@@ -3057,8 +3063,9 @@ var qrcode = function() {
   window.addEventListener('pointerdown',e=>{ downXY=[e.clientX,e.clientY]; });
   window.addEventListener('pointerup',e=>{
     if(!downXY) return; const moved=Math.hypot(e.clientX-downXY[0],e.clientY-downXY[1]); downXY=null;
-    if(moved>8) return;
-    if(state==='hub' && hovered>=0 && e.target===canvas) openChapter(hovered);
+    if(moved>10) return;                             // small movement tolerance so a tap still counts on touch
+    // raycast at the release point rather than trusting `hovered` — touch never fires hover before the tap
+    if(state==='hub' && e.target===canvas){ const i=pickNumeral(e.clientX,e.clientY); if(i>=0) openChapter(i); }
   });
 
   document.getElementById('vback').addEventListener('click',()=>backToHub());
