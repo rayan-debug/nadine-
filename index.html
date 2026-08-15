@@ -80,7 +80,10 @@
   .mmedia{ display:flex; gap:7px; }
   .mframe{ position:relative; flex:1; height:96px; border:1px solid var(--gold); border-radius:5px; background:linear-gradient(160deg,#fff,#f4e9d0);
      display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:7px; overflow:hidden; }
-  .mframe img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .mframe img{ position:absolute; inset:0; width:100%; height:100%; object-fit:contain; }
+  /* plates are 4:3 pages of diagram + type — show them whole, never cropped, and let them be opened full-size */
+  .mframe.hasimg{ height:auto; aspect-ratio:4/3; background:#FDFBF6; padding:0; cursor:zoom-in; }
+  .mframe.hasimg:hover{ border-color:var(--gold-deep); }
   .mframe .orn{ color:var(--gold); font-size:15px; }
   .mframe .bf{ font-family:var(--sans); font-size:9px; font-style:italic; color:var(--muted); line-height:1.3; margin-top:3px; max-width:96%; }
   .mtitle{ font-family:var(--serif); font-weight:600; color:var(--ink); font-size:17px; line-height:1.1; }
@@ -160,6 +163,15 @@
   .tnote{ margin-top:26px; font-family:var(--sans); font-weight:300; font-size:12.5px; letter-spacing:.02em; color:var(--muted); }
   .tback{ margin-top:22px; }
 
+  /* ---- full-size plate lightbox ---- */
+  #lightbox{ position:absolute; inset:0; z-index:9; opacity:0; pointer-events:none; transition:opacity .28s;
+     display:flex; align-items:center; justify-content:center; padding:4vh 4vw;
+     background:rgba(253,251,246,.94); backdrop-filter:blur(9px); -webkit-backdrop-filter:blur(9px); cursor:zoom-out; }
+  #lightbox.on{ opacity:1; pointer-events:auto; }
+  #lightbox img{ max-width:100%; max-height:100%; object-fit:contain; border:1px solid var(--gold);
+     border-radius:8px; background:#FDFBF6; box-shadow:0 30px 80px rgba(120,100,50,.22); }
+  #lbclose{ position:absolute; top:24px; right:30px; pointer-events:auto; }
+
   /* ---------- responsive / mobile ---------- */
   @media(max-width:900px){
     #vprev{ left:4px; } #vnext{ right:4px; }
@@ -237,6 +249,9 @@
         <button class="btn tback" id="tback">↑ Return to the hub</button>
       </div>
     </div>
+
+    <!-- full-size plate viewer: the chapter thumbnails are too small to read the diagrams -->
+    <div id="lightbox"><img id="lbimg" src="" alt=""><button class="btn" id="lbclose">Close ✕</button></div>
   </div>
 
   <div id="loader"><div class="mk">The Intimate Ecosystem</div><div class="dot"></div></div>
@@ -2580,18 +2595,18 @@ var qrcode = function() {
      'images/ii-1.jpg') next to the matching card id below. Empty '' shows an
      elegant placeholder with the art brief. Drop image files beside index.html. */
   const IMAGES = {
-    'I-1':'', 'I-2':'', 'I-3':'',
-    'II-1':'', 'II-2':'', 'II-3':'', 'II-4':'',
-    'III-1':'', 'III-2':'', 'III-3':'',
+    'I-1':'images/I-1.webp', 'I-2':'', 'I-3':'', 'I-4':'',
+    'II-1':'images/II-1.webp', 'II-2':'images/II-2.webp', 'II-3':'', 'II-4':'',
+    'III-1':'images/III-1.webp', 'III-2':'images/III-2.webp', 'III-3':'',
     'IV-1':'', 'IV-2':'', 'IV-3':'', 'IV-4':'',
-    'V-1':'', 'V-2':'',
-    'VI-1':'', 'VI-2':'',
-    'VII-1':'', 'VII-2':'', 'VII-3':'',
-    'VIII-1':'', 'VIII-2':'', 'VIII-3':'',
-    'IX-1':'', 'IX-2':'', 'IX-3':'',
-    'X-1':'', 'X-2':'',
+    'V-1':'images/V-1.webp', 'V-2':'',
+    'VI-1':'images/VI-1.webp', 'VI-1b':'images/VI-1b.webp', 'VI-2':'images/VI-2.webp',
+    'VII-1':'images/VII-1.webp', 'VII-2':'images/VII-2.webp', 'VII-3':'images/VII-3.webp',
+    'VIII-1':'images/VIII-1.webp', 'VIII-2':'images/VIII-2.webp', 'VIII-3':'images/VIII-3.webp',
+    'IX-1':'images/IX-1.webp', 'IX-2':'', 'IX-3':'',
+    'X-1':'images/X-1.webp', 'X-2':'images/X-2.webp',
     'XI-1':'', 'XI-2a':'', 'XI-2b':'', 'XI-3':'',
-    'XII-1':'', 'XII-2':'',
+    'XII-1':'images/XII-1.webp', 'XII-1b':'images/XII-1b.webp', 'XII-2':'',
   };
 
   const CH = [
@@ -2676,6 +2691,8 @@ var qrcode = function() {
     ]},
     { r:'VI', t:'Home Care', cards:[
       { id:'VI-1', title:'Barrier & Friction', brief:'Barrier-repair and friction-control iconography.',
+        media:[{key:'VI-1',brief:'Barrier-repair and friction-control iconography.'},
+               {key:'VI-1b',brief:'The inflammation–pigment cycle — friction, barrier disruption, inflammation, melanocyte activation, PIH.'}],
         lead:'The foundation — not filler.',
         blocks:[{h:'Barrier repair',b:'Ceramides and bland emollients (petrolatum, dimethicone) restore the barrier and cut water loss.'},
                 {h:'Friction control',b:'Breathable fabrics and anti-chafe care — chronic friction alone drives lichenification and darkening.'},
@@ -2755,6 +2772,8 @@ var qrcode = function() {
     ]},
     { r:'XII', t:'The Future', cards:[
       { id:'XII-1', title:'The Emerging Landscape', brief:'A helix, data lattice and regenerating tissue merging into light.',
+        media:[{key:'XII-1',brief:'A helix, data lattice and regenerating tissue merging into light.'},
+               {key:'XII-1b',brief:'NAD⁺ and cellular energy — the rationale, and the honest limit of it.'}],
         blocks:[{h:'Now',b:'AI-assisted assessment and 3D imaging; genomics of pigmentation; established fat grafting.'},
                 {h:'Emerging',b:'Next-generation exosomes, biomaterials & ECM engineering, and longevity science.'},
                 {h:'Caveat',b:'Strong mechanistic rationale, but weak controlled evidence and heavy marketing — appraise carefully.'}]},
@@ -2865,7 +2884,7 @@ var qrcode = function() {
   function miniCard(c){
     const media=c.media||[{brief:c.brief||'',key:c.id||''}];
     const mediaHTML='<div class="mmedia">'+media.map(m=>{ const src=(IMAGES[m.key]||m.src||'');
-      return '<div class="mframe">'+(src?('<img src="'+src+'" alt="">'):('<div class="orn">◆</div><div class="bf">'+(m.brief||'')+'</div>'))+'</div>'; }).join('')+'</div>';
+      return '<div class="mframe'+(src?' hasimg':'')+'">'+(src?('<img src="'+src+'" alt="'+(m.brief||'').replace(/"/g,'&quot;')+'" loading="lazy">'):('<div class="orn">◆</div><div class="bf">'+(m.brief||'')+'</div>'))+'</div>'; }).join('')+'</div>';
     const blocksHTML=(c.blocks||[]).map(b=>'<div class="mblk">'+(b.h?('<div class="bh">'+b.h+'</div>'):'')+'<div class="bb">'+b.b+'</div></div>').join('');
     return '<div class="mcard">'+mediaHTML+'<div class="mtitle">'+c.title+'</div>'+(c.lead?('<div class="mlead">'+c.lead+'</div>'):'')+'<div class="mblocks">'+blocksHTML+'</div></div>';
   }
@@ -3032,6 +3051,8 @@ var qrcode = function() {
     else if(state==='hub'){ if(dy<0){ hubBack+=-dy*2; if(hubBack>80) returnToIntro(); hubFwd=0; } else { hubBack=0; hubFwd+=dy*2; if(hubFwd>80) enterThanks(); } }
   },{passive:true});
   window.addEventListener('keydown',e=>{
+    // the lightbox owns Escape/arrows while it is open, so a plate close never also leaves the chapter
+    if(lbOpen()){ if(e.key==='Escape') closeLB(); return; }
     if(state==='intro'){ if(e.key==='ArrowDown'||e.key===' '){ introTarget=Math.min(1,introTarget+0.2); if(introTarget>=1)setTimeout(enterHub,300);} if(e.key==='ArrowUp') introTarget=Math.max(0,introTarget-0.2); }
     else if(state==='subpage'){ if(e.key==='Escape') backToHub(); if(e.key==='ArrowRight') nextChapter(); if(e.key==='ArrowLeft') prevChapter(); }
     else if(state==='hub'){ if(e.key==='ArrowUp'||e.key==='Escape') returnToIntro(); else if(e.key==='ArrowDown') enterThanks(); }
@@ -3067,6 +3088,18 @@ var qrcode = function() {
     // raycast at the release point rather than trusting `hovered` — touch never fires hover before the tap
     if(state==='hub' && e.target===canvas){ const i=pickNumeral(e.clientX,e.clientY); if(i>=0) openChapter(i); }
   });
+
+  /* ---- plate lightbox: tap any chapter illustration to read it full-size ---- */
+  const lbEl=document.getElementById('lightbox'), lbImg=document.getElementById('lbimg');
+  function lbOpen(){ return lbEl.classList.contains('on'); }
+  function openLB(src,alt){ lbImg.src=src; lbImg.alt=alt||''; lbEl.classList.add('on'); }
+  function closeLB(){ lbEl.classList.remove('on'); }
+  vcard.addEventListener('click',e=>{
+    const f=e.target.closest('.mframe.hasimg'); if(!f) return;
+    const img=f.querySelector('img'); if(!img) return;
+    e.stopPropagation(); openLB(img.getAttribute('src'), img.getAttribute('alt'));
+  });
+  lbEl.addEventListener('click',closeLB);
 
   document.getElementById('vback').addEventListener('click',()=>backToHub());
   document.getElementById('vprev').addEventListener('click',prevChapter);
