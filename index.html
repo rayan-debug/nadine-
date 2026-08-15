@@ -628,7 +628,11 @@
     buildDots(CH.length,curCh);
     vcard.className='chview';
     const {sections,images}=chapterParts(ch);
-    const cards=(sections.length?textCard(sections):'')+images.map(imageCard).join('');
+    // text card sits in the middle with plates flanking it; floor() keeps the
+    // 2-plate chapters perfectly symmetrical and leaves 1-plate ones as text-then-plate
+    const row=images.map(imageCard);
+    if(sections.length) row.splice(Math.floor(images.length/2), 0, textCard(sections));
+    const cards=row.join('');
     // fewer cards → each one gets more room; these modifiers widen the extremes
     const rowMod=(images.length?'':' textonly')+(images.length===1?' oneimg':'')+(images.length>=3?' manyimg':'');
     vcard.innerHTML='<div class="chhead"><div class="roman">Chapter '+ch.r+'</div><h3>'+ch.t+'</h3></div>'+
