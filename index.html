@@ -67,32 +67,43 @@
 
   /* ---- chapter viewer (multi-card) ---- */
   #viewer{ position:absolute; inset:0; opacity:0; pointer-events:none; display:flex; align-items:center; justify-content:center; padding:2vh 2vw; }
-  #viewer .stage{ position:relative; width:min(1260px,94vw); }
+  #viewer .stage{ position:relative; width:min(1500px,96vw); }
   /* ---- chapter view: small cards, all visible together, no modal, no scroll ---- */
   #vcard.chview{ background:transparent; border:none; box-shadow:none; padding:0; max-height:none; overflow:visible; width:100%; }
   .chview .chhead{ text-align:center; margin-bottom:18px; }
   .chview .chhead .roman{ font-family:var(--serif); font-weight:600; font-size:15px; letter-spacing:.12em;
      background:linear-gradient(180deg,#8A6A1C,#C9A24B,#B8933E); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
   .chview .chhead h3{ font-family:var(--serif); font-weight:600; color:var(--ink); font-size:clamp(23px,3vw,36px); line-height:1.04; }
-  .cardsrow{ display:flex; gap:15px; justify-content:center; align-items:stretch; flex-wrap:nowrap; }
-  .mcard{ flex:0 0 286px; max-width:286px; display:flex; flex-direction:column; gap:8px; background:#ffffff;
-     border:1px solid var(--line); border-radius:8px; padding:15px; box-shadow:0 14px 34px rgba(120,100,50,.12); }
-  .mmedia{ display:flex; gap:7px; }
-  .mframe{ position:relative; flex:1; height:96px; border:1px solid var(--gold); border-radius:5px; background:linear-gradient(160deg,#fff,#f4e9d0);
-     display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:7px; overflow:hidden; }
-  .mframe img{ position:absolute; inset:0; width:100%; height:100%; object-fit:contain; }
-  /* plates are 4:3 pages of diagram + type — show them whole, never cropped, and let them be opened full-size */
-  .mframe.hasimg{ height:auto; aspect-ratio:4/3; background:#FDFBF6; padding:0; cursor:zoom-in; }
-  .mframe.hasimg:hover{ border-color:var(--gold-deep); }
-  .mframe .orn{ color:var(--gold); font-size:15px; }
-  .mframe .bf{ font-family:var(--sans); font-size:9px; font-style:italic; color:var(--muted); line-height:1.3; margin-top:3px; max-width:96%; }
+  /* A chapter is one merged text card + one card per plate. Text and images never
+     share a card, and cards enlarge on hover so either can be read in place. */
+  .cardsrow{ display:flex; gap:16px; justify-content:center; align-items:center; flex-wrap:nowrap; }
+  .mcard{ background:#ffffff; border:1px solid var(--line); border-radius:8px; box-shadow:0 14px 34px rgba(120,100,50,.12);
+     transition:transform .38s cubic-bezier(.2,.7,.3,1), box-shadow .38s, border-color .38s; }
+  .mcard:hover{ z-index:6; border-color:var(--gold); box-shadow:0 30px 72px rgba(120,100,50,.26); }
+
+  .tcard{ flex:1 1 300px; max-width:404px; padding:16px 17px; }
+  .tcard:hover{ transform:scale(1.055); }
+  .cardsrow.textonly .tcard{ max-width:800px; }
+  .tscroll{ max-height:66vh; overflow-y:auto; display:flex; flex-direction:column; gap:13px; padding-right:3px; }
+  .tscroll::-webkit-scrollbar{ width:7px; } .tscroll::-webkit-scrollbar-thumb{ background:var(--line); border-radius:8px; }
+  .tsec{ display:flex; flex-direction:column; gap:6px; }
+  .tsec + .tsec{ border-top:1px solid var(--line); padding-top:12px; }
+
+  .icard{ flex:1 1 230px; max-width:500px; padding:9px; background:#FDFBF6; cursor:zoom-in; }
+  .icard img{ display:block; width:100%; aspect-ratio:4/3; object-fit:contain; border-radius:4px; }
+  .icard:hover{ transform:scale(1.26); }
+  .cardsrow.oneimg .icard{ max-width:580px; }
+  /* 3 plates in one row: give the width back to the plates, they are the point */
+  .cardsrow.manyimg .tcard{ flex:0 1 330px; }
+  .cardsrow.manyimg .icard{ flex:1 1 300px; }
+
   .mtitle{ font-family:var(--serif); font-weight:600; color:var(--ink); font-size:17px; line-height:1.1; }
   .mlead{ font-family:var(--serif); font-style:italic; color:var(--gold-deep); font-size:12.5px; margin-top:-2px; line-height:1.3; }
   .mblocks{ display:flex; flex-direction:column; gap:5px; }
   .mblk .bh{ font-family:var(--sans); font-weight:600; letter-spacing:.05em; text-transform:uppercase; font-size:9.5px; color:var(--gold-deep); margin-bottom:1px; }
   .mblk .bb{ font-family:var(--sans); font-weight:300; font-size:11.5px; line-height:1.42; color:var(--ink); }
   .mblk .bb b{ font-weight:600; color:var(--gold-deep); }
-  @media(max-width:1060px){ .cardsrow{ flex-wrap:wrap; } .mcard{ flex:0 0 240px; max-width:240px; } }
+  @media(max-width:1060px){ .cardsrow{ flex-wrap:wrap; } .tcard{ max-width:340px; } .icard{ max-width:400px; } }
   .card2{ display:flex; gap:32px; background:rgba(253,251,246,.9); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
      border:1px solid var(--line); border-radius:8px; padding:30px clamp(22px,3vw,38px); box-shadow:0 30px 80px rgba(120,100,50,.16);
      max-height:84vh; overflow:auto; pointer-events:auto; }
@@ -163,6 +174,9 @@
   .tnote{ margin-top:26px; font-family:var(--sans); font-weight:300; font-size:12.5px; letter-spacing:.02em; color:var(--muted); }
   .tback{ margin-top:22px; }
 
+  /* touch devices get no hover, and a sticky :hover scale would strand a card mid-zoom */
+  @media(hover:none){ .tcard:hover, .icard:hover{ transform:none; } }
+
   /* ---- full-size plate lightbox ---- */
   #lightbox{ position:absolute; inset:0; z-index:9; opacity:0; pointer-events:none; transition:opacity .28s;
      display:flex; align-items:center; justify-content:center; padding:4vh 4vw;
@@ -201,7 +215,8 @@
   @media(max-width:560px){
     .cardsrow{ flex-direction:column; flex-wrap:nowrap; align-items:stretch; }
     .mcard{ flex:0 0 auto; max-width:none; width:100%; }
-    .mframe{ height:118px; }
+    .tcard, .icard, .cardsrow.textonly .tcard, .cardsrow.oneimg .icard{ max-width:none; }
+    .tscroll{ max-height:none; }   /* the page already scrolls here — don't nest a second scroller */
     .beat{ padding:9vw 7vw; }
     #loader .mk{ font-size:23px; }
     #brand .n{ display:none; } /* keep only the diamond mark to avoid crowding the top */
@@ -2881,20 +2896,44 @@ var qrcode = function() {
   const visited=new Set(); let hubFwd=0;
 
   function buildDots(n,active){ vdots.innerHTML=''; for(let i=0;i<n;i++){ const d=document.createElement('i'); if(i===active)d.className='on'; vdots.appendChild(d);} }
-  function miniCard(c){
-    const media=c.media||[{brief:c.brief||'',key:c.id||''}];
-    const mediaHTML='<div class="mmedia">'+media.map(m=>{ const src=(IMAGES[m.key]||m.src||'');
-      return '<div class="mframe'+(src?' hasimg':'')+'">'+(src?('<img src="'+src+'" alt="'+(m.brief||'').replace(/"/g,'&quot;')+'" loading="lazy">'):('<div class="orn">◆</div><div class="bf">'+(m.brief||'')+'</div>'))+'</div>'; }).join('')+'</div>';
-    const blocksHTML=(c.blocks||[]).map(b=>'<div class="mblk">'+(b.h?('<div class="bh">'+b.h+'</div>'):'')+'<div class="bb">'+b.b+'</div></div>').join('');
-    return '<div class="mcard">'+mediaHTML+'<div class="mtitle">'+c.title+'</div>'+(c.lead?('<div class="mlead">'+c.lead+'</div>'):'')+'<div class="mblocks">'+blocksHTML+'</div></div>';
+  const esc=s=>String(s||'').replace(/"/g,'&quot;');
+  /* A chapter renders as ONE merged text card plus one card per real image.
+     Cards without an image contribute their text and nothing else — the old
+     "art brief" placeholder frames are gone. */
+  function chapterParts(ch){
+    const sections=[], images=[];
+    ch.cards.forEach(c=>{
+      (c.media||[{brief:c.brief||'',key:c.id||''}]).forEach(m=>{
+        const src=IMAGES[m.key]||m.src||'';
+        if(src) images.push({src, brief:m.brief||c.brief||'', title:c.title});
+      });
+      if((c.blocks&&c.blocks.length)||c.lead) sections.push(c);
+    });
+    return {sections, images};
+  }
+  function textCard(sections){
+    const inner=sections.map(c=>
+      '<div class="tsec"><div class="mtitle">'+c.title+'</div>'+
+      (c.lead?('<div class="mlead">'+c.lead+'</div>'):'')+
+      '<div class="mblocks">'+(c.blocks||[]).map(b=>
+        '<div class="mblk">'+(b.h?('<div class="bh">'+b.h+'</div>'):'')+'<div class="bb">'+b.b+'</div></div>'
+      ).join('')+'</div></div>').join('');
+    return '<div class="mcard tcard"><div class="tscroll">'+inner+'</div></div>';
+  }
+  function imageCard(im){
+    return '<div class="mcard icard"><img src="'+esc(im.src)+'" alt="'+esc(im.brief)+'" loading="lazy"></div>';
   }
   function renderChapter(dir){
     const ch=CH[curCh];
     vheadT.textContent='Chapter '+ch.r+' · '+ch.t;
     buildDots(CH.length,curCh);
     vcard.className='chview';
+    const {sections,images}=chapterParts(ch);
+    const cards=(sections.length?textCard(sections):'')+images.map(imageCard).join('');
+    // fewer cards → each one gets more room; these modifiers widen the extremes
+    const rowMod=(images.length?'':' textonly')+(images.length===1?' oneimg':'')+(images.length>=3?' manyimg':'');
     vcard.innerHTML='<div class="chhead"><div class="roman">Chapter '+ch.r+'</div><h3>'+ch.t+'</h3></div>'+
-      '<div class="cardsrow">'+ch.cards.map(miniCard).join('')+'</div>';
+      '<div class="cardsrow'+rowMod+'">'+cards+'</div>';
     gsap.fromTo(vcard,{x:(dir||0)*48,opacity:0},{x:0,opacity:1,duration:.55,ease:'power3.out'});
   }
   function nextChapter(){ if(state!=='subpage')return; curCh=(curCh+1)%CH.length; renderChapter(1); }
@@ -3095,7 +3134,7 @@ var qrcode = function() {
   function openLB(src,alt){ lbImg.src=src; lbImg.alt=alt||''; lbEl.classList.add('on'); }
   function closeLB(){ lbEl.classList.remove('on'); }
   vcard.addEventListener('click',e=>{
-    const f=e.target.closest('.mframe.hasimg'); if(!f) return;
+    const f=e.target.closest('.icard'); if(!f) return;
     const img=f.querySelector('img'); if(!img) return;
     e.stopPropagation(); openLB(img.getAttribute('src'), img.getAttribute('alt'));
   });
