@@ -15,6 +15,7 @@ import tempfile
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "index.html"
 OUT = ROOT / "docs" / "intimate-ecosystem-content.md"
+TXT = ROOT / "docs" / "intimate-ecosystem-clinical.txt"
 
 
 def js_array(name):
@@ -41,6 +42,55 @@ def md(s):
     """HTML emphasis -> markdown, everything else left exactly as written."""
     s = re.sub(r"</?b>", "**", s or "")
     return s.replace("<br>", " ")
+
+
+def plain(s):
+    """Strip every tag - the clinical text and nothing else."""
+    return re.sub(r"<[^>]+>", "", s or "").replace("<br>", " ").strip()
+
+
+def write_clinical(chapters):
+    """A plain-text file of the clinical content only: no art briefs, no image
+    paths, no interface strings, no contact details."""
+    import textwrap
+
+    L = ["THE INTIMATE ECOSYSTEM",
+         "Clinical content — Dr. Nadeen Kabboura",
+         "From normal anatomy to regenerative aesthetics",
+         ""]
+
+    L += ["CONTENTS", ""]
+    for c in chapters:
+        L.append(f"  {c['r']:>4}.  {c['t']}")
+    L.append("")
+
+    for c in chapters:
+        L += ["", "=" * 74, f"{c['r']}.  {c['t'].upper()}", "=" * 74, ""]
+        for card in c["cards"]:
+            L.append(f"{card['id']}   {plain(card['title']).upper()}")
+            if card.get("lead"):
+                L += textwrap.wrap(plain(card["lead"]), 70,
+                                   initial_indent="      ", subsequent_indent="      ")
+            L.append("")
+            for blk in card.get("blocks", []):
+                h, body = plain(blk.get("h", "")), plain(blk.get("b", ""))
+                if h:
+                    L.append(f"      {h}")
+                    L += textwrap.wrap(body, 66, initial_indent="        ",
+                                       subsequent_indent="        ")
+                else:
+                    L += textwrap.wrap(body, 68, initial_indent="      ",
+                                       subsequent_indent="      ")
+                L.append("")
+
+    cards = sum(len(c["cards"]) for c in chapters)
+    blocks = sum(len(k.get("blocks", [])) for c in chapters for k in c["cards"])
+    L += ["-" * 74,
+          f"{len(chapters)} chapters · {cards} topics · {blocks} clinical points", ""]
+    TXT.parent.mkdir(exist_ok=True)
+    TXT.write_text("\n".join(L))
+    print(f"  {TXT.relative_to(ROOT)}  {len(L)} lines, "
+          f"{TXT.stat().st_size/1024:.1f} kB")
 
 
 def main():
@@ -159,6 +209,7 @@ def main():
     blocks = sum(len(k.get("blocks", [])) for c in chapters for k in c["cards"])
     print(f"  {OUT.relative_to(ROOT)}  {len(chapters)} chapters, {cards} cards, "
           f"{blocks} text blocks, {OUT.stat().st_size/1024:.1f} kB")
+    write_clinical(chapters)
 
 
 if __name__ == "__main__":
