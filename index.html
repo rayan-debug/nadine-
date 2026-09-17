@@ -277,9 +277,9 @@
     <div id="hint"><div class="t" id="hintText">Scroll to begin</div><div class="chev">⌄</div></div>
     <div id="dots"></div>
 
-    <div id="hubc"><div class="lbl" id="hubLbl">The Journey</div><div class="sub" id="hubSub">Twelve chapters · select a numeral</div></div>
+    <div id="hubc"><div class="lbl" id="hubLbl">The Journey</div><div class="sub" id="hubSub">Eleven chapters · select a numeral</div></div>
     <div id="uphint"><div class="c">⌃</div><div class="t">Scroll up to return</div></div>
-    <div id="hubdone"><button class="btn" id="hubdoneBtn">Finish · Thank You →</button><div class="prog" id="hubprog">0 / 12 explored</div></div>
+    <div id="hubdone"><button class="btn" id="hubdoneBtn">Finish · Thank You →</button><div class="prog" id="hubprog">0 / 11 explored</div></div>
 
     <div id="viewer">
       <div id="vhead"><span class="t" id="vheadT"></span></div>
@@ -2657,15 +2657,14 @@ var qrcode = function() {
     'I-1':'images/I-1.webp', 'I-2':'', 'I-3':'', 'I-4':'',
     'II-1':'images/II-1.webp', 'II-2':'images/II-2.webp', 'II-3':'', 'II-4':'',
     'III-1':'images/III-1.webp', 'III-2':'images/III-2.webp', 'III-3':'',
-    'IV-1':'', 'IV-2':'', 'IV-3':'', 'IV-4':'',
-    'V-1':'images/V-1.webp', 'V-2':'',
+    'IV-1':'', 'IV-2':'',
+    'V-1':'images/V-1.webp',
     'VI-1':'images/VI-1.webp', 'VI-1b':'images/VI-1b.webp', 'VI-2':'images/VI-2.webp',
     'VII-1':'images/VII-1.webp', 'VII-2':'images/VII-2.webp', 'VII-3':'images/VII-3.webp',
     'VIII-1':'images/VIII-1.webp', 'VIII-2':'images/VIII-2.webp', 'VIII-3':'images/VIII-3.webp',
-    'IX-1':'images/IX-1.webp', 'IX-2':'', 'IX-3':'',
-    'X-1':'images/X-1.webp', 'X-2':'images/X-2.webp',
-    'XI-1':'', 'XI-2a':'', 'XI-2b':'', 'XI-3':'',
-    'XII-1':'images/XII-1.webp', 'XII-1b':'images/XII-1b.webp', 'XII-2':'',
+    'IX-1':'images/IX-1.webp', 'IX-2':'',
+    'X-1':'images/X-1.webp',
+    'XI-1':'images/XII-1.webp', 'XI-1b':'images/XII-1b.webp',
   };
 
   const CH = [
@@ -2690,14 +2689,14 @@ var qrcode = function() {
         lead:'Clinical anatomy — not the textbook.',
         blocks:[{h:'Structures',b:'Mons, labia majora & minora, clitoral hood & glans, vestibule, introitus, perineal body.'},
                 {h:'Hart’s line',b:'Where keratinised skin meets vestibular mucosa — the key procedural landmark.'},
-                {h:'Variation',b:'Dimensions vary widely and asymmetry is physiologic. There is no anatomic ideal.'}]},
+                {h:'Variation',b:'Dimensions vary widely and asymmetry is physiologic.'}]},
       { id:'II-2', title:'Skin, Pigment & Glands', brief:'Cross-section of zonal keratinisation with melanocytes and adnexal glands.',
         blocks:[{h:'Two zones',b:'Mons and majora are keratinised and hair-bearing; minora and vestibule are thin mucosa.'},
-                {h:'Melanocytes',b:'More active here — pigment rises with androgens, friction and age.'},
+                {h:'Melanocytes',b:'More active here.'},
                 {h:'Clinical pearl',b:'Thin barrier + active melanocytes = tissue <b>primed for hyperpigmentation</b>.'}]},
       { id:'II-3', title:'Support, Vessels & Nerves', brief:'Vascular and nerve map of the vulva — pudendal supply and innervation.',
-        blocks:[{h:'Support',b:'Laxity is collagen and elastin loss plus stretch injury — not one failed ligament.'},
-                {h:'Blood supply',b:'A rich dual pudendal supply — heals well, but a real <b>occlusion and haematoma risk</b>.'},
+        blocks:[{h:'Support',b:'Laxity is collagen and elastin loss.'},
+                {h:'Blood supply',b:'A rich dual pudendal supply.'},
                 {h:'Innervation',b:'Pudendal posteriorly; the anterior vulva needs ilioinguinal and genitofemoral cover.'}]},
       { id:'II-4', title:'Hormones & Microbiome', brief:'Estrogen receptors and lactobacilli maintaining an acidic pH.',
         blocks:[{h:'Receptors',b:'Estrogen sustains epithelium, collagen, elastin and vascularity.'},
@@ -2719,19 +2718,11 @@ var qrcode = function() {
     ]},
     { r:'IV', t:'Clinical Assessment', cards:[
       { id:'IV-1', title:'History & Red Flags', brief:'History intake sheet with red-flag callouts.',
-        blocks:[{h:'The whole woman',b:'Metabolic, hormonal and mechanical drivers — diabetes, PCOS, hair removal, products.'},
-                {h:'Red flags',b:'New, changing, bleeding or ulcerated lesions are <b>biopsied before any aesthetic treatment</b>.'}]},
-      { id:'IV-2', title:'Examination & Imaging', brief:'Standardised lighting and photography setup with a skin-tone reference card.',
-        blocks:[{h:'Systematic',b:'Map pigment, texture, elasticity, volume, symmetry and scars; palpate nodes.'},
-                {h:'Reproducible',b:'Fixed lighting, distance and framing; consent first; tone reference in frame.'}]},
-      { id:'IV-3', title:'Differential Diagnosis', brief:'Comparison plate — benign findings vs do-not-miss dermatoses.',
+        blocks:[{h:'The whole woman',b:'Metabolic, hormonal and mechanical drivers — diabetes, PCOS, hair removal, products.'}]},
+      { id:'IV-2', title:'Differential Diagnosis', brief:'Comparison plate — benign findings vs do-not-miss dermatoses.',
         blocks:[{h:'Usually benign',b:'Physiologic pigment, post-inflammatory hyperpigmentation, acanthosis nigricans.'},
                 {h:'Do not miss',b:'<b>Lichen sclerosus, differentiated VIN, vulvar melanoma</b> — ABCDE is unreliable on mucosa.'},
                 {h:'Rule',b:'Fixed, ulcerated, indurated or changing? Biopsy or refer.'}]},
-      { id:'IV-4', title:'Fitzpatrick Phototypes', brief:'Fitzpatrick I–VI tone wheel in gold-framed swatches.',
-        blocks:[{h:'Amplified here',b:'Genital skin runs 1–2 shades darker, amplifying phototype tendencies.'},
-                {h:'PIH risk',b:'Climbs steeply in <b>IV–VI</b> — consent explicitly.'},
-                {h:'Melanin-safe',b:'RF microneedling, longer wavelengths, strong cooling, mandatory test spot.'}]},
     ]},
     { r:'V', t:'The Treatment Pyramid', cards:[
       { id:'V-1', title:'The Treatment Pyramid', brief:'Six-tier gold pyramid from Lifestyle to Surgery.',
@@ -2739,11 +2730,6 @@ var qrcode = function() {
         blocks:[{h:'The tiers',b:'Lifestyle → home care → topicals → injectables → energy → surgery.'},
                 {h:'Escalate slowly',b:'Move up only when a gentler tier is exhausted or inappropriate.'},
                 {h:'Principle',b:'Preserve before removing. <b>Surgery is the apex, not the default.</b>'}]},
-      { id:'V-2', title:'Many Entry Points', brief:'Four patient archetypes mapped to different entry tiers.',
-        lead:'One framework — many entry points.',
-        blocks:[{h:'Friction-driven PIH',b:'Lifestyle, home care and gentle topicals — no devices.'},
-                {h:'Perimenopausal dryness',b:'Local estrogen or DHEA first; regenerative adjuncts second.'},
-                {h:'Postpartum laxity',b:'Structure first — biostimulator ± energy, then surface quality.'}]},
     ]},
     { r:'VI', t:'Home Care', cards:[
       { id:'VI-1', title:'Barrier & Friction', brief:'Barrier-repair and friction-control iconography.',
@@ -2751,83 +2737,57 @@ var qrcode = function() {
                {key:'VI-1b',brief:'The inflammation–pigment cycle — friction, barrier disruption, inflammation, melanocyte activation, PIH.'}],
         lead:'The foundation — not filler.',
         blocks:[{h:'Barrier repair',b:'Ceramides and bland emollients restore the barrier and cut water loss.'},
-                {h:'Friction control',b:'Breathable fabrics and anti-chafe care — friction alone drives darkening.'},
+                {h:'Friction control',b:'Breathable fabrics — friction alone drives darkening.'},
                 {h:'Cleansing',b:'pH-balanced, fragrance-free, <b>no douching</b>; considered hair removal.'}]},
       { id:'VI-2', title:'Mistakes & Compliance', brief:'A do / don’t list for sensitive-area skincare.',
         blocks:[{h:'Common mistakes',b:'Facial actives on mucosa, unregulated whitening creams, over-cleansing.'},
-                {h:'Compliance',b:'Fewest steps, realistic 12-week timelines, patch tests, follow-up photos.'},
+                {h:'Compliance',b:'Fewest steps, realistic 12-week timelines.'},
                 {h:'Treat the driver',b:'Address friction, folliculitis or hormones — not just the pigment.'}]},
     ]},
     { r:'VII', t:'Topicals', cards:[
       { id:'VII-1', title:'Mechanisms, Not Brands', brief:'Tyrosinase pathway diagram: tyrosine → DOPA → melanin.',
         lead:'Teach mechanism, and any product can be reasoned about.',
-        blocks:[{h:'The pathway',b:'Tyrosinase is rate-limiting; most brighteners act somewhere along it.'},
+        blocks:[{h:'The pathway',b:'Most brighteners act somewhere along the tyrosinase pathway.'},
                 {h:'Four levers',b:'Enzyme inhibition, melanocyte signalling, melanosome transfer, epidermal turnover.'}]},
       { id:'VII-2', title:'The Working Agents', brief:'Elegant agent cards with mechanism and cautions.',
         blocks:[{h:'Gentle first-line',b:'Tranexamic acid, azelaic acid, niacinamide — low irritation, pregnancy-friendly.'},
-                {h:'Use with care',b:'Vitamin C, kojic acid, arbutin, cysteamine; retinoids irritate. Hydroquinone is <b>Rx-only in the US</b> — ochronosis risk.'}]},
+                {h:'Use with care',b:'Vitamin C, kojic acid, arbutin, cysteamine; retinoids irritate.'}]},
       { id:'VII-3', title:'Safety Tiering', brief:'Gentle / caution / avoid tiers for mucosal skin.',
-        blocks:[{h:'Avoid on mucosa',b:'High-strength retinoids and strong acids — physician-supervised only.'},
-                {h:'Be honest',b:'Mucosa is not the face; genital-specific trials are limited.'}]},
+        blocks:[{h:'Avoid on mucosa',b:'High-strength retinoids and strong acids.'},
+                {h:'Be honest',b:'Mucosa is not the face.'}]},
     ]},
     { r:'VIII', t:'Regenerative Injectables', cards:[
       { id:'VIII-1', title:'Autologous & Nucleotide', brief:'Luminous regenerative motif — fibroblasts, collagen and new microvessels in gold.',
         lead:'The biology of repair.',
         blocks:[{h:'PRP / PRF',b:'Autologous growth factors drive fibroblast activation, angiogenesis and repair.'},
                 {h:'PDRN',b:'Salmon-DNA polymer — anti-inflammatory, pro-angiogenic, pro-collagen.'},
-                {h:'PN',b:'Higher-weight polynucleotides — a hydrating scaffold. Not FDA-approved (US).'}]},
+                {h:'PN',b:'Higher-weight polynucleotides — a hydrating scaffold.'}]},
       { id:'VIII-2', title:'Scaffolds, Stimulators & Signals', brief:'Panel of HA boosters, biostimulators and an exosome caution flag.',
-        blocks:[{h:'Scaffold & stimulate',b:'HA boosters hydrate; PLLA / CaHA build collagen — <b>labia majora only</b>, nodule risk.'},
-                {h:'Exosomes',b:'An active frontier with <b>no FDA-approved product</b> and standing safety warnings.'}]},
+        blocks:[{h:'Scaffold & stimulate',b:'HA boosters hydrate; PLLA / CaHA build collagen — <b>labia majora only</b>.'},
+                {h:'Exosomes',b:'An active frontier.'}]},
       { id:'VIII-3', title:'Convergence & Sequencing', brief:'Signal + scaffold + structure converging on restored tissue.',
-        blocks:[{h:'Sequence, don’t stack',b:'Prime → stimulate → hydrate; energy first, biologic into primed tissue. <b>One inflammatory stimulus per session.</b>'}]},
+        blocks:[{h:'Sequence, don’t stack',b:'Prime → stimulate → hydrate; energy first, biologic into primed tissue.'}]},
     ]},
     { r:'IX', t:'Energy-Based Medicine', cards:[
       { id:'IX-1', title:'Ablative & Fractional Lasers', brief:'CO₂ vs Er:YAG water-absorption diagram.',
-        blocks:[{h:'Wavelengths',b:'CO₂ (10,600 nm) builds collagen through fractional columns; Er:YAG (2,940 nm) ablates very superficially.'},
-                {h:'Chromophore caution',b:'Lasers also heat melanin — real PIH and burn risk in Fitzpatrick IV–VI.'}]},
+        blocks:[{h:'Wavelengths',b:'CO₂ builds collagen through fractional columns; Er:YAG ablates very superficially.'},
+                {h:'Chromophore caution',b:'Lasers also heat melanin — real PIH and burn risk.'}]},
       { id:'IX-2', title:'Radiofrequency Microneedling', brief:'RF needle-depth schematic sparing the epidermis.',
         blocks:[{h:'Melanin-safe',b:'RF has <b>no chromophore</b> — resistive heating bypasses epidermal melanin (Morpheus8, Scarlet).'}]},
-      { id:'IX-3', title:'The Evidence Check', brief:'FDA 2018 statement and sham-controlled trial summary.',
-        lead:'Mechanistically plausible — held to honest evidence.',
-        blocks:[{h:'FDA · 2018',b:'Warned against energy devices for “vaginal rejuvenation”.'},
-                {h:'Sham-controlled',b:'Fractional CO₂ showed <b>no benefit over placebo</b> for GSM (JAMA 2021).'},
-                {h:'First-line',b:'Local estrogen or DHEA stays best-evidenced; energy is adjunctive.'}]},
     ]},
     { r:'X', t:'Combination Therapy', cards:[
       { id:'X-1', title:'The Kabboura Protocol', brief:'Five-step protocol flow converging on restored tissue.',
         lead:'Structure before surface.',
         blocks:[{h:'The sequence',b:'Restore the barrier → rebuild structure → regenerate quality → refine pigment → maintain.'},
-                {h:'Read together',b:'Volume loss, pigment, laxity and dryness are assessed as one picture.'},
-                {h:'Discipline',b:'Distinct depths and products; never stack inflammatory stimuli.'}]},
-      { id:'X-2', title:'Algorithm — Pigmentation', brief:'Pigmentation algorithm flow with a consent asterisk on exosomes.',
-        blocks:[{h:'The path',b:'Barrier repair → topicals → melanin-safe energy → PDRN → maintenance.'},
-                {h:'Honesty',b:'Correct the driver before chasing pigment; investigational steps need consent.'}]},
+                {h:'Read together',b:'Volume loss, pigment, laxity and dryness are assessed as one picture.'}]},
     ]},
-    { r:'XI', t:'Clinical Cases', cards:[
-      { id:'XI-1', title:'How to Read a Case', brief:'Case reasoning framework — six numbered steps.',
-        lead:'Each case is a reasoning trace.',
-        blocks:[{h:'The trace',b:'Diagnosis → assessment → decision → sequence → outcome → pearls.'},
-                {h:'The point',b:'The decision matters more than the device.'}]},
-      { id:'XI-2', title:'Case One', lead:'Standardised, consented before / after.',
-        media:[{key:'XI-2a',brief:'BEFORE — standardised, consented clinical photograph (fixed lighting/angle, skin-tone reference).'},
-               {key:'XI-2b',brief:'AFTER — matched view at a defined follow-up interval, identical capture settings.'}],
-        blocks:[{h:'Diagnosis & plan',b:'____________________'},
-                {h:'Sequence & outcome',b:'Populate with your own de-identified, consented case.'}]},
-      { id:'XI-3', title:'Pearls & Pitfalls', brief:'Before/after montage with pearls and complications-avoided callouts.',
-        blocks:[{h:'Pearls',b:'Correct the driver · test-spot before full energy · photograph every visit.'},
-                {h:'Avoid',b:'PIH from over-aggressive energy, nodules on mucosa and — above all — <b>treating over a missed malignancy</b>.'}]},
-    ]},
-    { r:'XII', t:'The Future', cards:[
-      { id:'XII-1', title:'The Emerging Landscape', brief:'A helix, data lattice and regenerating tissue merging into light.',
-        media:[{key:'XII-1',brief:'A helix, data lattice and regenerating tissue merging into light.'},
-               {key:'XII-1b',brief:'NAD⁺ and cellular energy — the rationale, and the honest limit of it.'}],
+    { r:'XI', t:'The Future', cards:[
+      { id:'XI-1', title:'The Emerging Landscape', brief:'A helix, data lattice and regenerating tissue merging into light.',
+        media:[{key:'XI-1',brief:'A helix, data lattice and regenerating tissue merging into light.'},
+               {key:'XI-1b',brief:'NAD⁺ and cellular energy — the rationale, and the honest limit of it.'}],
         blocks:[{h:'Now',b:'AI-assisted assessment, 3D imaging, pigment genomics, established fat grafting.'},
                 {h:'Emerging',b:'Next-generation exosomes, ECM engineering, longevity science.'},
-                {h:'Caveat',b:'Strong rationale, weak controlled evidence, heavy marketing — appraise carefully.'}]},
-      { id:'XII-2', title:'Closing', brief:'A single gold ornament on ivory.',
-        lead:'“Beauty begins when women stop believing they were abnormal.”',
-        blocks:[{h:'The recurring lesson',b:'Plausibility must <b>survive sham-controlled testing</b> before it becomes practice.'}]},
+                {h:'Caveat',b:'Heavy marketing — appraise carefully.'}]},
     ]},
   ];
 
@@ -2865,7 +2825,7 @@ var qrcode = function() {
   const particles=new THREE.Points(pg, new THREE.PointsMaterial({color:0xB8933E,size:0.03,transparent:true,opacity:0.55,sizeAttenuation:true,depthWrite:false}));
   scene.add(particles);
 
-  // ---- hub: 12-numeral clock ----
+  // ---- hub: one numeral per chapter, evenly spaced ----
   const hub=new THREE.Group(); hub.visible=false; scene.add(hub); hubRef=hub;
   const hubInner=new THREE.Group(); hub.add(hubInner);   // hub=responsive fit scale, hubInner=animated
   const R=2.35;
@@ -2873,6 +2833,7 @@ var qrcode = function() {
   const orbit=new THREE.Mesh(new THREE.TorusGeometry(R,0.004,16,220), new THREE.MeshBasicMaterial({color:GOLD,transparent:true,opacity:0.28}));
   hubInner.add(orbit);
   const ROMAN=['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII'];
+  const NCH=CH.length;   // the ring follows the chapter list, never a fixed 12
   function numTex(txt){
     const c=document.createElement('canvas'); c.width=c.height=256; const x=c.getContext('2d');
     const g=x.createLinearGradient(0,40,0,220); g.addColorStop(0,'#7A5C1C'); g.addColorStop(.42,'#C9A24B'); g.addColorStop(.55,'#EFE0AE'); g.addColorStop(.78,'#B8933E'); g.addColorStop(1,'#6E5218');
@@ -2881,8 +2842,8 @@ var qrcode = function() {
     const t=new THREE.CanvasTexture(c); t.anisotropy=renderer.capabilities.getMaxAnisotropy(); t.needsUpdate=true; return t;
   }
   const nodes=[]; const hitTargets=[];
-  for(let i=0;i<12;i++){
-    const a=Math.PI/2 - i*(Math.PI*2/12); // I at top, clockwise
+  for(let i=0;i<NCH;i++){
+    const a=Math.PI/2 - i*(Math.PI*2/NCH); // I at top, clockwise
     const nx=Math.cos(a)*R, ny=Math.sin(a)*R;
     const g=new THREE.Group(); g.position.set(nx,ny,0); hubInner.add(g);
     const rr=new THREE.Mesh(new THREE.TorusGeometry(0.29,0.013,16,80), new THREE.MeshBasicMaterial({color:GOLD,transparent:true,opacity:0.55})); g.add(rr);
@@ -3077,7 +3038,7 @@ var qrcode = function() {
     hub.visible=true; hubInner.scale.set(instant?1:.9,instant?1:.9,1);
     gsap.to(hubInner.scale,{x:1,y:1,duration:instant?0:1.1,ease:'expo.out'});
     gsap.to(brand,{opacity:1,duration:instant?0:.8});
-    hubLbl.textContent='The Journey'; hubSub.textContent='Twelve chapters · select a numeral';
+    hubLbl.textContent='The Journey'; hubSub.textContent='Eleven chapters · select a numeral';
     gsap.to(hubc,{opacity:1,duration:instant?0:.9,delay:instant?0:.2});
     hubMatOpacity(0); gsap.to({v:0},{v:1,duration:instant?0:1.0,onUpdate:function(){hubMatOpacity(this.targets()[0].v);}});
     gsap.to(uphint,{opacity:1,duration:instant?0:.6,delay:instant?0:.5});
@@ -3106,7 +3067,7 @@ var qrcode = function() {
     gsap.to(hubInner.scale,{x:1,y:1,duration:instant?0:.9,ease:'expo.out'});
     gsap.to({v:0},{v:1,duration:instant?0:.7,onUpdate:function(){hubMatOpacity(this.targets()[0].v);}});
     gsap.to(camera.position,{z:BASE_Z,duration:instant?0:.9,ease:'expo.out'});
-    hubLbl.textContent='The Journey'; hubSub.textContent='Twelve chapters · select a numeral';
+    hubLbl.textContent='The Journey'; hubSub.textContent='Eleven chapters · select a numeral';
     gsap.to(hubc,{opacity:1,duration:instant?0:.7,delay:instant?0:.15});
     gsap.to(uphint,{opacity:1,duration:instant?0:.6,delay:instant?0:.25});
     hubdone.style.pointerEvents='auto'; updateHubDone(); gsap.to(hubdone,{opacity:1,duration:instant?0:.6,delay:instant?0:.3});
@@ -3120,8 +3081,8 @@ var qrcode = function() {
   }
   function updateHubDone(){
     if(!hubprog) return;
-    const done=visited.size>=12;
-    hubprog.textContent = done ? 'All twelve explored' : (visited.size+' / 12 explored');
+    const done=visited.size>=CH.length;
+    hubprog.textContent = done ? 'All eleven explored' : (visited.size+' / '+CH.length+' explored');
     hubdoneBtn.classList.toggle('ready',done);
     hubdoneBtn.textContent='Finish · Thank You →';
   }
@@ -3139,7 +3100,7 @@ var qrcode = function() {
     hub.visible=true;
     gsap.to({v:0},{v:1,duration:instant?0:.7,onUpdate:function(){hubMatOpacity(this.targets()[0].v);}});
     gsap.to(camera.position,{z:BASE_Z,duration:instant?0:.9,ease:'expo.out'});
-    hubLbl.textContent='The Journey'; hubSub.textContent='Twelve chapters · select a numeral';
+    hubLbl.textContent='The Journey'; hubSub.textContent='Eleven chapters · select a numeral';
     gsap.to(hubc,{opacity:1,duration:instant?0:.7,delay:instant?0:.15});
     hubdone.style.pointerEvents='auto'; updateHubDone(); gsap.to(hubdone,{opacity:1,duration:instant?0:.6,delay:instant?0:.2});
     gsap.to(uphint,{opacity:1,duration:instant?0:.6,delay:instant?0:.25});
@@ -3224,7 +3185,7 @@ var qrcode = function() {
     hovered=h; document.body.style.cursor = h>=0?'pointer':'default';
     if(h>=0){ const n=nodes[h]; gsap.to(n.g.scale,{x:1.18,y:1.18,duration:.45,ease:'expo.out'}); gsap.to(n.ring.material,{opacity:1,duration:.4});
       hubLbl.style.opacity=0; setTimeout(()=>{ hubLbl.textContent=CH[h].t; hubSub.textContent='Chapter '+CH[h].r; hubLbl.style.opacity=1; },140);
-    } else { hubLbl.style.opacity=0; setTimeout(()=>{ hubLbl.textContent='The Journey'; hubSub.textContent='Twelve chapters · select a numeral'; hubLbl.style.opacity=1; },140); }
+    } else { hubLbl.style.opacity=0; setTimeout(()=>{ hubLbl.textContent='The Journey'; hubSub.textContent='Eleven chapters · select a numeral'; hubLbl.style.opacity=1; },140); }
   }
   let downXY=null;
   window.addEventListener('pointerdown',e=>{ downXY=[e.clientX,e.clientY]; });
