@@ -14,8 +14,7 @@ CONTENTS
   VIII.  Regenerative Injectables
     IX.  Energy-Based Medicine
      X.  Combination Therapy
-    XI.  Clinical Cases
-   XII.  The Future
+    XI.  The Future
 
 
 ==========================================================================
@@ -74,8 +73,7 @@ II-1   EXTERNAL ARCHITECTURE
         procedural landmark.
 
       Variation
-        Dimensions vary widely and asymmetry is physiologic. There
-        is no anatomic ideal.
+        Dimensions vary widely and asymmetry is physiologic.
 
 II-2   SKIN, PIGMENT & GLANDS
 
@@ -84,8 +82,7 @@ II-2   SKIN, PIGMENT & GLANDS
         and vestibule are thin mucosa.
 
       Melanocytes
-        More active here — pigment rises with androgens, friction
-        and age.
+        More active here.
 
       Clinical pearl
         Thin barrier + active melanocytes = tissue primed for
@@ -94,12 +91,10 @@ II-2   SKIN, PIGMENT & GLANDS
 II-3   SUPPORT, VESSELS & NERVES
 
       Support
-        Laxity is collagen and elastin loss plus stretch injury —
-        not one failed ligament.
+        Laxity is collagen and elastin loss plus stretch injury.
 
       Blood supply
-        A rich dual pudendal supply — heals well, but a real
-        occlusion and haematoma risk.
+        A rich dual pudendal supply.
 
       Innervation
         Pudendal posteriorly; the anterior vulva needs
@@ -164,21 +159,7 @@ IV-1   HISTORY & RED FLAGS
         Metabolic, hormonal and mechanical drivers — diabetes,
         PCOS, hair removal, products.
 
-      Red flags
-        New, changing, bleeding or ulcerated lesions are biopsied
-        before any aesthetic treatment.
-
-IV-2   EXAMINATION & IMAGING
-
-      Systematic
-        Map pigment, texture, elasticity, volume, symmetry and
-        scars; palpate nodes.
-
-      Reproducible
-        Fixed lighting, distance and framing; consent first; tone
-        reference in frame.
-
-IV-3   DIFFERENTIAL DIAGNOSIS
+IV-2   DIFFERENTIAL DIAGNOSIS
 
       Usually benign
         Physiologic pigment, post-inflammatory hyperpigmentation,
@@ -190,19 +171,6 @@ IV-3   DIFFERENTIAL DIAGNOSIS
 
       Rule
         Fixed, ulcerated, indurated or changing? Biopsy or refer.
-
-IV-4   FITZPATRICK PHOTOTYPES
-
-      Amplified here
-        Genital skin runs 1–2 shades darker, amplifying phototype
-        tendencies.
-
-      PIH risk
-        Climbs steeply in IV–VI — consent explicitly.
-
-      Melanin-safe
-        RF microneedling, longer wavelengths, strong cooling,
-        mandatory test spot.
 
 
 ==========================================================================
@@ -224,20 +192,6 @@ V-1   THE TREATMENT PYRAMID
         Preserve before removing. Surgery is the apex, not the
         default.
 
-V-2   MANY ENTRY POINTS
-      One framework — many entry points.
-
-      Friction-driven PIH
-        Lifestyle, home care and gentle topicals — no devices.
-
-      Perimenopausal dryness
-        Local estrogen or DHEA first; regenerative adjuncts
-        second.
-
-      Postpartum laxity
-        Structure first — biostimulator ± energy, then surface
-        quality.
-
 
 ==========================================================================
 VI.  HOME CARE
@@ -251,8 +205,7 @@ VI-1   BARRIER & FRICTION
         water loss.
 
       Friction control
-        Breathable fabrics and anti-chafe care — friction alone
-        drives darkening.
+        Breathable fabrics — friction alone drives darkening.
 
       Cleansing
         pH-balanced, fragrance-free, no douching; considered hair
@@ -265,8 +218,7 @@ VI-2   MISTAKES & COMPLIANCE
         over-cleansing.
 
       Compliance
-        Fewest steps, realistic 12-week timelines, patch tests,
-        follow-up photos.
+        Fewest steps, realistic 12-week timelines.
 
       Treat the driver
         Address friction, folliculitis or hormones — not just the
@@ -281,8 +233,8 @@ VII-1   MECHANISMS, NOT BRANDS
       Teach mechanism, and any product can be reasoned about.
 
       The pathway
-        Tyrosinase is rate-limiting; most brighteners act
-        somewhere along it.
+        Most brighteners act somewhere along the tyrosinase
+        pathway.
 
       Four levers
         Enzyme inhibition, melanocyte signalling, melanosome
@@ -296,18 +248,15 @@ VII-2   THE WORKING AGENTS
 
       Use with care
         Vitamin C, kojic acid, arbutin, cysteamine; retinoids
-        irritate. Hydroquinone is Rx-only in the US — ochronosis
-        risk.
+        irritate.
 
 VII-3   SAFETY TIERING
 
       Avoid on mucosa
-        High-strength retinoids and strong acids — physician-
-        supervised only.
+        High-strength retinoids and strong acids.
 
       Be honest
-        Mucosa is not the face; genital-specific trials are
-        limited.
+        Mucosa is not the face.
 
 
 ==========================================================================
@@ -326,24 +275,22 @@ VIII-1   AUTOLOGOUS & NUCLEOTIDE
         pro-collagen.
 
       PN
-        Higher-weight polynucleotides — a hydrating scaffold. Not
-        FDA-approved (US).
+        Higher-weight polynucleotides — a hydrating scaffold.
 
 VIII-2   SCAFFOLDS, STIMULATORS & SIGNALS
 
       Scaffold & stimulate
         HA boosters hydrate; PLLA / CaHA build collagen — labia
-        majora only, nodule risk.
+        majora only.
 
       Exosomes
-        An active frontier with no FDA-approved product and
-        standing safety warnings.
+        An active frontier.
 
 VIII-3   CONVERGENCE & SEQUENCING
 
       Sequence, don’t stack
         Prime → stimulate → hydrate; energy first, biologic into
-        primed tissue. One inflammatory stimulus per session.
+        primed tissue.
 
 
 ==========================================================================
@@ -366,20 +313,6 @@ IX-2   RADIOFREQUENCY MICRONEEDLING
         RF has no chromophore — resistive heating bypasses
         epidermal melanin (Morpheus8, Scarlet).
 
-IX-3   THE EVIDENCE CHECK
-      Mechanistically plausible — held to honest evidence.
-
-      FDA · 2018
-        Warned against energy devices for “vaginal rejuvenation”.
-
-      Sham-controlled
-        Fractional CO₂ showed no benefit over placebo for GSM
-        (JAMA 2021).
-
-      First-line
-        Local estrogen or DHEA stays best-evidenced; energy is
-        adjunctive.
-
 
 ==========================================================================
 X.  COMBINATION THERAPY
@@ -396,60 +329,12 @@ X-1   THE KABBOURA PROTOCOL
         Volume loss, pigment, laxity and dryness are assessed as
         one picture.
 
-      Discipline
-        Distinct depths and products; never stack inflammatory
-        stimuli.
-
-X-2   ALGORITHM — PIGMENTATION
-
-      The path
-        Barrier repair → topicals → melanin-safe energy → PDRN →
-        maintenance.
-
-      Honesty
-        Correct the driver before chasing pigment; investigational
-        steps need consent.
-
 
 ==========================================================================
-XI.  CLINICAL CASES
+XI.  THE FUTURE
 ==========================================================================
 
-XI-1   HOW TO READ A CASE
-      Each case is a reasoning trace.
-
-      The trace
-        Diagnosis → assessment → decision → sequence → outcome →
-        pearls.
-
-      The point
-        The decision matters more than the device.
-
-XI-2   CASE ONE
-      Standardised, consented before / after.
-
-      Diagnosis & plan
-        ____________________
-
-      Sequence & outcome
-        Populate with your own de-identified, consented case.
-
-XI-3   PEARLS & PITFALLS
-
-      Pearls
-        Correct the driver · test-spot before full energy ·
-        photograph every visit.
-
-      Avoid
-        PIH from over-aggressive energy, nodules on mucosa and —
-        above all — treating over a missed malignancy.
-
-
-==========================================================================
-XII.  THE FUTURE
-==========================================================================
-
-XII-1   THE EMERGING LANDSCAPE
+XI-1   THE EMERGING LANDSCAPE
 
       Now
         AI-assisted assessment, 3D imaging, pigment genomics,
@@ -460,15 +345,7 @@ XII-1   THE EMERGING LANDSCAPE
         science.
 
       Caveat
-        Strong rationale, weak controlled evidence, heavy
-        marketing — appraise carefully.
-
-XII-2   CLOSING
-      “Beauty begins when women stop believing they were abnormal.”
-
-      The recurring lesson
-        Plausibility must survive sham-controlled testing before
-        it becomes practice.
+        Heavy marketing — appraise carefully.
 
 --------------------------------------------------------------------------
-12 chapters · 35 topics · 80 clinical points
+11 chapters · 26 topics · 58 clinical points

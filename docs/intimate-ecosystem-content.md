@@ -60,15 +60,14 @@ Hub label: **The Journey** · *Twelve chapters · select a numeral*
 | I | The Mindset | 4 |
 | II | Normal Anatomy | 4 |
 | III | Why Patients Come | 3 |
-| IV | Clinical Assessment | 4 |
-| V | The Treatment Pyramid | 2 |
+| IV | Clinical Assessment | 2 |
+| V | The Treatment Pyramid | 1 |
 | VI | Home Care | 2 |
 | VII | Topicals | 3 |
 | VIII | Regenerative Injectables | 3 |
-| IX | Energy-Based Medicine | 3 |
-| X | Combination Therapy | 2 |
-| XI | Clinical Cases | 3 |
-| XII | The Future | 2 |
+| IX | Energy-Based Medicine | 2 |
+| X | Combination Therapy | 1 |
+| XI | The Future | 1 |
 
 
 ---
@@ -124,7 +123,7 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 **Hart’s line** — Where keratinised skin meets vestibular mucosa — the key procedural landmark.
 
-**Variation** — Dimensions vary widely and asymmetry is physiologic. There is no anatomic ideal.
+**Variation** — Dimensions vary widely and asymmetry is physiologic.
 
 <sub>Plate `II-1` `images/II-1.webp` · art brief: Labelled line diagram of external structures with Hart’s line highlighted.</sub>
 
@@ -132,7 +131,7 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 **Two zones** — Mons and majora are keratinised and hair-bearing; minora and vestibule are thin mucosa.
 
-**Melanocytes** — More active here — pigment rises with androgens, friction and age.
+**Melanocytes** — More active here.
 
 **Clinical pearl** — Thin barrier + active melanocytes = tissue **primed for hyperpigmentation**.
 
@@ -140,9 +139,9 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 ### II-3 — Support, Vessels & Nerves
 
-**Support** — Laxity is collagen and elastin loss plus stretch injury — not one failed ligament.
+**Support** — Laxity is collagen and elastin loss plus stretch injury.
 
-**Blood supply** — A rich dual pudendal supply — heals well, but a real **occlusion and haematoma risk**.
+**Blood supply** — A rich dual pudendal supply.
 
 **Innervation** — Pudendal posteriorly; the anterior vulva needs ilioinguinal and genitofemoral cover.
 
@@ -200,19 +199,9 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 **The whole woman** — Metabolic, hormonal and mechanical drivers — diabetes, PCOS, hair removal, products.
 
-**Red flags** — New, changing, bleeding or ulcerated lesions are **biopsied before any aesthetic treatment**.
-
 <sub>Plate `IV-1` *no image yet — placeholder* · art brief: History intake sheet with red-flag callouts.</sub>
 
-### IV-2 — Examination & Imaging
-
-**Systematic** — Map pigment, texture, elasticity, volume, symmetry and scars; palpate nodes.
-
-**Reproducible** — Fixed lighting, distance and framing; consent first; tone reference in frame.
-
-<sub>Plate `IV-2` *no image yet — placeholder* · art brief: Standardised lighting and photography setup with a skin-tone reference card.</sub>
-
-### IV-3 — Differential Diagnosis
+### IV-2 — Differential Diagnosis
 
 **Usually benign** — Physiologic pigment, post-inflammatory hyperpigmentation, acanthosis nigricans.
 
@@ -220,17 +209,7 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 **Rule** — Fixed, ulcerated, indurated or changing? Biopsy or refer.
 
-<sub>Plate `IV-3` *no image yet — placeholder* · art brief: Comparison plate — benign findings vs do-not-miss dermatoses.</sub>
-
-### IV-4 — Fitzpatrick Phototypes
-
-**Amplified here** — Genital skin runs 1–2 shades darker, amplifying phototype tendencies.
-
-**PIH risk** — Climbs steeply in **IV–VI** — consent explicitly.
-
-**Melanin-safe** — RF microneedling, longer wavelengths, strong cooling, mandatory test spot.
-
-<sub>Plate `IV-4` *no image yet — placeholder* · art brief: Fitzpatrick I–VI tone wheel in gold-framed swatches.</sub>
+<sub>Plate `IV-2` *no image yet — placeholder* · art brief: Comparison plate — benign findings vs do-not-miss dermatoses.</sub>
 
 
 ---
@@ -249,18 +228,6 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 <sub>Plate `V-1` `images/V-1.webp` · art brief: Six-tier gold pyramid from Lifestyle to Surgery.</sub>
 
-### V-2 — Many Entry Points
-
-> *One framework — many entry points.*
-
-**Friction-driven PIH** — Lifestyle, home care and gentle topicals — no devices.
-
-**Perimenopausal dryness** — Local estrogen or DHEA first; regenerative adjuncts second.
-
-**Postpartum laxity** — Structure first — biostimulator ± energy, then surface quality.
-
-<sub>Plate `V-2` *no image yet — placeholder* · art brief: Four patient archetypes mapped to different entry tiers.</sub>
-
 
 ---
 
@@ -272,7 +239,7 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 **Barrier repair** — Ceramides and bland emollients restore the barrier and cut water loss.
 
-**Friction control** — Breathable fabrics and anti-chafe care — friction alone drives darkening.
+**Friction control** — Breathable fabrics — friction alone drives darkening.
 
 **Cleansing** — pH-balanced, fragrance-free, **no douching**; considered hair removal.
 
@@ -284,7 +251,7 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 **Common mistakes** — Facial actives on mucosa, unregulated whitening creams, over-cleansing.
 
-**Compliance** — Fewest steps, realistic 12-week timelines, patch tests, follow-up photos.
+**Compliance** — Fewest steps, realistic 12-week timelines.
 
 **Treat the driver** — Address friction, folliculitis or hormones — not just the pigment.
 
@@ -299,7 +266,7 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 > *Teach mechanism, and any product can be reasoned about.*
 
-**The pathway** — Tyrosinase is rate-limiting; most brighteners act somewhere along it.
+**The pathway** — Most brighteners act somewhere along the tyrosinase pathway.
 
 **Four levers** — Enzyme inhibition, melanocyte signalling, melanosome transfer, epidermal turnover.
 
@@ -309,15 +276,15 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 **Gentle first-line** — Tranexamic acid, azelaic acid, niacinamide — low irritation, pregnancy-friendly.
 
-**Use with care** — Vitamin C, kojic acid, arbutin, cysteamine; retinoids irritate. Hydroquinone is **Rx-only in the US** — ochronosis risk.
+**Use with care** — Vitamin C, kojic acid, arbutin, cysteamine; retinoids irritate.
 
 <sub>Plate `VII-2` `images/VII-2.webp` · art brief: Elegant agent cards with mechanism and cautions.</sub>
 
 ### VII-3 — Safety Tiering
 
-**Avoid on mucosa** — High-strength retinoids and strong acids — physician-supervised only.
+**Avoid on mucosa** — High-strength retinoids and strong acids.
 
-**Be honest** — Mucosa is not the face; genital-specific trials are limited.
+**Be honest** — Mucosa is not the face.
 
 <sub>Plate `VII-3` `images/VII-3.webp` · art brief: Gentle / caution / avoid tiers for mucosal skin.</sub>
 
@@ -334,21 +301,21 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 **PDRN** — Salmon-DNA polymer — anti-inflammatory, pro-angiogenic, pro-collagen.
 
-**PN** — Higher-weight polynucleotides — a hydrating scaffold. Not FDA-approved (US).
+**PN** — Higher-weight polynucleotides — a hydrating scaffold.
 
 <sub>Plate `VIII-1` `images/VIII-1.webp` · art brief: Luminous regenerative motif — fibroblasts, collagen and new microvessels in gold.</sub>
 
 ### VIII-2 — Scaffolds, Stimulators & Signals
 
-**Scaffold & stimulate** — HA boosters hydrate; PLLA / CaHA build collagen — **labia majora only**, nodule risk.
+**Scaffold & stimulate** — HA boosters hydrate; PLLA / CaHA build collagen — **labia majora only**.
 
-**Exosomes** — An active frontier with **no FDA-approved product** and standing safety warnings.
+**Exosomes** — An active frontier.
 
 <sub>Plate `VIII-2` `images/VIII-2.webp` · art brief: Panel of HA boosters, biostimulators and an exosome caution flag.</sub>
 
 ### VIII-3 — Convergence & Sequencing
 
-**Sequence, don’t stack** — Prime → stimulate → hydrate; energy first, biologic into primed tissue. **One inflammatory stimulus per session.**
+**Sequence, don’t stack** — Prime → stimulate → hydrate; energy first, biologic into primed tissue.
 
 <sub>Plate `VIII-3` `images/VIII-3.webp` · art brief: Signal + scaffold + structure converging on restored tissue.</sub>
 
@@ -371,18 +338,6 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 <sub>Plate `IX-2` *no image yet — placeholder* · art brief: RF needle-depth schematic sparing the epidermis.</sub>
 
-### IX-3 — The Evidence Check
-
-> *Mechanistically plausible — held to honest evidence.*
-
-**FDA · 2018** — Warned against energy devices for “vaginal rejuvenation”.
-
-**Sham-controlled** — Fractional CO₂ showed **no benefit over placebo** for GSM (JAMA 2021).
-
-**First-line** — Local estrogen or DHEA stays best-evidenced; energy is adjunctive.
-
-<sub>Plate `IX-3` *no image yet — placeholder* · art brief: FDA 2018 statement and sham-controlled trial summary.</sub>
-
 
 ---
 
@@ -396,77 +351,24 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 **Read together** — Volume loss, pigment, laxity and dryness are assessed as one picture.
 
-**Discipline** — Distinct depths and products; never stack inflammatory stimuli.
-
 <sub>Plate `X-1` `images/X-1.webp` · art brief: Five-step protocol flow converging on restored tissue.</sub>
 
-### X-2 — Algorithm — Pigmentation
-
-**The path** — Barrier repair → topicals → melanin-safe energy → PDRN → maintenance.
-
-**Honesty** — Correct the driver before chasing pigment; investigational steps need consent.
-
-<sub>Plate `X-2` `images/X-2.webp` · art brief: Pigmentation algorithm flow with a consent asterisk on exosomes.</sub>
-
 
 ---
 
-## XI · Clinical Cases
+## XI · The Future
 
-### XI-1 — How to Read a Case
-
-> *Each case is a reasoning trace.*
-
-**The trace** — Diagnosis → assessment → decision → sequence → outcome → pearls.
-
-**The point** — The decision matters more than the device.
-
-<sub>Plate `XI-1` *no image yet — placeholder* · art brief: Case reasoning framework — six numbered steps.</sub>
-
-### XI-2 — Case One
-
-> *Standardised, consented before / after.*
-
-**Diagnosis & plan** — ____________________
-
-**Sequence & outcome** — Populate with your own de-identified, consented case.
-
-<sub>Plate `XI-2a` *no image yet — placeholder* · art brief: BEFORE — standardised, consented clinical photograph (fixed lighting/angle, skin-tone reference).</sub>
-
-<sub>Plate `XI-2b` *no image yet — placeholder* · art brief: AFTER — matched view at a defined follow-up interval, identical capture settings.</sub>
-
-### XI-3 — Pearls & Pitfalls
-
-**Pearls** — Correct the driver · test-spot before full energy · photograph every visit.
-
-**Avoid** — PIH from over-aggressive energy, nodules on mucosa and — above all — **treating over a missed malignancy**.
-
-<sub>Plate `XI-3` *no image yet — placeholder* · art brief: Before/after montage with pearls and complications-avoided callouts.</sub>
-
-
----
-
-## XII · The Future
-
-### XII-1 — The Emerging Landscape
+### XI-1 — The Emerging Landscape
 
 **Now** — AI-assisted assessment, 3D imaging, pigment genomics, established fat grafting.
 
 **Emerging** — Next-generation exosomes, ECM engineering, longevity science.
 
-**Caveat** — Strong rationale, weak controlled evidence, heavy marketing — appraise carefully.
+**Caveat** — Heavy marketing — appraise carefully.
 
-<sub>Plate `XII-1` `images/XII-1.webp` · art brief: A helix, data lattice and regenerating tissue merging into light.</sub>
+<sub>Plate `XI-1` `images/XII-1.webp` · art brief: A helix, data lattice and regenerating tissue merging into light.</sub>
 
-<sub>Plate `XII-1b` `images/XII-1b.webp` · art brief: NAD⁺ and cellular energy — the rationale, and the honest limit of it.</sub>
-
-### XII-2 — Closing
-
-> *“Beauty begins when women stop believing they were abnormal.”*
-
-**The recurring lesson** — Plausibility must **survive sham-controlled testing** before it becomes practice.
-
-<sub>Plate `XII-2` *no image yet — placeholder* · art brief: A single gold ornament on ivory.</sub>
+<sub>Plate `XI-1b` `images/XII-1b.webp` · art brief: NAD⁺ and cellular energy — the rationale, and the honest limit of it.</sub>
 
 
 ---
