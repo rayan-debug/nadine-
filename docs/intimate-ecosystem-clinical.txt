@@ -91,7 +91,7 @@ II-2   SKIN, PIGMENT & GLANDS
 II-3   SUPPORT, VESSELS & NERVES
 
       Support
-        Laxity is collagen and elastin loss plus stretch injury.
+        Laxity is collagen and elastin loss.
 
       Blood supply
         A rich dual pudendal supply.
@@ -300,12 +300,11 @@ IX.  ENERGY-BASED MEDICINE
 IX-1   ABLATIVE & FRACTIONAL LASERS
 
       Wavelengths
-        CO₂ (10,600 nm) builds collagen through fractional
-        columns; Er:YAG (2,940 nm) ablates very superficially.
+        CO₂ builds collagen through fractional columns; Er:YAG
+        ablates very superficially.
 
       Chromophore caution
-        Lasers also heat melanin — real PIH and burn risk in
-        Fitzpatrick IV–VI.
+        Lasers also heat melanin — real PIH and burn risk.
 
 IX-2   RADIOFREQUENCY MICRONEEDLING
 

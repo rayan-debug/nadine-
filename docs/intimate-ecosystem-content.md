@@ -139,7 +139,7 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 ### II-3 — Support, Vessels & Nerves
 
-**Support** — Laxity is collagen and elastin loss plus stretch injury.
+**Support** — Laxity is collagen and elastin loss.
 
 **Blood supply** — A rich dual pudendal supply.
 
@@ -326,9 +326,9 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 ### IX-1 — Ablative & Fractional Lasers
 
-**Wavelengths** — CO₂ (10,600 nm) builds collagen through fractional columns; Er:YAG (2,940 nm) ablates very superficially.
+**Wavelengths** — CO₂ builds collagen through fractional columns; Er:YAG ablates very superficially.
 
-**Chromophore caution** — Lasers also heat melanin — real PIH and burn risk in Fitzpatrick IV–VI.
+**Chromophore caution** — Lasers also heat melanin — real PIH and burn risk.
 
 <sub>Plate `IX-1` `images/IX-1.webp` · art brief: CO₂ vs Er:YAG water-absorption diagram.</sub>
 
