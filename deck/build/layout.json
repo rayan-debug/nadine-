@@ -1,0 +1,10249 @@
+[
+ {
+  "title": "Title",
+  "texts": [
+   {
+    "sel": "eyebrow kicker",
+    "box": {
+     "x": 357.58,
+     "y": 133.19,
+     "w": 1204.84,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "center",
+    "caps": true,
+    "track": 8.32,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Functional \u00b7 Aesthetic \u00b7 Regenerative Gynaecology",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "h1",
+    "box": {
+     "x": 532.66,
+     "y": 205.19,
+     "w": 854.69,
+     "h": 236.63
+    },
+    "size": 116,
+    "line": 118.32,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0.464,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Tissue-Specific",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "t": "\n",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "t": "Intimate Medicine",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "sub",
+    "box": {
+     "x": 595.38,
+     "y": 471.81,
+     "w": 729.25,
+     "h": 63
+    },
+    "size": 52,
+    "line": 62.4,
+    "serif": true,
+    "italic": true,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Indication-driven. Biologically rational.",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "name",
+    "box": {
+     "x": 497.33,
+     "y": 606.81,
+     "w": 925.34,
+     "h": 42
+    },
+    "size": 34,
+    "line": 40.8,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "center",
+    "caps": true,
+    "track": 8.84,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Dr. Nadeen Kabboura",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cred",
+    "box": {
+     "x": 497.33,
+     "y": 664.81,
+     "w": 925.34,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 1.56,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Obstetrics & Gynaecology \u00b7 Aesthetic and Regenerative Medicine",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "venue micro",
+    "box": {
+     "x": 0,
+     "y": 994,
+     "w": 1920,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     107,
+     96,
+     83
+    ],
+    "align": "center",
+    "caps": true,
+    "track": 5.6,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Conference \u00b7 Session \u00b7 Date",
+      "b": false,
+      "c": [
+       107,
+       96,
+       83
+      ]
+     }
+    ]
+   }
+  ],
+  "shapes": [],
+  "images": [
+   {
+    "i": 0,
+    "box": {
+     "x": 0,
+     "y": 610,
+     "w": 1920,
+     "h": 470
+    },
+    "file": "s01-0.png"
+   }
+  ],
+  "notes": [
+   "Open on the single claim the whole lecture defends: intimate treatment must be tissue-specific, indication-driven and biologically rational \u2014 not product- or device-driven.",
+   "Fourteen slides, ten minutes of core material. Signpost the five movements: premise and anatomy, pigment and inflammation, energy and hierarchy, regeneration and evidence, framework and conclusion.",
+   "Timing: 20 seconds. Do not read the title."
+  ],
+  "n": 1
+ },
+ {
+  "title": "Clinical premise",
+  "texts": [
+   {
+    "sel": "eyebrow",
+    "box": {
+     "x": 128,
+     "y": 88,
+     "w": 1664,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 8.32,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "The clinical premise",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "hero",
+    "box": {
+     "x": 200.42,
+     "y": 238.14,
+     "w": 1519.14,
+     "h": 148.91
+    },
+    "size": 146,
+    "line": 148.92,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Variation is not pathology.",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "lead",
+    "box": {
+     "x": 620.88,
+     "y": 413.05,
+     "w": 678.25,
+     "h": 64.8
+    },
+    "size": 54,
+    "line": 64.8,
+    "serif": true,
+    "italic": true,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Treat indication \u2014 not expectation.",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "ref",
+    "box": {
+     "x": 128,
+     "y": 973,
+     "w": 1183.25,
+     "h": 29
+    },
+    "size": 24,
+    "line": 28.799999999999997,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.36,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Lloyd et al. ",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": "BJOG",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": " 2005;112:643\u20136 \u00b7 ACOG Committee Opinion 795, 2020",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "chip",
+    "box": {
+     "x": 1343.25,
+     "y": 965,
+     "w": 392.13,
+     "h": 45
+    },
+    "size": 21,
+    "line": 25.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 3.78,
+    "pad": [
+     9,
+     22,
+     9,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Established evidence",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pageno",
+    "box": {
+     "x": 1767.38,
+     "y": 970.5,
+     "w": 24.63,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": true,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "02",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   }
+  ],
+  "shapes": [
+   {
+    "sel": "footer-rule",
+    "box": {
+     "x": 128,
+     "y": 944,
+     "w": 1664,
+     "h": 66
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   }
+  ],
+  "images": [
+   {
+    "i": 0,
+    "box": {
+     "x": 128,
+     "y": 491.84,
+     "w": 1664,
+     "h": 350
+    },
+    "file": "s02-0.png"
+   }
+  ],
+  "notes": [
+   "Labial dimensions in unselected women span a wide range \u2014 Lloyd's series recorded labia minora width from a few millimetres to roughly five centimetres, with marked asymmetry common and unrelated to symptoms.",
+   "The clinical consequence: an appearance outside a patient's expectation is not, by itself, an indication. ACOG Committee Opinion 795 is explicit that counselling on normal variation precedes any discussion of intervention.",
+   "Say plainly: we treat symptoms, function and disease. We do not treat a photograph. Timing: 45 seconds."
+  ],
+  "n": 2
+ },
+ {
+  "title": "Tissue-specific anatomy",
+  "texts": [
+   {
+    "sel": "eyebrow",
+    "box": {
+     "x": 128,
+     "y": 88,
+     "w": 1664,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 8.32,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Tissue-specific anatomy",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "h1",
+    "box": {
+     "x": 128,
+     "y": 140,
+     "w": 1664,
+     "h": 86.52
+    },
+    "size": 84,
+    "line": 86.52,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.336,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "One region. Distinct tissue biology.",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": {},
+    "box": {
+     "x": 501.52,
+     "y": 517.85,
+     "w": 49.85,
+     "h": 10.26
+    },
+    "size": 54,
+    "line": 64.8,
+    "serif": true,
+    "italic": true,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": []
+   },
+   {
+    "sel": {},
+    "box": {
+     "x": 501.52,
+     "y": 629.29,
+     "w": 129.03,
+     "h": 16.13
+    },
+    "size": 54,
+    "line": 64.8,
+    "serif": true,
+    "italic": true,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": []
+   },
+   {
+    "sel": {},
+    "box": {
+     "x": 501.52,
+     "y": 838.96,
+     "w": 184.75,
+     "h": 23.46
+    },
+    "size": 54,
+    "line": 64.8,
+    "serif": true,
+    "italic": true,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": []
+   },
+   {
+    "sel": {},
+    "box": {
+     "x": 717.06,
+     "y": 429.88,
+     "w": 177.42,
+     "h": 8.8
+    },
+    "size": 54,
+    "line": 64.8,
+    "serif": true,
+    "italic": true,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": []
+   },
+   {
+    "sel": {},
+    "box": {
+     "x": 702.4,
+     "y": 522.25,
+     "w": 192.08,
+     "h": 7.33
+    },
+    "size": 54,
+    "line": 64.8,
+    "serif": true,
+    "italic": true,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": []
+   },
+   {
+    "sel": {},
+    "box": {
+     "x": 708.26,
+     "y": 705.53,
+     "w": 186.21,
+     "h": 42.52
+    },
+    "size": 54,
+    "line": 64.8,
+    "serif": true,
+    "italic": true,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": []
+   },
+   {
+    "sel": {},
+    "box": {
+     "x": 718.53,
+     "y": 624.89,
+     "w": 175.95,
+     "h": 16.13
+    },
+    "size": 54,
+    "line": 64.8,
+    "serif": true,
+    "italic": true,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": []
+   },
+   {
+    "sel": "step",
+    "box": {
+     "x": 1332,
+     "y": 409.08,
+     "w": 460,
+     "h": 111.78
+    },
+    "size": 43,
+    "line": 55.9,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     28
+    ],
+    "runs": [
+     {
+      "t": "Keratinised skin ",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "laterally",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "step",
+    "box": {
+     "x": 1332,
+     "y": 552.86,
+     "w": 460,
+     "h": 111.78
+    },
+    "size": 43,
+    "line": 55.9,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     28
+    ],
+    "runs": [
+     {
+      "t": "Non-keratinised mucosa ",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "medially",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "step",
+    "box": {
+     "x": 1332,
+     "y": 696.64,
+     "w": 460,
+     "h": 111.78
+    },
+    "size": 43,
+    "line": 55.9,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     28
+    ],
+    "runs": [
+     {
+      "t": "Hart\u2019s line",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     },
+     {
+      "t": " is the boundary",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "ref",
+    "box": {
+     "x": 128,
+     "y": 973,
+     "w": 1183.63,
+     "h": 29
+    },
+    "size": 24,
+    "line": 28.799999999999997,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.36,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Yeung & Pauls, ",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": "Obstet Gynecol Clin North Am",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": " 2016;43:27\u201344",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "chip",
+    "box": {
+     "x": 1343.63,
+     "y": 965,
+     "w": 392.13,
+     "h": 45
+    },
+    "size": 21,
+    "line": 25.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 3.78,
+    "pad": [
+     9,
+     22,
+     9,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Established evidence",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pageno",
+    "box": {
+     "x": 1767.75,
+     "y": 970.5,
+     "w": 24.25,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": true,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "03",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   }
+  ],
+  "shapes": [
+   {
+    "sel": "rule",
+    "box": {
+     "x": 128,
+     "y": 256.52,
+     "w": 96,
+     "h": 1
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "footer-rule",
+    "box": {
+     "x": 128,
+     "y": 944,
+     "w": 1664,
+     "h": 66
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   }
+  ],
+  "images": [
+   {
+    "i": 0,
+    "box": {
+     "x": 128,
+     "y": 293.52,
+     "w": 1140,
+     "h": 630.48
+    },
+    "file": "s03-0.png"
+   }
+  ],
+  "notes": [
+   "Click once: Hart\u2019s line traces in gold. Let it draw before speaking over it.",
+   "Hart\u2019s line runs along the medial aspect of the labia minora and marks the boundary between keratinised, ectodermally derived skin and the non-keratinised vestibular mucosa of urogenital-sinus origin. It is the most clinically useful landmark on the vulva and it is almost never drawn on an aesthetic consent form.",
+   "Everything that follows \u2014 what you can apply, what you can inject, what energy you can deliver \u2014 changes when you cross that line. Name the tissue before you name the treatment. Timing: 50 seconds."
+  ],
+  "n": 3
+ },
+ {
+  "title": "Cutaneous\u2013mucosal interface",
+  "texts": [
+   {
+    "sel": "eyebrow",
+    "box": {
+     "x": 128,
+     "y": 88,
+     "w": 1664,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 8.32,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "The cutaneous\u2013mucosal interface",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "h1-gold",
+    "box": {
+     "x": 128,
+     "y": 140,
+     "w": 1664,
+     "h": 86.52
+    },
+    "size": 84,
+    "line": 86.52,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.336,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Mucosa \u2260 facial skin",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "note step",
+    "box": {
+     "x": 150.98,
+     "y": 869,
+     "w": 1618.03,
+     "h": 42
+    },
+    "size": 34,
+    "line": 40.8,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.68,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "No stratum corneum \u00b7 no adnexa \u00b7 percutaneous absorption several-fold higher than forearm",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "ref",
+    "box": {
+     "x": 128,
+     "y": 952,
+     "w": 1181.89,
+     "h": 58
+    },
+    "size": 24,
+    "line": 28.799999999999997,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.36,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Oriba, Bucks & Maibach, ",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": "Br J Dermatol",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": " 1996;134:229\u201333 \u00b7 Farage & Maibach, ",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": "Arch Gynecol Obstet",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": " 2006;273:195\u2013202",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "chip",
+    "box": {
+     "x": 1341.89,
+     "y": 958.5,
+     "w": 392.13,
+     "h": 45
+    },
+    "size": 21,
+    "line": 25.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 3.78,
+    "pad": [
+     9,
+     22,
+     9,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Established evidence",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pageno",
+    "box": {
+     "x": 1766.02,
+     "y": 964,
+     "w": 25.98,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": true,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "04",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   }
+  ],
+  "shapes": [
+   {
+    "sel": "rule",
+    "box": {
+     "x": 128,
+     "y": 256.52,
+     "w": 96,
+     "h": 1
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "footer-rule",
+    "box": {
+     "x": 128,
+     "y": 931,
+     "w": 1664,
+     "h": 79
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   }
+  ],
+  "images": [
+   {
+    "i": 0,
+    "box": {
+     "x": 128,
+     "y": 293.52,
+     "w": 1664,
+     "h": 549.48
+    },
+    "file": "s04-0.png"
+   }
+  ],
+  "notes": [
+   "Left: labia majora \u2014 thick stratum corneum, deep rete ridges, follicles, sebaceous and apocrine glands, a competent barrier. Right: vestibule \u2014 non-keratinised, glycogen-rich, no corneum, no adnexa, superficial capillary loops.",
+   "Oriba and Maibach measured percutaneous absorption of hydrocortisone and testosterone across vulvar versus forearm skin and found it substantially higher at the vulva. The practical reading: a concentration that is well tolerated on the face is not the same exposure here, and the absence of adnexa removes the reservoir and the re-epithelialisation source that facial resurfacing relies on.",
+   "This is why facial protocols transplanted unchanged are the commonest source of iatrogenic injury in this field. Timing: 60 seconds."
+  ],
+  "n": 4
+ },
+ {
+  "title": "Inflammation\u2013pigment cycle",
+  "texts": [
+   {
+    "sel": "eyebrow",
+    "box": {
+     "x": 128,
+     "y": 88,
+     "w": 1664,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 8.32,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Mechanism",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "h1",
+    "box": {
+     "x": 128,
+     "y": 140,
+     "w": 1664,
+     "h": 86.52
+    },
+    "size": 84,
+    "line": 86.52,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.336,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "The inflammation\u2013pigment cycle",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "lead step",
+    "box": {
+     "x": 1332,
+     "y": 389.27,
+     "w": 460,
+     "h": 129.59
+    },
+    "size": 54,
+    "line": 64.8,
+    "serif": true,
+    "italic": true,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Escalation feeds",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     },
+     {
+      "t": "\n",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     },
+     {
+      "t": "the cycle.",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "term step",
+    "box": {
+     "x": 1332,
+     "y": 550.86,
+     "w": 460,
+     "h": 246.38
+    },
+    "size": 44,
+    "line": 61.6,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Correct the driver first. Pigment is the readout, not the disease.",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "ref",
+    "box": {
+     "x": 128,
+     "y": 973,
+     "w": 831.75,
+     "h": 29
+    },
+    "size": 24,
+    "line": 28.799999999999997,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.36,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Davis & Callender, ",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": "J Clin Aesthet Dermatol",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": " 2010;3(7):20\u201331",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "chip",
+    "box": {
+     "x": 991.75,
+     "y": 965,
+     "w": 743.44,
+     "h": 45
+    },
+    "size": 21,
+    "line": 25.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 3.78,
+    "pad": [
+     9,
+     22,
+     9,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Mechanism established \u00b7 site extrapolated",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pageno",
+    "box": {
+     "x": 1767.19,
+     "y": 970.5,
+     "w": 24.81,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": true,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "05",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   }
+  ],
+  "shapes": [
+   {
+    "sel": "footer-rule",
+    "box": {
+     "x": 128,
+     "y": 944,
+     "w": 1664,
+     "h": 66
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   }
+  ],
+  "images": [
+   {
+    "i": 0,
+    "box": {
+     "x": 128,
+     "y": 262.52,
+     "w": 1140,
+     "h": 661.48
+    },
+    "file": "s05-0.png"
+   }
+  ],
+  "notes": [
+   "Build it one click at a time; seven clicks in total. Do not rush \u2014 this is the slide the room should remember.",
+   "Friction and occlusion disrupt an already thin barrier. Barrier disruption drives low-grade inflammation. Inflammatory mediators \u2014 prostaglandins, leukotrienes, endothelin-1, stem cell factor \u2014 upregulate melanocyte activity. Melanin is transferred and, where the basement membrane is breached, dropped into the dermis. The visible result is post-inflammatory hyperpigmentation.",
+   "The sixth node is the one we contribute: aggressive treatment aimed at the pigment re-injures the barrier and re-enters the loop at step two. Every escalation taken against an inflamed field buys a darker result.",
+   "Timing: 90 seconds \u2014 the longest single slide."
+  ],
+  "n": 5
+ },
+ {
+  "title": "Assess before treatment",
+  "texts": [
+   {
+    "sel": "eyebrow",
+    "box": {
+     "x": 128,
+     "y": 88,
+     "w": 1664,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 8.32,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Assessment",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "h1",
+    "box": {
+     "x": 128,
+     "y": 140,
+     "w": 1664,
+     "h": 86.52
+    },
+    "size": 84,
+    "line": 86.52,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.336,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Assess before you treat",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "q",
+    "box": {
+     "x": 606.05,
+     "y": 314.58,
+     "w": 707.89,
+     "h": 122
+    },
+    "size": 72,
+    "line": 86.39999999999999,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     16,
+     54,
+     16,
+     54
+    ],
+    "runs": [
+     {
+      "t": "Is pathology present?",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "h3",
+    "box": {
+     "x": 128,
+     "y": 498.58,
+     "w": 792,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     110,
+     38,
+     57
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 6.72,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Yes",
+      "b": true,
+      "c": [
+       110,
+       38,
+       57
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "head",
+    "box": {
+     "x": 128,
+     "y": 542.58,
+     "w": 792,
+     "h": 63
+    },
+    "size": 52,
+    "line": 62.4,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Biopsy or treat the disease",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "li",
+    "box": {
+     "x": 128,
+     "y": 625.58,
+     "w": 792,
+     "h": 55.47
+    },
+    "size": 38,
+    "line": 55.48,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "\u2014\u00a0\u00a0",
+      "b": false,
+      "c": [
+       110,
+       38,
+       57
+      ]
+     },
+     {
+      "t": "Lichen sclerosus",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "li",
+    "box": {
+     "x": 128,
+     "y": 681.05,
+     "w": 792,
+     "h": 55.47
+    },
+    "size": 38,
+    "line": 55.48,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "\u2014\u00a0\u00a0",
+      "b": false,
+      "c": [
+       110,
+       38,
+       57
+      ]
+     },
+     {
+      "t": "Differentiated VIN",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "li",
+    "box": {
+     "x": 128,
+     "y": 736.52,
+     "w": 792,
+     "h": 55.47
+    },
+    "size": 38,
+    "line": 55.48,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "\u2014\u00a0\u00a0",
+      "b": false,
+      "c": [
+       110,
+       38,
+       57
+      ]
+     },
+     {
+      "t": "Vulvar melanoma",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "li",
+    "box": {
+     "x": 128,
+     "y": 791.98,
+     "w": 792,
+     "h": 55.47
+    },
+    "size": 38,
+    "line": 55.48,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "\u2014\u00a0\u00a0",
+      "b": false,
+      "c": [
+       110,
+       38,
+       57
+      ]
+     },
+     {
+      "t": "Infection or dermatosis",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "h3",
+    "box": {
+     "x": 1000,
+     "y": 498.58,
+     "w": 792,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 6.72,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "No",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "head",
+    "box": {
+     "x": 1000,
+     "y": 542.58,
+     "w": 792,
+     "h": 63
+    },
+    "size": 52,
+    "line": 62.4,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Identify the driver",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "li",
+    "box": {
+     "x": 1000,
+     "y": 625.58,
+     "w": 792,
+     "h": 55.47
+    },
+    "size": 38,
+    "line": 55.48,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "\u2014\u00a0\u00a0",
+      "b": false,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "t": "Physiological variation",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "li",
+    "box": {
+     "x": 1000,
+     "y": 681.05,
+     "w": 792,
+     "h": 55.47
+    },
+    "size": 38,
+    "line": 55.48,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "\u2014\u00a0\u00a0",
+      "b": false,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "t": "Friction or mechanical trauma",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "li",
+    "box": {
+     "x": 1000,
+     "y": 736.52,
+     "w": 792,
+     "h": 55.47
+    },
+    "size": 38,
+    "line": 55.48,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "\u2014\u00a0\u00a0",
+      "b": false,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "t": "Post-inflammatory pigment",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "li",
+    "box": {
+     "x": 1000,
+     "y": 791.98,
+     "w": 792,
+     "h": 55.47
+    },
+    "size": 38,
+    "line": 55.48,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "\u2014\u00a0\u00a0",
+      "b": false,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "t": "Hormonal influence",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "li",
+    "box": {
+     "x": 1000,
+     "y": 847.45,
+     "w": 792,
+     "h": 55.47
+    },
+    "size": 38,
+    "line": 55.48,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "\u2014\u00a0\u00a0",
+      "b": false,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "t": "Previous procedural injury",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "ref",
+    "box": {
+     "x": 128,
+     "y": 973,
+     "w": 1085.16,
+     "h": 29
+    },
+    "size": 24,
+    "line": 28.799999999999997,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.36,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Lewis et al. BAD guidelines, ",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": "Br J Dermatol",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": " 2018;178:839\u201353",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "chip",
+    "box": {
+     "x": 1245.16,
+     "y": 965,
+     "w": 488.45,
+     "h": 45
+    },
+    "size": 21,
+    "line": 25.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 3.78,
+    "pad": [
+     9,
+     22,
+     9,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Expert clinical framework",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pageno",
+    "box": {
+     "x": 1765.61,
+     "y": 970.5,
+     "w": 26.39,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": true,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "06",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   }
+  ],
+  "shapes": [
+   {
+    "sel": "rule",
+    "box": {
+     "x": 128,
+     "y": 256.52,
+     "w": 96,
+     "h": 1
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "q",
+    "box": {
+     "x": 606.05,
+     "y": 314.58,
+     "w": 707.89,
+     "h": 122
+    },
+    "fill": [
+     245,
+     239,
+     227
+    ],
+    "radius": 14,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "footer-rule",
+    "box": {
+     "x": 128,
+     "y": 944,
+     "w": 1664,
+     "h": 66
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   }
+  ],
+  "images": [
+   {
+    "i": 0,
+    "box": {
+     "x": 128,
+     "y": 436.58,
+     "w": 1664,
+     "h": 62
+    },
+    "file": "s06-0.png"
+   }
+  ],
+  "notes": [
+   "Two clicks. The left arm first, deliberately \u2014 it is the arm that ends careers.",
+   "Any fixed, indurated, ulcerated, eroded or changing lesion is biopsied before a single aesthetic intervention. ABCDE criteria perform poorly on mucosal melanoma; a benign clinical impression is not a substitute for histology. Lichen sclerosus and differentiated VIN both carry malignant potential and both are routinely mistaken for pigmentary or textural complaints.",
+   "The right arm is where most consultations actually sit \u2014 and even there, naming the driver comes before choosing a modality. If you cannot name the driver, you are not ready to treat. Timing: 60 seconds."
+  ],
+  "n": 6
+ },
+ {
+  "title": "Mechanism-based pigment management",
+  "texts": [
+   {
+    "sel": "eyebrow",
+    "box": {
+     "x": 128,
+     "y": 88,
+     "w": 1664,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 8.32,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Pigment",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "h1",
+    "box": {
+     "x": 128,
+     "y": 140,
+     "w": 1664,
+     "h": 86.52
+    },
+    "size": 84,
+    "line": 86.52,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.336,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Target the mechanism, not the shade",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "nm",
+    "box": {
+     "x": 191.84,
+     "y": 393.75,
+     "w": 110.03,
+     "h": 82
+    },
+    "size": 30,
+    "line": 39,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0.3,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Trigger",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "nm",
+    "box": {
+     "x": 380.19,
+     "y": 393.75,
+     "w": 208.77,
+     "h": 82
+    },
+    "size": 30,
+    "line": 39,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0.3,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Inflammatory",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "\n",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "signalling",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "nm",
+    "box": {
+     "x": 633.5,
+     "y": 393.75,
+     "w": 177.59,
+     "h": 82
+    },
+    "size": 30,
+    "line": 39,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0.3,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Melanocyte",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "\n",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "activation",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "nm",
+    "box": {
+     "x": 879.81,
+     "y": 393.75,
+     "w": 160.39,
+     "h": 82
+    },
+    "size": 30,
+    "line": 39,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0.3,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Tyrosinase",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "\n",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "activity",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "nm",
+    "box": {
+     "x": 1126.83,
+     "y": 393.75,
+     "w": 141.81,
+     "h": 82
+    },
+    "size": 30,
+    "line": 39,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0.3,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Melanin",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "\n",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "synthesis",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "nm",
+    "box": {
+     "x": 1336.44,
+     "y": 393.75,
+     "w": 198.03,
+     "h": 82
+    },
+    "size": 30,
+    "line": 39,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0.3,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Melanosome",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "\n",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "transfer",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "nm",
+    "box": {
+     "x": 1567.45,
+     "y": 393.75,
+     "w": 211.42,
+     "h": 82
+    },
+    "size": 30,
+    "line": 39,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0.3,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Visible",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "\n",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "pigmentation",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "agent",
+    "box": {
+     "x": 341.53,
+     "y": 583.75,
+     "w": 293.67,
+     "h": 59
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 500,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     10,
+     22,
+     10,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Tranexamic acid",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "agent",
+    "box": {
+     "x": 874.56,
+     "y": 583.75,
+     "w": 225.3,
+     "h": 59
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 500,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     10,
+     22,
+     10,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Azelaic acid",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "agent",
+    "box": {
+     "x": 848.73,
+     "y": 654.75,
+     "w": 276.95,
+     "h": 59
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 500,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     10,
+     22,
+     10,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Hydroquinone*",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "agent",
+    "box": {
+     "x": 1339.22,
+     "y": 583.75,
+     "w": 239.25,
+     "h": 59
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 500,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     10,
+     22,
+     10,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Niacinamide",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "agent",
+    "box": {
+     "x": 1363.69,
+     "y": 654.75,
+     "w": 190.31,
+     "h": 59
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 500,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     10,
+     22,
+     10,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Retinoids",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "note step",
+    "box": {
+     "x": 209.47,
+     "y": 769.75,
+     "w": 1501.05,
+     "h": 42
+    },
+    "size": 34,
+    "line": 40.8,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.68,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": " Dermatological evidence is established \u00b7 vulvar application is anatomical extrapolation ",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "note",
+    "box": {
+     "x": 483.31,
+     "y": 825.75,
+     "w": 953.36,
+     "h": 33
+    },
+    "size": 27,
+    "line": 32.4,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.54,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": " * prescription-only in several jurisdictions \u00b7 exogenous ochronosis risk ",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "ref",
+    "box": {
+     "x": 128,
+     "y": 973,
+     "w": 1154.16,
+     "h": 29
+    },
+    "size": 24,
+    "line": 28.799999999999997,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.36,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Bala et al. ",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": "Dermatol Surg",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": " 2018;44:814\u201325 \u00b7 Hakozaki et al. ",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": "Br J Dermatol",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": " 2002;147:20\u201331",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "chip",
+    "box": {
+     "x": 1314.16,
+     "y": 965,
+     "w": 420.47,
+     "h": 45
+    },
+    "size": 21,
+    "line": 25.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 3.78,
+    "pad": [
+     9,
+     22,
+     9,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Extrapolated evidence",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pageno",
+    "box": {
+     "x": 1766.63,
+     "y": 970.5,
+     "w": 25.38,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": true,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "07",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   }
+  ],
+  "shapes": [
+   {
+    "sel": "rule",
+    "box": {
+     "x": 128,
+     "y": 256.52,
+     "w": 96,
+     "h": 1
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "dot",
+    "box": {
+     "x": 239.36,
+     "y": 358.75,
+     "w": 15,
+     "h": 15
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 50,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "dot",
+    "box": {
+     "x": 477.08,
+     "y": 358.75,
+     "w": 15,
+     "h": 15
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 50,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "dot",
+    "box": {
+     "x": 714.8,
+     "y": 358.75,
+     "w": 15,
+     "h": 15
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 50,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "dot",
+    "box": {
+     "x": 952.52,
+     "y": 358.75,
+     "w": 15,
+     "h": 15
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 50,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "dot",
+    "box": {
+     "x": 1190.23,
+     "y": 358.75,
+     "w": 15,
+     "h": 15
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 50,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "dot",
+    "box": {
+     "x": 1427.95,
+     "y": 358.75,
+     "w": 15,
+     "h": 15
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 50,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "dot",
+    "box": {
+     "x": 1665.67,
+     "y": 358.75,
+     "w": 15,
+     "h": 15
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 50,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "agent",
+    "box": {
+     "x": 341.53,
+     "y": 583.75,
+     "w": 293.67,
+     "h": 59
+    },
+    "fill": [
+     245,
+     239,
+     227
+    ],
+    "radius": 999,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "agent",
+    "box": {
+     "x": 874.56,
+     "y": 583.75,
+     "w": 225.3,
+     "h": 59
+    },
+    "fill": [
+     245,
+     239,
+     227
+    ],
+    "radius": 999,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "agent",
+    "box": {
+     "x": 848.73,
+     "y": 654.75,
+     "w": 276.95,
+     "h": 59
+    },
+    "fill": [
+     245,
+     239,
+     227
+    ],
+    "radius": 999,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "agent",
+    "box": {
+     "x": 1339.22,
+     "y": 583.75,
+     "w": 239.25,
+     "h": 59
+    },
+    "fill": [
+     245,
+     239,
+     227
+    ],
+    "radius": 999,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "agent",
+    "box": {
+     "x": 1363.69,
+     "y": 654.75,
+     "w": 190.31,
+     "h": 59
+    },
+    "fill": [
+     245,
+     239,
+     227
+    ],
+    "radius": 999,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "footer-rule",
+    "box": {
+     "x": 128,
+     "y": 944,
+     "w": 1664,
+     "h": 66
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   }
+  ],
+  "images": [
+   {
+    "i": 0,
+    "box": {
+     "x": 128,
+     "y": 481.75,
+     "w": 1664,
+     "h": 22
+    },
+    "file": "s07-0.png"
+   }
+  ],
+  "notes": [
+   "One click reveals where each agent class acts. The point of the slide is that a clinician who knows the pathway can reason about any product, including the ones that do not exist yet.",
+   "Tranexamic acid acts upstream, on plasmin-mediated inflammatory signalling \u2014 which is why it outperforms pure tyrosinase inhibitors where inflammation is the driver. Azelaic acid and hydroquinone inhibit tyrosinase, the rate-limiting enzyme. Niacinamide reduces melanosome transfer to keratinocytes; retinoids act on transfer and on epidermal turnover.",
+   "Be explicit about the evidence class: these data come from facial melasma and post-inflammatory hyperpigmentation trials. Vulvar use is extrapolation by mechanism, not by trial \u2014 and on non-keratinised mucosa the irritant potential of retinoids and acids is higher. Timing: 60 seconds."
+  ],
+  "n": 7
+ },
+ {
+  "title": "Energy\u2013tissue interaction",
+  "texts": [
+   {
+    "sel": "eyebrow",
+    "box": {
+     "x": 128,
+     "y": 88,
+     "w": 1664,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 8.32,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Energy",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "h1",
+    "box": {
+     "x": 128,
+     "y": 140,
+     "w": 1664,
+     "h": 86.52
+    },
+    "size": 84,
+    "line": 86.52,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.336,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Select energy by tissue target",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "note step",
+    "box": {
+     "x": 233.13,
+     "y": 882,
+     "w": 1453.75,
+     "h": 42
+    },
+    "size": 34,
+    "line": 40.8,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.68,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Melanin is a competing chromophore \u2014 optical risk rises steeply in Fitzpatrick IV\u2013VI",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "ref",
+    "box": {
+     "x": 128,
+     "y": 973,
+     "w": 1119.28,
+     "h": 29
+    },
+    "size": 24,
+    "line": 28.799999999999997,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.36,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "FDA Safety Communication, 30 July 2018 \u00b7 Li et al. ",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": "JAMA",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": " 2021;326:1381\u20139",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "chip limited",
+    "box": {
+     "x": 1279.28,
+     "y": 965,
+     "w": 453.66,
+     "h": 45
+    },
+    "size": 21,
+    "line": 25.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     110,
+     38,
+     57
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 3.78,
+    "pad": [
+     9,
+     22,
+     9,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Evidence remains limited",
+      "b": true,
+      "c": [
+       110,
+       38,
+       57
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pageno",
+    "box": {
+     "x": 1764.94,
+     "y": 970.5,
+     "w": 27.06,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": true,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "08",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   }
+  ],
+  "shapes": [
+   {
+    "sel": "rule",
+    "box": {
+     "x": 128,
+     "y": 256.52,
+     "w": 96,
+     "h": 1
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "footer-rule",
+    "box": {
+     "x": 128,
+     "y": 944,
+     "w": 1664,
+     "h": 66
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   }
+  ],
+  "images": [
+   {
+    "i": 0,
+    "box": {
+     "x": 128,
+     "y": 293.52,
+     "w": 1664,
+     "h": 562.48
+    },
+    "file": "s08-0.png"
+   }
+  ],
+  "notes": [
+   "Three clicks, one modality class at a time. Deliberately no devices, no brands \u2014 the variable that matters is depth and chromophore, not the badge on the handpiece.",
+   "Optical energy deposits superficially and is absorbed by melanin as well as by water; in richly pigmented skin the epidermis competes for the energy you intended for the dermis. Fractional delivery spares intervening tissue and relies on those islands for repair. Volumetric radiofrequency heats resistively, has no chromophore dependence, and can reach dermis and submucosa while the epidermis is comparatively spared.",
+   "Hold the evidence honestly: the FDA's 2018 communication warned against energy devices marketed for vaginal \u2018rejuvenation\u2019, and Li's sham-controlled trial found fractional CO\u2082 no better than sham for postmenopausal vaginal symptoms at 12 months. Local oestrogen remains better evidenced for genitourinary syndrome of menopause. Timing: 60 seconds."
+  ],
+  "n": 8
+ },
+ {
+  "title": "Therapeutic hierarchy",
+  "texts": [
+   {
+    "sel": "eyebrow",
+    "box": {
+     "x": 128,
+     "y": 88,
+     "w": 1664,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 8.32,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Sequence",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "h1",
+    "box": {
+     "x": 128,
+     "y": 140,
+     "w": 1664,
+     "h": 86.52
+    },
+    "size": 84,
+    "line": 86.52,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.336,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Therapeutic hierarchy",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "nm",
+    "box": {
+     "x": 802.47,
+     "y": 298.56,
+     "w": 315.06,
+     "h": 37
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 7.2,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Maintenance",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "sb",
+    "box": {
+     "x": 766.02,
+     "y": 341.56,
+     "w": 387.97,
+     "h": 37
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Prevention \u00b7 reassessment",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "nm",
+    "box": {
+     "x": 791.67,
+     "y": 404.56,
+     "w": 336.64,
+     "h": 37
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 7.2,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Regeneration",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "sb",
+    "box": {
+     "x": 740.88,
+     "y": 447.56,
+     "w": 438.23,
+     "h": 37
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Tissue quality \u00b7 biostimulation",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "nm",
+    "box": {
+     "x": 834.27,
+     "y": 510.56,
+     "w": 251.45,
+     "h": 37
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 7.2,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Structure",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "sb",
+    "box": {
+     "x": 804.91,
+     "y": 553.56,
+     "w": 310.17,
+     "h": 37
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Volume \u00b7 laxity \u00b7 scars",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "nm",
+    "box": {
+     "x": 820,
+     "y": 616.56,
+     "w": 280,
+     "h": 37
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 7.2,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Correction",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "sb",
+    "box": {
+     "x": 790,
+     "y": 659.56,
+     "w": 340,
+     "h": 37
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Pigment \u00b7 texture \u00b7 hair",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "nm",
+    "box": {
+     "x": 816.39,
+     "y": 722.56,
+     "w": 287.2,
+     "h": 37
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 7.2,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Foundation",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "sb",
+    "box": {
+     "x": 733.17,
+     "y": 765.56,
+     "w": 453.66,
+     "h": 37
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Barrier \u00b7 inflammation \u00b7 friction",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "lead step",
+    "box": {
+     "x": 494.44,
+     "y": 866.56,
+     "w": 931.13,
+     "h": 62.39
+    },
+    "size": 52,
+    "line": 62.4,
+    "serif": true,
+    "italic": true,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": " An inflamed foundation cannot support escalation.",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "ref",
+    "box": {
+     "x": 128,
+     "y": 987.5,
+     "w": 1085.16,
+     "h": 0
+    },
+    "size": 24,
+    "line": 28.799999999999997,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.36,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": []
+   },
+   {
+    "sel": "chip",
+    "box": {
+     "x": 1245.16,
+     "y": 965,
+     "w": 488.45,
+     "h": 45
+    },
+    "size": 21,
+    "line": 25.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 3.78,
+    "pad": [
+     9,
+     22,
+     9,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Expert clinical framework",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pageno",
+    "box": {
+     "x": 1765.61,
+     "y": 970.5,
+     "w": 26.39,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": true,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "09",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   }
+  ],
+  "shapes": [
+   {
+    "sel": "rule",
+    "box": {
+     "x": 128,
+     "y": 256.52,
+     "w": 96,
+     "h": 1
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "bg",
+    "box": {
+     "x": 647,
+     "y": 288.56,
+     "w": 626,
+     "h": 100
+    },
+    "fill": [
+     243,
+     235,
+     220
+    ],
+    "radius": 0,
+    "clip": "polygon(12.46% 0px, 87.54% 0px, 100% 100%, 0px 100%)",
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "bg",
+    "box": {
+     "x": 569,
+     "y": 394.56,
+     "w": 782,
+     "h": 100
+    },
+    "fill": [
+     239,
+     230,
+     212
+    ],
+    "radius": 0,
+    "clip": "polygon(9.97% 0px, 90.03% 0px, 100% 100%, 0px 100%)",
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "bg",
+    "box": {
+     "x": 491,
+     "y": 500.56,
+     "w": 938,
+     "h": 100
+    },
+    "fill": [
+     234,
+     223,
+     200
+    ],
+    "radius": 0,
+    "clip": "polygon(8.32% 0px, 91.68% 0px, 100% 100%, 0px 100%)",
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "bg",
+    "box": {
+     "x": 413,
+     "y": 606.56,
+     "w": 1094,
+     "h": 100
+    },
+    "fill": [
+     228,
+     215,
+     186
+    ],
+    "radius": 0,
+    "clip": "polygon(7.13% 0px, 92.87% 0px, 100% 100%, 0px 100%)",
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "bg",
+    "box": {
+     "x": 335,
+     "y": 712.56,
+     "w": 1250,
+     "h": 100
+    },
+    "fill": [
+     220,
+     203,
+     173
+    ],
+    "radius": 0,
+    "clip": "polygon(6.24% 0px, 93.76% 0px, 100% 100%, 0px 100%)",
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "footer-rule",
+    "box": {
+     "x": 128,
+     "y": 944,
+     "w": 1664,
+     "h": 66
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   }
+  ],
+  "images": [],
+  "notes": [
+   "Six clicks, building from the base upward \u2014 the order of the build is the argument.",
+   "Foundation is barrier repair, inflammation control and friction elimination: bland emollients, pH-appropriate cleansing, breathable fabrics, reconsidered hair removal. Correction addresses surface \u2014 pigment, texture, hair. Structure addresses volume, laxity and scar. Regeneration addresses tissue quality. Maintenance is prevention and scheduled reassessment, not a repeat sale.",
+   "The rule that governs the whole pyramid: you may not skip a tier because a patient has asked for a higher one. An inflamed, friction-driven field treated with energy or injectables returns darker, not lighter. Timing: 50 seconds."
+  ],
+  "n": 9
+ },
+ {
+  "title": "Regenerative biology",
+  "texts": [
+   {
+    "sel": "eyebrow",
+    "box": {
+     "x": 128,
+     "y": 88,
+     "w": 1664,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 8.32,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Tissue regeneration \u00b7 biostimulation \u00b7 ECM remodelling",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "h1",
+    "box": {
+     "x": 128,
+     "y": 140,
+     "w": 1664,
+     "h": 86.52
+    },
+    "size": 84,
+    "line": 86.52,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.336,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "The cascade, not the product",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cell step",
+    "box": {
+     "x": 128,
+     "y": 350.69,
+     "w": 264.5,
+     "h": 198.55
+    },
+    "size": 34,
+    "line": 43.52,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     34,
+     28,
+     34,
+     28
+    ],
+    "runs": [
+     {
+      "t": "Stimulus",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cell step",
+    "box": {
+     "x": 404.5,
+     "y": 350.69,
+     "w": 264.5,
+     "h": 198.55
+    },
+    "size": 34,
+    "line": 43.52,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     34,
+     28,
+     34,
+     28
+    ],
+    "runs": [
+     {
+      "t": "Cellular signalling",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cell step",
+    "box": {
+     "x": 681,
+     "y": 350.69,
+     "w": 264.5,
+     "h": 198.55
+    },
+    "size": 34,
+    "line": 43.52,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     34,
+     28,
+     34,
+     28
+    ],
+    "runs": [
+     {
+      "t": "Fibroblast activity",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cell step",
+    "box": {
+     "x": 957.5,
+     "y": 350.69,
+     "w": 281.48,
+     "h": 198.55
+    },
+    "size": 34,
+    "line": 43.52,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     34,
+     28,
+     34,
+     28
+    ],
+    "runs": [
+     {
+      "t": "Extracellular-matrix remodelling",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cell step",
+    "box": {
+     "x": 1250.98,
+     "y": 350.69,
+     "w": 264.5,
+     "h": 198.55
+    },
+    "size": 34,
+    "line": 43.52,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     34,
+     28,
+     34,
+     28
+    ],
+    "runs": [
+     {
+      "t": "Collagen and elastin synthesis",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cell step",
+    "box": {
+     "x": 1527.48,
+     "y": 350.69,
+     "w": 264.5,
+     "h": 198.55
+    },
+    "size": 34,
+    "line": 43.52,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     34,
+     28,
+     34,
+     28
+    ],
+    "runs": [
+     {
+      "t": "Improved tissue quality",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "b",
+    "box": {
+     "x": 153,
+     "y": 620.23,
+     "w": 349.5,
+     "h": 33.8
+    },
+    "size": 26,
+    "line": 33.8,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "center",
+    "caps": true,
+    "track": 4.68,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Autologous",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "span",
+    "box": {
+     "x": 162.89,
+     "y": 667.03,
+     "w": 329.72,
+     "h": 78.3
+    },
+    "size": 31,
+    "line": 40.3,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Platelet concentrates (PRP / PRF)",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "b",
+    "box": {
+     "x": 574.5,
+     "y": 620.23,
+     "w": 349.5,
+     "h": 33.8
+    },
+    "size": 26,
+    "line": 33.8,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "center",
+    "caps": true,
+    "track": 4.68,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Nucleotide",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "span",
+    "box": {
+     "x": 583.45,
+     "y": 667.03,
+     "w": 331.58,
+     "h": 78.3
+    },
+    "size": 31,
+    "line": 40.3,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Polynucleotides (PN / PDRN)",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "b",
+    "box": {
+     "x": 996,
+     "y": 620.23,
+     "w": 349.5,
+     "h": 33.8
+    },
+    "size": 26,
+    "line": 33.8,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "center",
+    "caps": true,
+    "track": 4.68,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Scaffold",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "span",
+    "box": {
+     "x": 1048.97,
+     "y": 667.03,
+     "w": 243.56,
+     "h": 78.3
+    },
+    "size": 31,
+    "line": 40.3,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Hyaluronic-acid biostimulation",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "b",
+    "box": {
+     "x": 1417.5,
+     "y": 620.23,
+     "w": 349.5,
+     "h": 33.8
+    },
+    "size": 26,
+    "line": 33.8,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "center",
+    "caps": true,
+    "track": 4.68,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Stimulator",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "span",
+    "box": {
+     "x": 1428.27,
+     "y": 667.03,
+     "w": 327.97,
+     "h": 78.3
+    },
+    "size": 31,
+    "line": 40.3,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Collagen-stimulating injectables",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "lead step",
+    "box": {
+     "x": 550.94,
+     "y": 817.63,
+     "w": 818.13,
+     "h": 55.19
+    },
+    "size": 46,
+    "line": 55.2,
+    "serif": true,
+    "italic": true,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": " Evidence varies by indication and anatomical site.",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "ref",
+    "box": {
+     "x": 128,
+     "y": 973,
+     "w": 1228.47,
+     "h": 29
+    },
+    "size": 24,
+    "line": 28.799999999999997,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.36,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Squadrito et al. ",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": "Front Pharmacol",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": " 2017;8:224",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "chip",
+    "box": {
+     "x": 1388.47,
+     "y": 965,
+     "w": 348.88,
+     "h": 45
+    },
+    "size": 21,
+    "line": 25.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 3.78,
+    "pad": [
+     9,
+     22,
+     9,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Emerging evidence",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pageno",
+    "box": {
+     "x": 1769.34,
+     "y": 970.5,
+     "w": 22.66,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": true,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "10",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   }
+  ],
+  "shapes": [
+   {
+    "sel": "rule",
+    "box": {
+     "x": 128,
+     "y": 256.52,
+     "w": 96,
+     "h": 1
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cell step",
+    "box": {
+     "x": 128,
+     "y": 350.69,
+     "w": 264.5,
+     "h": 198.55
+    },
+    "fill": [
+     243,
+     235,
+     220
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cell step",
+    "box": {
+     "x": 404.5,
+     "y": 350.69,
+     "w": 264.5,
+     "h": 198.55
+    },
+    "fill": [
+     241,
+     231,
+     212
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cell step",
+    "box": {
+     "x": 681,
+     "y": 350.69,
+     "w": 264.5,
+     "h": 198.55
+    },
+    "fill": [
+     237,
+     225,
+     203
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cell step",
+    "box": {
+     "x": 957.5,
+     "y": 350.69,
+     "w": 281.48,
+     "h": 198.55
+    },
+    "fill": [
+     233,
+     219,
+     193
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cell step",
+    "box": {
+     "x": 1250.98,
+     "y": 350.69,
+     "w": 264.5,
+     "h": 198.55
+    },
+    "fill": [
+     228,
+     213,
+     183
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cell step",
+    "box": {
+     "x": 1527.48,
+     "y": 350.69,
+     "w": 264.5,
+     "h": 198.55
+    },
+    "fill": [
+     220,
+     203,
+     173
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cat step",
+    "box": {
+     "x": 128,
+     "y": 593.23,
+     "w": 399.5,
+     "h": 180.39
+    },
+    "fill": null,
+    "radius": 12,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cat step",
+    "box": {
+     "x": 549.5,
+     "y": 593.23,
+     "w": 399.5,
+     "h": 180.39
+    },
+    "fill": null,
+    "radius": 12,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cat step",
+    "box": {
+     "x": 971,
+     "y": 593.23,
+     "w": 399.5,
+     "h": 180.39
+    },
+    "fill": null,
+    "radius": 12,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cat step",
+    "box": {
+     "x": 1392.5,
+     "y": 593.23,
+     "w": 399.5,
+     "h": 180.39
+    },
+    "fill": null,
+    "radius": 12,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "footer-rule",
+    "box": {
+     "x": 128,
+     "y": 944,
+     "w": 1664,
+     "h": 66
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   }
+  ],
+  "images": [],
+  "notes": [
+   "Three clicks: the cascade, then the therapeutic categories, then the caveat.",
+   "Every regenerative approach in this field claims the same pathway: a stimulus produces cellular signalling, fibroblasts are recruited and activated, the extracellular matrix is remodelled, collagen and elastin are synthesised, and tissue quality improves. Polydeoxyribonucleotide acts partly through adenosine A2A receptor agonism with anti-inflammatory and pro-angiogenic effects; platelet concentrates deliver autologous growth factors; hyaluronic-acid and collagen-stimulating injectables act as scaffold and stimulus.",
+   "Present these as categories with proposed mechanisms, not as products. The cascade is plausible and partly demonstrated in vitro and at other sites; the site-specific clinical evidence at the vulva is thin and heterogeneous, and one indication does not license another. Timing: 60 seconds."
+  ],
+  "n": 10
+ },
+ {
+  "title": "Emerging therapies",
+  "texts": [
+   {
+    "sel": "eyebrow",
+    "box": {
+     "x": 128,
+     "y": 88,
+     "w": 1664,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 8.32,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Evidence",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "h1",
+    "box": {
+     "x": 128,
+     "y": 140,
+     "w": 1664,
+     "h": 86.52
+    },
+    "size": 84,
+    "line": 86.52,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.336,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Where the evidence actually sits",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cap l",
+    "box": {
+     "x": 128,
+     "y": 556.25,
+     "w": 347.33,
+     "h": 30
+    },
+    "size": 25,
+    "line": 30,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 5,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "More established",
+      "b": true,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cap r",
+    "box": {
+     "x": 1417.08,
+     "y": 556.25,
+     "w": 374.92,
+     "h": 30
+    },
+    "size": 25,
+    "line": 30,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 5,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "More experimental",
+      "b": true,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "t",
+    "box": {
+     "x": 327.67,
+     "y": 334.25,
+     "w": 300,
+     "h": 160
+    },
+    "size": 32,
+    "line": 40,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Autologous platelet",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "\n",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "concentrates (PRP)",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "t",
+    "box": {
+     "x": 660.47,
+     "y": 614.25,
+     "w": 300,
+     "h": 80
+    },
+    "size": 32,
+    "line": 40,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Polynucleotides",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "\n",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "(PN / PDRN)",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "t",
+    "box": {
+     "x": 976.63,
+     "y": 374.25,
+     "w": 300,
+     "h": 120
+    },
+    "size": 32,
+    "line": 40,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Collagen-stimulating",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "\n",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "injectables",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "t",
+    "box": {
+     "x": 1292.8,
+     "y": 614.25,
+     "w": 300,
+     "h": 120
+    },
+    "size": 32,
+    "line": 40,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Extracellular vesicles",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "\n",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "/ exosomes",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "t",
+    "box": {
+     "x": 1575.67,
+     "y": 414.25,
+     "w": 300,
+     "h": 80
+    },
+    "size": 32,
+    "line": 40,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "NAD\u207a-related",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "\n",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     },
+     {
+      "t": "interventions",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "lead step",
+    "box": {
+     "x": 486.72,
+     "y": 800.25,
+     "w": 946.56,
+     "h": 60
+    },
+    "size": 50,
+    "line": 60,
+    "serif": true,
+    "italic": true,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": " Biological rationale does not equal clinical validation.",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "ref",
+    "box": {
+     "x": 128,
+     "y": 952,
+     "w": 1140.66,
+     "h": 58
+    },
+    "size": 24,
+    "line": 28.799999999999997,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.36,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Goldstein et al. ",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": "J Am Acad Dermatol",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     },
+     {
+      "t": " 2019;80:1788\u20139 \u00b7 FDA Public Safety Notification on exosome products, 2019",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "chip limited",
+    "box": {
+     "x": 1300.66,
+     "y": 958.5,
+     "w": 440.75,
+     "h": 45
+    },
+    "size": 21,
+    "line": 25.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     110,
+     38,
+     57
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 3.78,
+    "pad": [
+     9,
+     22,
+     9,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Emerging \u00b7 experimental",
+      "b": true,
+      "c": [
+       110,
+       38,
+       57
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pageno",
+    "box": {
+     "x": 1773.41,
+     "y": 964,
+     "w": 18.59,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": true,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "11",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   }
+  ],
+  "shapes": [
+   {
+    "sel": "rule",
+    "box": {
+     "x": 128,
+     "y": 256.52,
+     "w": 96,
+     "h": 1
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "axis",
+    "box": {
+     "x": 128,
+     "y": 544.25,
+     "w": 1664,
+     "h": 2
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "stem",
+    "box": {
+     "x": 477.17,
+     "y": 500.25,
+     "w": 1,
+     "h": 34
+    },
+    "fill": [
+     228,
+     213,
+     172
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pin",
+    "box": {
+     "x": 469.67,
+     "y": 534.25,
+     "w": 16,
+     "h": 16
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 50,
+    "clip": null,
+    "borders": [
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pin",
+    "box": {
+     "x": 802.47,
+     "y": 540.25,
+     "w": 16,
+     "h": 16
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 50,
+    "clip": null,
+    "borders": [
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "stem",
+    "box": {
+     "x": 809.97,
+     "y": 556.25,
+     "w": 1,
+     "h": 34
+    },
+    "fill": [
+     228,
+     213,
+     172
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "stem",
+    "box": {
+     "x": 1126.13,
+     "y": 500.25,
+     "w": 1,
+     "h": 34
+    },
+    "fill": [
+     228,
+     213,
+     172
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pin",
+    "box": {
+     "x": 1118.63,
+     "y": 534.25,
+     "w": 16,
+     "h": 16
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 50,
+    "clip": null,
+    "borders": [
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pin",
+    "box": {
+     "x": 1434.8,
+     "y": 540.25,
+     "w": 16,
+     "h": 16
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 50,
+    "clip": null,
+    "borders": [
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "stem",
+    "box": {
+     "x": 1442.3,
+     "y": 556.25,
+     "w": 1,
+     "h": 34
+    },
+    "fill": [
+     228,
+     213,
+     172
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "stem",
+    "box": {
+     "x": 1725.17,
+     "y": 500.25,
+     "w": 1,
+     "h": 34
+    },
+    "fill": [
+     228,
+     213,
+     172
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pin",
+    "box": {
+     "x": 1717.67,
+     "y": 534.25,
+     "w": 16,
+     "h": 16
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 50,
+    "clip": null,
+    "borders": [
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     },
+     {
+      "w": 3,
+      "c": [
+       251,
+       247,
+       238
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "footer-rule",
+    "box": {
+     "x": 128,
+     "y": 931,
+     "w": 1664,
+     "h": 79
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   }
+  ],
+  "images": [],
+  "notes": [
+   "Five clicks place the categories, the sixth delivers the line. Resist the urge to move anything leftward for the room\u2019s comfort.",
+   "Autologous platelet concentrates have the largest genital literature and it is still small \u2014 Goldstein\u2019s randomised, double-blind trial in vulvar lichen sclerosus found no significant benefit over placebo, which is exactly the kind of result that should temper enthusiasm. Polynucleotides have a coherent mechanism and mostly uncontrolled genital data. Collagen-stimulating injectables are extrapolated from facial and body use, and carry nodule risk if placed in the wrong plane.",
+   "Extracellular vesicles and NAD\u207a-related interventions are, at this site, pre-clinical rationale with active marketing. There is no FDA-approved exosome product and standing safety notifications exist. Naming that from the podium is part of the job. Timing: 70 seconds."
+  ],
+  "n": 11
+ },
+ {
+  "title": "The Kabboura Clinical Framework",
+  "texts": [
+   {
+    "sel": "eyebrow",
+    "box": {
+     "x": 128,
+     "y": 88,
+     "w": 1664,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 8.32,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Expert clinical framework \u2014 not a validated guideline",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "h1",
+    "box": {
+     "x": 128,
+     "y": 140,
+     "w": 1664,
+     "h": 86.52
+    },
+    "size": 84,
+    "line": 86.52,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.336,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "The Kabboura Clinical Framework",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "lead step",
+    "box": {
+     "x": 1172,
+     "y": 343.97,
+     "w": 620,
+     "h": 129.59
+    },
+    "size": 54,
+    "line": 64.8,
+    "serif": true,
+    "italic": true,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Escalate only from",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     },
+     {
+      "t": "\n",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     },
+     {
+      "t": "a quiet foundation.",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "term step",
+    "box": {
+     "x": 1172,
+     "y": 505.56,
+     "w": 620,
+     "h": 246.38
+    },
+    "size": 44,
+    "line": 61.6,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Stage-gated and indication-led. Each stage is re-assessed before the next is entered.",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "term step",
+    "box": {
+     "x": 1172,
+     "y": 783.94,
+     "w": 620,
+     "h": 89.59
+    },
+    "size": 32,
+    "line": 44.8,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": " An organising heuristic \u2014 not a validated protocol.",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "ref",
+    "box": {
+     "x": 128,
+     "y": 987.5,
+     "w": 1090.98,
+     "h": 0
+    },
+    "size": 24,
+    "line": 28.799999999999997,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.36,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": []
+   },
+   {
+    "sel": "chip",
+    "box": {
+     "x": 1250.98,
+     "y": 965,
+     "w": 488.45,
+     "h": 45
+    },
+    "size": 21,
+    "line": 25.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 3.78,
+    "pad": [
+     9,
+     22,
+     9,
+     22
+    ],
+    "runs": [
+     {
+      "t": "Expert clinical framework",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "pageno",
+    "box": {
+     "x": 1771.44,
+     "y": 970.5,
+     "w": 20.56,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": true,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "12",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   }
+  ],
+  "shapes": [
+   {
+    "sel": "rule",
+    "box": {
+     "x": 128,
+     "y": 256.52,
+     "w": 96,
+     "h": 1
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "footer-rule",
+    "box": {
+     "x": 128,
+     "y": 944,
+     "w": 1664,
+     "h": 66
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   }
+  ],
+  "images": [
+   {
+    "i": 0,
+    "box": {
+     "x": 128,
+     "y": 293.52,
+     "w": 980,
+     "h": 630.48
+    },
+    "file": "s12-0.png"
+   }
+  ],
+  "notes": [
+   "Six clicks, one stage each. Let RESTORE, REBUILD, REGENERATE and REFINE carry the visual weight \u2014 those four words are the deck\u2019s takeaway.",
+   "Assess: tissue, pathology, indication. Restore: barrier and inflammation \u2014 nothing above this stage is attempted until the field is quiet. Rebuild: structure and function. Regenerate: tissue quality through biostimulation and extracellular-matrix remodelling. Refine: pigment and texture, deliberately last, because pigment is the readout of everything beneath it. Maintain: reassessment and prevention.",
+   "State the epistemic status out loud: this is an expert clinical framework, offered as an organising heuristic. It is not a guideline and it has not been validated prospectively. Timing: 60 seconds."
+  ],
+  "n": 12
+ },
+ {
+  "title": "Clinical take-home",
+  "texts": [
+   {
+    "sel": "eyebrow",
+    "box": {
+     "x": 128,
+     "y": 88,
+     "w": 1664,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 8.32,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Conclusion",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "h1",
+    "box": {
+     "x": 128,
+     "y": 140,
+     "w": 1664,
+     "h": 86.52
+    },
+    "size": 84,
+    "line": 86.52,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.336,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Clinical take-home",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "n",
+    "box": {
+     "x": 128,
+     "y": 325.56,
+     "w": 96,
+     "h": 72
+    },
+    "size": 60,
+    "line": 72,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     198,
+     162,
+     78
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "01",
+      "b": true,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "t",
+    "box": {
+     "x": 268,
+     "y": 304.56,
+     "w": 792.36,
+     "h": 100
+    },
+    "size": 82,
+    "line": 98.39999999999999,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Diagnose before treating",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "n",
+    "box": {
+     "x": 128,
+     "y": 500.56,
+     "w": 96,
+     "h": 72
+    },
+    "size": 60,
+    "line": 72,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     198,
+     162,
+     78
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "02",
+      "b": true,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "t",
+    "box": {
+     "x": 268,
+     "y": 479.56,
+     "w": 832.8,
+     "h": 100
+    },
+    "size": 82,
+    "line": 98.39999999999999,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Match treatment to tissue",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "n",
+    "box": {
+     "x": 128,
+     "y": 675.56,
+     "w": 96,
+     "h": 72
+    },
+    "size": 60,
+    "line": 72,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     198,
+     162,
+     78
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "03",
+      "b": true,
+      "c": [
+       198,
+       162,
+       78
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "t",
+    "box": {
+     "x": 268,
+     "y": 654.56,
+     "w": 977.52,
+     "h": 100
+    },
+    "size": 82,
+    "line": 98.39999999999999,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Escalate according to evidence",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "lead step",
+    "box": {
+     "x": 612.02,
+     "y": 848.61,
+     "w": 695.95,
+     "h": 86.39
+    },
+    "size": 72,
+    "line": 86.4,
+    "serif": true,
+    "italic": true,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": " Treat biology \u2014 not trends.",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "ref",
+    "box": {
+     "x": 128,
+     "y": 993,
+     "w": 1611.8,
+     "h": 0
+    },
+    "size": 24,
+    "line": 28.799999999999997,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.36,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": []
+   },
+   {
+    "sel": "pageno",
+    "box": {
+     "x": 1771.8,
+     "y": 976,
+     "w": 20.2,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": true,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "13",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   }
+  ],
+  "shapes": [
+   {
+    "sel": "rule",
+    "box": {
+     "x": 128,
+     "y": 256.52,
+     "w": 96,
+     "h": 1
+    },
+    "fill": [
+     198,
+     162,
+     78
+    ],
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "row step",
+    "box": {
+     "x": 128,
+     "y": 304.56,
+     "w": 1664,
+     "h": 135
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "row step",
+    "box": {
+     "x": 128,
+     "y": 479.56,
+     "w": 1664,
+     "h": 135
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "row step",
+    "box": {
+     "x": 128,
+     "y": 654.56,
+     "w": 1664,
+     "h": 135
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     },
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "footer-rule",
+    "box": {
+     "x": 128,
+     "y": 955,
+     "w": 1664,
+     "h": 55
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   }
+  ],
+  "images": [],
+  "notes": [
+   "Four clicks. Say each line once and stop \u2014 do not gloss them.",
+   "Diagnose before treating: the biopsy threshold is low and the cost of missing differentiated VIN or mucosal melanoma is absolute. Match treatment to tissue: Hart\u2019s line changes what is safe on either side of it. Escalate according to evidence: name the evidence class \u2014 established, extrapolated, emerging, or expert framework \u2014 every time you offer something.",
+   "Close on the final line and let it sit. Timing: 40 seconds."
+  ],
+  "n": 13
+ },
+ {
+  "title": "Closing",
+  "texts": [
+   {
+    "sel": "eyebrow",
+    "box": {
+     "x": 128,
+     "y": 88,
+     "w": 1664,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "start",
+    "caps": true,
+    "track": 8.32,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Thank you",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "name",
+    "box": {
+     "x": 547.95,
+     "y": 233,
+     "w": 824.08,
+     "h": 117
+    },
+    "size": 96,
+    "line": 115.19999999999999,
+    "serif": true,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     46,
+     43,
+     38
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Dr. Nadeen Kabboura",
+      "b": true,
+      "c": [
+       46,
+       43,
+       38
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cred",
+    "box": {
+     "x": 426.14,
+     "y": 368,
+     "w": 1067.7,
+     "h": 37
+    },
+    "size": 30,
+    "line": 36,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 1.8,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Obstetrics & Gynaecology \u00b7 Aesthetic and Regenerative Medicine",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "handles",
+    "box": {
+     "x": 434.73,
+     "y": 439,
+     "w": 1050.53,
+     "h": 39
+    },
+    "size": 32,
+    "line": 38.4,
+    "serif": false,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 1.92,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "@drnadeenkabbouraofficial \u00b7 nadeenkabboura@gmail.com",
+      "b": false,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cap",
+    "box": {
+     "x": 449.81,
+     "y": 792,
+     "w": 514.66,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": true,
+    "track": 5.2,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Full bibliography",
+      "b": true,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "url",
+    "box": {
+     "x": 449.81,
+     "y": 834,
+     "w": 514.66,
+     "h": 24
+    },
+    "size": 20,
+    "line": 24,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "rayan-debug.github.io/nadine-/deck/references.html",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cap",
+    "box": {
+     "x": 1084.47,
+     "y": 792,
+     "w": 385.7,
+     "h": 32
+    },
+    "size": 26,
+    "line": 31.2,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": true,
+    "track": 5.2,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Lecture resources",
+      "b": true,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "url",
+    "box": {
+     "x": 1084.47,
+     "y": 834,
+     "w": 385.7,
+     "h": 24
+    },
+    "size": 20,
+    "line": 24,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "rayan-debug.github.io/nadine-/",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "ref",
+    "box": {
+     "x": 128,
+     "y": 993,
+     "w": 1610.06,
+     "h": 0
+    },
+    "size": 24,
+    "line": 28.799999999999997,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0.36,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": []
+   },
+   {
+    "sel": "pageno",
+    "box": {
+     "x": 1770.06,
+     "y": 976,
+     "w": 21.94,
+     "h": 34
+    },
+    "size": 28,
+    "line": 33.6,
+    "serif": true,
+    "italic": false,
+    "weight": 400,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "start",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "14",
+      "b": false,
+      "c": [
+       124,
+       115,
+       101
+      ]
+     }
+    ]
+   }
+  ],
+  "shapes": [
+   {
+    "sel": "footer-rule",
+    "box": {
+     "x": 128,
+     "y": 955,
+     "w": 1664,
+     "h": 55
+    },
+    "fill": null,
+    "radius": 0,
+    "clip": null,
+    "borders": [
+     {
+      "w": 1,
+      "c": [
+       228,
+       213,
+       172
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "w": 0,
+      "c": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   }
+  ],
+  "images": [
+   {
+    "i": 0,
+    "box": {
+     "x": 449.81,
+     "y": 542,
+     "w": 230,
+     "h": 230
+    },
+    "file": "s14-0.png"
+   },
+   {
+    "i": 1,
+    "box": {
+     "x": 1084.47,
+     "y": 542,
+     "w": 230,
+     "h": 230
+    },
+    "file": "s14-1.png"
+   }
+  ],
+  "notes": [
+   "Leave this slide up through questions. The left code opens the full reference list for every claim made in the lecture; the right opens the longer teaching resource.",
+   "If time has run short, the three slides worth returning to in discussion are Hart\u2019s line, the inflammation\u2013pigment cycle and the evidence spectrum."
+  ],
+  "n": 14
+ }
+]

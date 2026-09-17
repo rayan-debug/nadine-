@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 560" width="1400" height="560" role="img" aria-label="Abstract layered tissue contour">
+<title>Abstract layered tissue contour</title>
+<style>
+  .ln    { fill:none; stroke:#2E2B26; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; }
+  .ln-m  { fill:none; stroke:#2E2B26; stroke-width:1.3; stroke-linecap:round; stroke-linejoin:round; opacity:.62; }
+  .ln-f  { fill:none; stroke:#2E2B26; stroke-width:.9;  stroke-linecap:round; stroke-linejoin:round; opacity:.32; }
+  .f1    { fill:#F3EBDC; } .f2 { fill:#E8DCC6; } .f3 { fill:#DCCBAD; } .f4 { fill:#CDB995; }
+  .muc   { fill:#F0E1D3; }
+  .gold  { fill:none; stroke:#C6A24E; stroke-width:3.6; stroke-linecap:round; stroke-linejoin:round; }
+  .gold-t{ fill:none; stroke:#C6A24E; stroke-width:2.2; stroke-linecap:round; }
+  .goldf { fill:#C6A24E; } .goldd { fill:#8A6A1C; }
+  .halo  { fill:none; stroke:#FBF7EE; stroke-width:7; stroke-linecap:round; opacity:.92; }
+  .lead  { fill:none; stroke:#8A7C68; stroke-width:1.2; }
+  .lab   { font-family:'Montserrat',Helvetica,Arial,sans-serif; font-size:35px; font-weight:400; fill:#453F35; letter-spacing:.03em; }
+  .lab-k { font-family:'Montserrat',Helvetica,Arial,sans-serif; font-size:35px; font-weight:600; fill:#8A6A1C; letter-spacing:.09em; }
+  .lab-s { font-family:'Montserrat',Helvetica,Arial,sans-serif; font-size:29px; font-weight:400; fill:#7C7365; letter-spacing:.04em; }
+  .lab-b { font-family:'Montserrat',Helvetica,Arial,sans-serif; font-size:26px; font-weight:500; fill:#6B6053; letter-spacing:.15em; }
+  .lab-c { font-family:'Montserrat',Helvetica,Arial,sans-serif; font-size:28px; font-weight:600; fill:#8A6A1C; letter-spacing:.17em; }
+  .num   { font-family:'Montserrat',Helvetica,Arial,sans-serif; font-size:34px; font-weight:600; fill:#8A6A1C; }
+  .ser   { font-family:'Cormorant Garamond',Georgia,serif; fill:#8A6A1C; }
+</style>
+<defs><linearGradient id="tc-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".34" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="1"/></linearGradient><mask id="tc-mask"><rect width="1400" height="560" fill="url(#tc-fade)"/></mask></defs><rect width="1400" height="560" fill="#FBF7EE"/><g mask="url(#tc-mask)"><path d="M -30 84 C 250 60 470 115 700 88 C 940 53 1180 108 1430 76 L 1430 560 L -30 560 Z" fill="#F5EFE3"/><path d="M -30 140 C 250 105 470 184 700 144 C 940 96 1180 175 1430 132 L 1430 560 L -30 560 Z" fill="#F1E9DA"/><path d="M -30 196 C 250 150 470 214 700 200 C 940 178 1180 242 1430 188 L 1430 560 L -30 560 Z" fill="#EDE3D0"/><path d="M -30 252 C 250 228 470 283 700 256 C 940 221 1180 276 1430 244 L 1430 560 L -30 560 Z" fill="#E9DDC8"/><path d="M -30 308 C 250 273 470 352 700 312 C 940 264 1180 343 1430 300 L 1430 560 L -30 560 Z" fill="#E4D7BE"/><path d="M -30 364 C 250 318 470 382 700 368 C 940 346 1180 410 1430 356 L 1430 560 L -30 560 Z" fill="#DFD0B3"/><path d="M -30 420 C 250 396 470 451 700 424 C 940 389 1180 444 1430 412 L 1430 560 L -30 560 Z" fill="#D9C8A7"/><path d="M -30 476 C 250 441 470 520 700 480 C 940 432 1180 511 1430 468 L 1430 560 L -30 560 Z" fill="#D3C09C"/><path class="ln-f" d="M -30 84 C 250 60 470 115 700 88 C 940 53 1180 108 1430 76"/><path class="ln-f" d="M -30 140 C 250 105 470 184 700 144 C 940 96 1180 175 1430 132"/><path class="ln-f" d="M -30 196 C 250 150 470 214 700 200 C 940 178 1180 242 1430 188"/><path class="ln-f" d="M -30 252 C 250 228 470 283 700 256 C 940 221 1180 276 1430 244"/><path class="ln-f" d="M -30 308 C 250 273 470 352 700 312 C 940 264 1180 343 1430 300"/><path class="ln-f" d="M -30 364 C 250 318 470 382 700 368 C 940 346 1180 410 1430 356"/><path class="ln-f" d="M -30 420 C 250 396 470 451 700 424 C 940 389 1180 444 1430 412"/><path class="ln-f" d="M -30 476 C 250 441 470 520 700 480 C 940 432 1180 511 1430 468"/><path class="ln-f" d="M -30 532 C 250 486 470 550 700 536 C 940 514 1180 578 1430 524"/><path class="gold" d="M -30 308 C 250 273 470 352 700 312 C 940 264 1180 343 1430 300" opacity=".9"/></g>
+</svg>

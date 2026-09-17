@@ -1,0 +1,295 @@
+/* ==========================================================================
+   Tissue-Specific Intimate Medicine - conference deck
+   Design system: warm ivory ground, charcoal type and anatomical line,
+   muted beige tissue, restrained gold, minimal burgundy.
+   The slide is authored at a fixed 1920 x 1080 stage and scaled to fit.
+   ========================================================================== */
+
+:root{
+  --paper:#FBF7EE;
+  --ivory:#F5EFE3;
+  --ink:#2E2B26;
+  --ink-2:#453F35;
+  --muted:#7C7365;
+  --gold:#C6A24E;
+  --gold-deep:#8A6A1C;
+  --line:#E4D5AC;
+  --tissue-1:#F3EBDC;
+  --tissue-2:#E8DCC6;
+  --tissue-3:#DCCBAD;
+  --burgundy:#6E2639;
+  --serif:'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sans:'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+html,body{ height:100%; overflow:hidden; background:#14120F; }
+body{ font-family:var(--sans); color:var(--ink); -webkit-font-smoothing:antialiased; }
+
+/* ---- stage ------------------------------------------------------------- */
+#stage{
+  position:fixed; left:50%; top:50%;
+  width:1920px; height:1080px;
+  transform-origin:50% 50%;
+  background:var(--paper);
+  box-shadow:0 0 90px rgba(0,0,0,.45);
+}
+
+.slide{
+  position:absolute; inset:0;
+  background:var(--paper);
+  padding:88px 128px 70px;
+  display:none; flex-direction:column;
+}
+.slide.on{ display:flex; }
+.slide.on > *{ animation:slide-in .5s ease both; }
+@keyframes slide-in{ from{ opacity:0; transform:translateY(12px); } to{ opacity:1; transform:none; } }
+
+/* ---- shared type ------------------------------------------------------- */
+.eyebrow{
+  font-size:26px; font-weight:600; letter-spacing:.32em;
+  text-transform:uppercase; color:var(--gold-deep);
+}
+h1{
+  font-family:var(--serif); font-weight:600; font-size:84px;
+  line-height:1.03; letter-spacing:.004em; color:var(--ink);
+}
+.hero{
+  font-family:var(--serif); font-weight:600; font-size:132px;
+  line-height:1.02; color:var(--ink);
+}
+.lead{
+  font-family:var(--serif); font-style:italic; font-size:54px;
+  color:var(--gold-deep); line-height:1.2;
+}
+.body{ font-size:60px; font-weight:300; line-height:1.4; color:var(--ink-2); }
+.term{ font-size:44px; font-weight:400; line-height:1.4; color:var(--ink-2); }
+.micro{ font-size:28px; font-weight:400; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); }
+
+header{ flex:0 0 auto; }
+header .eyebrow + h1{ margin-top:20px; }
+header .rule{ width:96px; height:1px; background:var(--gold); margin-top:30px; }
+main{ flex:1 1 auto; display:flex; min-height:0; padding-top:36px; }
+
+/* ---- footer ------------------------------------------------------------ */
+footer{
+  flex:0 0 auto; display:flex; align-items:center; gap:32px;
+  border-top:1px solid var(--line); padding-top:20px; margin-top:20px;
+}
+footer .ref{ font-size:24px; font-weight:300; color:var(--muted); letter-spacing:.015em; flex:1 1 auto; }
+footer .pageno{ font-family:var(--serif); font-size:28px; color:var(--muted); }
+.chip{
+  font-size:21px; font-weight:600; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--gold-deep); border:1px solid var(--gold); border-radius:999px;
+  padding:9px 22px; white-space:nowrap;
+}
+.chip.limited{ color:var(--burgundy); border-color:var(--burgundy); }
+
+/* ---- figures ----------------------------------------------------------- */
+/* inline SVG fills its box and self-letterboxes via preserveAspectRatio, so a
+   figure is always as large as the slide grid allows */
+figure, .fig{ display:block; min-width:0; min-height:0; }
+figure > svg, .fig > svg{ display:block; width:100%; height:100%; }
+
+/* ---- build steps ------------------------------------------------------- */
+.step{ opacity:0; transform:translateY(12px); transition:opacity .5s ease, transform .5s ease; }
+.step.in{ opacity:1; transform:none; }
+.hart{ opacity:0; transition:opacity .45s ease; }
+.hart.in{ opacity:1; }
+.hart-trace{ stroke-dasharray:var(--len,1200); stroke-dashoffset:var(--len,1200); }
+.hart.in .hart-trace{ transition:stroke-dashoffset 1.5s cubic-bezier(.4,0,.2,1); stroke-dashoffset:0; }
+html.no-anim .step{ opacity:1; transform:none; transition:none; }
+html.no-anim .hart-trace{ stroke-dashoffset:0; transition:none; }
+html.no-anim .hart{ opacity:1; transition:none; }
+html.no-anim .slide.on > *{ animation:none; }
+
+/* ---- slide 1: title ---------------------------------------------------- */
+.title-slide{ padding:0; }
+.title-slide .plate{ position:absolute; inset:auto 0 0 0; height:470px; overflow:hidden; }
+.title-slide .plate svg{ width:100%; height:100%; }
+.title-slide .inner{
+  position:relative; z-index:2; height:100%;
+  display:flex; flex-direction:column; justify-content:center; align-items:center;
+  text-align:center; padding:0 180px 250px;
+}
+.title-slide h1{ font-size:116px; line-height:1.02; }
+.title-slide .kicker{ margin-bottom:40px; }
+.title-slide .sub{ font-family:var(--serif); font-style:italic; font-size:52px; color:var(--gold-deep); margin-top:30px; }
+.title-slide .who{ margin-top:72px; }
+.title-slide .who .name{ font-size:34px; font-weight:600; letter-spacing:.26em; text-transform:uppercase; color:var(--ink); }
+.title-slide .who .cred{ margin-top:16px; font-size:26px; font-weight:300; letter-spacing:.06em; color:var(--muted); }
+.title-slide .venue{ position:absolute; left:0; right:0; bottom:52px; text-align:center; color:#6B6053; }
+
+/* ---- slide 2: premise -------------------------------------------------- */
+.premise main{ flex-direction:column; justify-content:center; align-items:center; text-align:center; }
+.premise .hero{ font-size:146px; }
+.premise .lead{ margin-top:26px; }
+.premise figure{ margin-top:14px; width:100%; flex:0 0 350px; }
+
+/* ---- two-column and stacked figure layouts ---------------------------- */
+.split{ display:flex; gap:64px; width:100%; flex:1 1 auto; min-height:0; align-items:center; }
+.split .fig{ flex:1 1 auto; min-width:0; height:100%; }
+.split .side{ flex:0 0 460px; display:flex; flex-direction:column; gap:32px; }
+.split .side li{ list-style:none; font-size:43px; font-weight:300; line-height:1.3; color:var(--ink-2); padding-left:28px; border-left:2px solid var(--line); }
+.split .side li b{ font-weight:600; color:var(--gold-deep); }
+
+.stack{ display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:26px; width:100%; flex:1 1 auto; min-height:0; }
+.stack > figure{ flex:1 1 auto; min-height:0; width:100%; }
+
+/* gold callout band */
+.callout{
+  display:inline-flex; align-items:center; gap:24px; align-self:center;
+  border-top:1px solid var(--gold); border-bottom:1px solid var(--gold);
+  padding:20px 54px;
+  font-family:var(--serif); font-weight:600; font-size:66px; color:var(--gold-deep);
+}
+.note{ align-self:center; font-size:34px; font-weight:300; color:var(--muted); letter-spacing:.02em; }
+
+/* ---- slide 6: decision tree ------------------------------------------- */
+.tree{ width:100%; display:flex; flex-direction:column; align-items:center; margin:auto 0; }
+.tree .q{
+  font-family:var(--serif); font-weight:600; font-size:72px; color:var(--gold-deep);
+  border:1px solid var(--gold); border-radius:14px; padding:16px 54px; background:var(--ivory);
+}
+.tree .fork{ width:100%; height:62px; position:relative; }
+.tree .fork svg{ width:100%; height:100%; }
+.tree .branches{ display:flex; gap:80px; width:100%; }
+.tree .branch{ flex:1 1 0; }
+.tree .branch h3{
+  font-size:28px; font-weight:600; letter-spacing:.24em; text-transform:uppercase;
+  color:var(--gold-deep); margin-bottom:10px;
+}
+.tree .branch .head{ font-family:var(--serif); font-size:52px; font-weight:600; color:var(--ink); margin-bottom:20px; }
+.tree .branch ul{ list-style:none; }
+.tree .branch li{ font-size:38px; font-weight:300; line-height:1.46; color:var(--ink-2); }
+.tree .branch li::before{ content:'—'; color:var(--gold); margin-right:16px; }
+.tree .branch.alert h3, .tree .branch.alert li::before{ color:var(--burgundy); }
+
+/* ---- slide 7: melanogenesis pathway ----------------------------------- */
+.pathway{ width:100%; display:flex; flex-direction:column; gap:0; margin:auto 0; }
+.pathway .chain{ display:flex; align-items:stretch; width:100%; }
+.pathway .node{ flex:1 1 0; display:flex; flex-direction:column; align-items:center; text-align:center; position:relative; }
+.pathway .node .dot{ width:15px; height:15px; border-radius:50%; background:var(--gold); margin-bottom:20px; }
+.pathway .node .nm{ font-size:30px; font-weight:400; line-height:1.3; color:var(--ink-2); letter-spacing:.01em; min-height:82px; }
+.pathway .rail{ position:relative; width:100%; height:22px; margin:6px 0 20px; }
+.pathway .rail svg{ display:block; width:100%; height:100%; }
+.pathway .agents{ display:flex; width:100%; margin-top:14px; }
+.pathway .agents .slot{ flex:1 1 0; display:flex; flex-direction:column; align-items:center; gap:12px; }
+.pathway .agent{
+  font-size:30px; font-weight:500; color:var(--gold-deep);
+  border:1px solid var(--gold); border-radius:999px; padding:10px 22px; background:var(--ivory);
+  white-space:nowrap;
+}
+.pathway .tick{ width:1px; height:34px; background:var(--gold); opacity:.6; }
+
+/* ---- slide 9: therapeutic hierarchy ----------------------------------- */
+.pyramid{ display:flex; flex-direction:column; align-items:center; width:100%; }
+.pyramid{ margin:auto 0; }
+.pyramid .tier{
+  position:relative; height:100px; display:flex; flex-direction:column;
+  align-items:center; justify-content:center; margin-bottom:6px;
+}
+.pyramid .tier .bg{ position:absolute; inset:0; }
+.pyramid .tier .nm{
+  position:relative; font-size:30px; font-weight:600; letter-spacing:.24em;
+  text-transform:uppercase; color:var(--gold-deep);
+}
+.pyramid .tier .sb{ position:relative; font-size:30px; font-weight:300; color:var(--ink-2); margin-top:6px; }
+
+/* ---- slide 10: regenerative cascade ----------------------------------- */
+.cascade{ display:flex; width:100%; gap:12px; }
+.cascade{ margin-top:6px; }
+.cascade .cell{
+  position:relative; flex:1 1 0; border-left:3px solid var(--gold);
+  padding:34px 28px; display:flex; align-items:center;
+  font-size:34px; font-weight:400; line-height:1.28; color:var(--ink-2);
+}
+.cascade .cell:not(:last-child)::after{
+  content:''; position:absolute; right:-13px; top:50%; z-index:2;
+  width:0; height:0; border:9px solid transparent; border-left:12px solid var(--gold);
+  transform:translateY(-50%);
+}
+.cascade .cell:nth-child(1){ background:var(--tissue-1); }
+.cascade .cell:nth-child(2){ background:#F1E7D4; }
+.cascade .cell:nth-child(3){ background:#EDE1CB; }
+.cascade .cell:nth-child(4){ background:#E9DBC1; }
+.cascade .cell:nth-child(5){ background:#E4D5B7; }
+.cascade .cell:nth-child(6){ background:var(--tissue-3); }
+.categories{ display:flex; gap:22px; width:100%; }
+.categories .cat{
+  flex:1 1 0; border:1px solid var(--line); border-radius:12px; padding:26px 24px;
+  font-size:31px; font-weight:400; line-height:1.3; color:var(--ink-2); text-align:center;
+}
+.categories .cat b{ display:block; font-weight:600; color:var(--gold-deep); font-size:26px;
+  letter-spacing:.18em; text-transform:uppercase; margin-bottom:12px; }
+
+/* ---- slide 11: evidence spectrum -------------------------------------- */
+.spectrum{ width:100%; position:relative; height:430px; flex:0 0 430px; }
+.spectrum .axis{ position:absolute; left:0; right:0; top:200px; height:2px;
+  background:linear-gradient(90deg,var(--gold),#C9B08A 55%,var(--burgundy)); }
+.spectrum .cap{ position:absolute; top:212px; font-size:25px; font-weight:600;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--muted); }
+.spectrum .cap.l{ left:0; } .spectrum .cap.r{ right:0; }
+.spectrum .mk{ position:absolute; transform:translateX(-50%); text-align:center; width:300px; }
+.spectrum .mk .pin{ width:16px; height:16px; border-radius:50%; background:var(--gold);
+  margin:0 auto; border:3px solid var(--paper); box-shadow:0 0 0 1px var(--gold); }
+.spectrum .mk .stem{ width:1px; background:var(--line); margin:0 auto; }
+.spectrum .mk .t{ font-size:32px; font-weight:400; line-height:1.25; color:var(--ink-2); }
+.spectrum .mk.up{ bottom:224px; display:flex; flex-direction:column; justify-content:flex-end; }
+.spectrum .mk.up .stem{ height:34px; }
+.spectrum .mk.dn{ top:196px; }
+.spectrum .mk.dn .stem{ height:34px; }
+.spectrum .mk.dn .t{ margin-top:24px; }
+.spectrum .mk.up .t{ margin-bottom:6px; }
+
+/* ---- slide 13: take-home ---------------------------------------------- */
+.takehome{ display:flex; flex-direction:column; gap:40px; width:100%; margin:auto 0; }
+.takehome .row{ display:flex; align-items:baseline; gap:44px; border-bottom:1px solid var(--line); padding-bottom:34px; }
+.takehome .n{ font-family:var(--serif); font-size:60px; font-weight:600; color:var(--gold); width:96px; flex:0 0 96px; }
+.takehome .t{ font-family:var(--serif); font-size:82px; font-weight:600; color:var(--ink); }
+
+/* ---- slide 14: closing ------------------------------------------------- */
+.closing main{ flex-direction:column; justify-content:center; align-items:center; text-align:center; }
+.closing .name{ font-family:var(--serif); font-size:96px; font-weight:600; color:var(--ink); }
+.closing .cred{ margin-top:18px; font-size:30px; font-weight:300; letter-spacing:.06em; color:var(--muted); }
+.closing .handles{ margin-top:34px; font-size:32px; font-weight:400; color:var(--gold-deep); letter-spacing:.06em; }
+.closing .qrs{ display:flex; gap:120px; margin-top:64px; }
+.closing .qr{ text-align:center; }
+.closing .qr svg{ width:230px; height:230px; display:block; }
+.closing .qr .cap{ margin-top:20px; font-size:26px; font-weight:600; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--ink-2); }
+.closing .qr .url{ margin-top:10px; font-size:20px; font-weight:300; color:var(--muted); }
+
+/* ---- chrome: progress, notes, index ----------------------------------- */
+#progress{ position:fixed; left:0; bottom:0; height:3px; background:var(--gold); width:0;
+  transition:width .35s ease; z-index:40; }
+
+#notes{
+  position:fixed; left:0; right:0; bottom:0; height:38vh; z-index:50;
+  background:#1B1916; color:#E8E2D6; padding:30px 44px 34px;
+  transform:translateY(101%); transition:transform .3s ease; overflow:auto;
+  border-top:2px solid var(--gold);
+}
+#notes.open{ transform:none; }
+#notes .hd{ display:flex; gap:20px; align-items:baseline; margin-bottom:16px;
+  font-size:13px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); }
+#notes .hd .nx{ color:#9A9285; letter-spacing:.08em; text-transform:none; margin-left:auto; }
+#notes .bd{ font-size:17px; line-height:1.62; font-weight:300; max-width:1500px; }
+#notes .bd p + p{ margin-top:12px; }
+#notes .bd b{ color:#E3C87F; font-weight:600; }
+
+#index{
+  position:fixed; inset:0; z-index:60; background:rgba(20,18,15,.97);
+  display:none; padding:6vh 6vw; overflow:auto;
+}
+#index.open{ display:block; }
+#index h2{ font-family:var(--serif); color:var(--gold); font-size:30px; font-weight:600; margin-bottom:26px; }
+#index ol{ list-style:none; columns:2; column-gap:80px; }
+#index li{ break-inside:avoid; padding:11px 0; border-bottom:1px solid #2E2A24;
+  color:#E8E2D6; font-size:17px; font-weight:300; cursor:pointer; display:flex; gap:20px; }
+#index li:hover{ color:var(--gold); }
+#index li span{ font-family:var(--serif); color:var(--gold); width:34px; }
+
+#help{ position:fixed; right:14px; bottom:12px; z-index:40; font-size:11px;
+  letter-spacing:.14em; text-transform:uppercase; color:#6A6257; }
