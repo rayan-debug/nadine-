@@ -12,9 +12,10 @@ CONTENTS
     VI.  Home Care
    VII.  Topicals
   VIII.  Regenerative Injectables
-    IX.  Energy-Based Medicine
-     X.  Combination Therapy
-    XI.  The Future
+    IX.  The Injectable Protocol
+     X.  Energy-Based Medicine
+    XI.  Combination Therapy
+   XII.  The Future
 
 
 ==========================================================================
@@ -305,7 +306,12 @@ VIII-1t   PRP TECHNIQUE · HYPERPIGMENTATION
         Small, evenly distributed papules — no excessive
         blanching, no tissue distortion.
 
-VIII-1c   THE TRIPLE INJECTABLE CORE
+
+==========================================================================
+IX.  THE INJECTABLE PROTOCOL
+==========================================================================
+
+IX-1   THE TRIPLE INJECTABLE CORE
       Three agents, three different points on one pathway.
 
       Tranexamic acid
@@ -328,7 +334,7 @@ VIII-1c   THE TRIPLE INJECTABLE CORE
         glutathione is not a licensed lightening agent. Counsel
         accordingly.
 
-VIII-1a   AFTERCARE & COURSE
+IX-2   AFTERCARE & COURSE
 
       Afterwards
         Gentle compression — no vigorous massage.
@@ -337,7 +343,7 @@ VIII-1a   AFTERCARE & COURSE
         Three sessions, four weeks apart, then reassess on
         standardised photographs.
 
-VIII-2   SCAFFOLDS, STIMULATORS & SIGNALS
+IX-3   SCAFFOLDS, STIMULATORS & SIGNALS
 
       Scaffold & stimulate
         HA boosters hydrate; PLLA / CaHA build collagen — labia
@@ -346,7 +352,7 @@ VIII-2   SCAFFOLDS, STIMULATORS & SIGNALS
       Exosomes
         An active frontier.
 
-VIII-3   CONVERGENCE & SEQUENCING
+IX-4   CONVERGENCE & SEQUENCING
 
       Sequence, don’t stack
         Prime → stimulate → hydrate; energy first, biologic into
@@ -354,10 +360,10 @@ VIII-3   CONVERGENCE & SEQUENCING
 
 
 ==========================================================================
-IX.  ENERGY-BASED MEDICINE
+X.  ENERGY-BASED MEDICINE
 ==========================================================================
 
-IX-1   ABLATIVE & FRACTIONAL LASERS
+X-1   ABLATIVE & FRACTIONAL LASERS
 
       Wavelengths
         CO₂ builds collagen through fractional columns; Er:YAG
@@ -366,7 +372,7 @@ IX-1   ABLATIVE & FRACTIONAL LASERS
       Chromophore caution
         Lasers also heat melanin — real PIH and burn risk.
 
-IX-2   RADIOFREQUENCY MICRONEEDLING
+X-2   RADIOFREQUENCY MICRONEEDLING
 
       Melanin-safe
         RF has no chromophore — resistive heating bypasses
@@ -374,10 +380,10 @@ IX-2   RADIOFREQUENCY MICRONEEDLING
 
 
 ==========================================================================
-X.  COMBINATION THERAPY
+XI.  COMBINATION THERAPY
 ==========================================================================
 
-X-1   THE KABBOURA PROTOCOL
+XI-1   THE KABBOURA PROTOCOL
       Structure before surface.
 
       The sequence
@@ -390,10 +396,10 @@ X-1   THE KABBOURA PROTOCOL
 
 
 ==========================================================================
-XI.  THE FUTURE
+XII.  THE FUTURE
 ==========================================================================
 
-XI-1   THE EMERGING LANDSCAPE
+XII-1   THE EMERGING LANDSCAPE
 
       Now
         AI-assisted assessment, 3D imaging, pigment genomics,
@@ -407,4 +413,4 @@ XI-1   THE EMERGING LANDSCAPE
         Heavy marketing — appraise carefully.
 
 --------------------------------------------------------------------------
-11 chapters · 29 topics · 71 clinical points
+12 chapters · 29 topics · 71 clinical points

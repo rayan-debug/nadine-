@@ -1524,7 +1524,7 @@ HTML = """<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Intimate Ecosystem \u00b7 Chapter Illustrations</title>
-<meta name="description" content="Eleven coordinated chapter illustrations for The Intimate Ecosystem, in chapter order.">
+<meta name="description" content="Coordinated chapter illustrations for The Intimate Ecosystem, in chapter order.">
 <style>
   @font-face { font-family:'Cormorant Garamond'; src:url('../deck/fonts/CormorantGaramond-400.ttf') format('truetype'); font-weight:400; font-display:swap; }
   @font-face { font-family:'Cormorant Garamond'; src:url('../deck/fonts/CormorantGaramond-600.ttf') format('truetype'); font-weight:600; font-display:swap; }
@@ -1619,7 +1619,7 @@ HTML = """<!doctype html>
 <header>
   <p class="kicker">International Masterclass &middot; Regenerative Intimate Medicine</p>
   <h1>The Intimate Ecosystem</h1>
-  <p class="sub">Eleven coordinated chapter illustrations, in chapter order &middot; {{COUNT}}</p>
+  <p class="sub">Coordinated chapter illustrations, in chapter order &middot; {{COUNT}}</p>
   <div class="rule"></div>
 </header>
 <nav>{{NAV}}</nav>
@@ -1673,15 +1673,15 @@ SERIES = [
      "A depleted grey matrix, the same field activating under a stimulus, and tissue "
      "restored - dense collagen, new microvessels, held water.",
      "renders/08-regenerative-injectables.webp"),
-    ("09-energy-based-medicine.svg", "IX", "Energy-Based Medicine", "The depth map",
+    ("09-energy-based-medicine.svg", "X", "Energy-Based Medicine", "The depth map",
      "Fractional columns, superficial ablation and insulated needles in the same "
      "tissue - two of them lighting the epidermal melanin, one leaving it alone.",
      "renders/09-energy-based-medicine.webp"),
-    ("10-the-kabboura-protocol.svg", "X", "The Kabboura Protocol", "Five streams, one tissue",
+    ("10-the-kabboura-protocol.svg", "XI", "The Kabboura Protocol", "Five streams, one tissue",
      "Barrier, structure, regeneration, pigment and maintenance entering in order and "
      "braiding into a single restored field. Structure before surface.",
      "renders/10-the-kabboura-protocol.webp"),
-    ("11-the-future.svg", "XI", "The Future", "Helix, lattice, light",
+    ("11-the-future.svg", "XII", "The Future", "Helix, lattice, light",
      "Genomics, machine-read data and regenerating tissue as one continuous movement.",
      "renders/11-the-future.webp"),
 ]
@@ -1711,10 +1711,10 @@ def gallery():
       <figcaption>{note}</figcaption>
     </figure>''')
     nav = "".join(f'<a href="#{e[1].lower()}">{e[1]}</a>' for e in SERIES)
-    have = sum(1 for e in SERIES if e[5])
+    have = sum(1 for e in SERIES if e[5])   # every plate has a render
     doc = (HTML.replace("{{NAV}}", nav)
                .replace("{{PLATES}}", "\n".join(plates))
-               .replace("{{COUNT}}", f"{have} of {len(SERIES)} rendered"))
+               .replace("{{COUNT}}", f"{len(SERIES)} plates across twelve chapters"))
     (OUT / "index.html").write_text(doc)
     print(f"  {'index.html':32s} {len(doc)/1024:6.1f} kB  ({have} renders paired)")
 

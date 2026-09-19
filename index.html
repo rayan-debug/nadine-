@@ -282,7 +282,7 @@
     <div id="hint"><div class="t" id="hintText">Scroll to begin</div><div class="chev">⌄</div></div>
     <div id="dots"></div>
 
-    <div id="hubc"><div class="lbl" id="hubLbl">The Journey</div><div class="sub" id="hubSub">Eleven chapters · select a numeral</div></div>
+    <div id="hubc"><div class="lbl" id="hubLbl">The Journey</div><div class="sub" id="hubSub">Twelve chapters · select a numeral</div></div>
     <div id="uphint"><div class="c">⌃</div><div class="t">Scroll up to return</div></div>
     <div id="hubdone"><button class="btn" id="hubdoneBtn">Finish · Thank You →</button><div class="prog" id="hubprog">0 / 11 explored</div></div>
 
@@ -2666,10 +2666,12 @@ var qrcode = function() {
     'V-1':'images/V-1.webp',
     'VI-1':'images/VI-1.webp', 'VI-1b':'images/VI-1b.webp', 'VI-2':'images/VI-2.webp',
     'VII-1':'images/VII-1.webp', 'VII-2':'images/VII-2.webp', 'VII-3':'images/VII-3.webp',
-    'VIII-1':'images/VIII-1.webp', 'VIII-2':'images/VIII-2.webp', 'VIII-3':'images/VIII-3.webp',
-    'IX-1':'images/IX-1.webp', 'IX-2':'',
-    'X-1':'images/X-1.webp',
-    'XI-1':'images/XII-1.webp', 'XI-1b':'images/XII-1b.webp',
+    /* the key is the card id; the filename is just a filename, so the two drift
+       apart whenever chapters are renumbered. The key is what matters. */
+    'VIII-1':'images/VIII-1.webp', 'IX-3':'images/VIII-2.webp', 'IX-4':'images/VIII-3.webp',
+    'X-1':'images/IX-1.webp', 'X-2':'',
+    'XI-1':'images/X-1.webp',
+    'XII-1':'images/XII-1.webp', 'XII-1b':'images/XII-1b.webp',
   };
 
   const CH = [
@@ -2775,39 +2777,41 @@ var qrcode = function() {
                 {h:'Place',b:'Superficial intradermal micro-papules, <b>0.05–0.1 mL</b> per point, <b>0.5–1 cm</b> apart, spread evenly over the pigmented external skin.'},
                 {h:'Stay out of',b:'Mucosa, visible vessels and the <b>clitoral neurovascular area</b>.'},
                 {h:'Endpoint',b:'Small, evenly distributed papules — no excessive blanching, no tissue distortion.'}]},
-      { id:'VIII-1c', title:'The Triple Injectable Core', brief:'Tranexamic acid, niacinamide and glutathione converging on the melanin pathway.',
+    ]},
+    { r:'IX', t:'The Injectable Protocol', cards:[
+      { id:'IX-1', title:'The Triple Injectable Core', brief:'Tranexamic acid, niacinamide and glutathione converging on the melanin pathway.',
         lead:'Three agents, three different points on one pathway.',
         blocks:[{h:'Tranexamic acid',b:'Damps the plasmin-driven signalling that wakes the melanocyte.'},
                 {h:'Niacinamide',b:'Blocks <b>melanosome transfer</b> into the keratinocyte.'},
                 {h:'Glutathione',b:'Shifts melanogenesis away from eumelanin, and takes out the oxidative drive behind it.'},
                 {h:'Why combine',b:'Suppression at signal, synthesis <b>and</b> transfer — multi-pathway, not a single enzyme block.'},
                 {h:'Be honest',b:'Off-label, with largely uncontrolled data; injectable glutathione is <b>not</b> a licensed lightening agent. Counsel accordingly.'}]},
-      { id:'VIII-1a', title:'Aftercare & Course',
+      { id:'IX-2', title:'Aftercare & Course',
         blocks:[{h:'Afterwards',b:'Gentle compression — no vigorous massage.'},
                 {h:'Course',b:'Three sessions, four weeks apart, then reassess on <b>standardised photographs</b>.'}]},
-      { id:'VIII-2', title:'Scaffolds, Stimulators & Signals', brief:'Panel of HA boosters, biostimulators and an exosome caution flag.',
+      { id:'IX-3', title:'Scaffolds, Stimulators & Signals', brief:'Panel of HA boosters, biostimulators and an exosome caution flag.',
         blocks:[{h:'Scaffold & stimulate',b:'HA boosters hydrate; PLLA / CaHA build collagen — <b>labia majora only</b>.'},
                 {h:'Exosomes',b:'An active frontier.'}]},
-      { id:'VIII-3', title:'Convergence & Sequencing', brief:'Signal + scaffold + structure converging on restored tissue.',
+      { id:'IX-4', title:'Convergence & Sequencing', brief:'Signal + scaffold + structure converging on restored tissue.',
         blocks:[{h:'Sequence, don’t stack',b:'Prime → stimulate → hydrate; energy first, biologic into primed tissue.'}]},
     ]},
-    { r:'IX', t:'Energy-Based Medicine', cards:[
-      { id:'IX-1', title:'Ablative & Fractional Lasers', brief:'CO₂ vs Er:YAG water-absorption diagram.',
+    { r:'X', t:'Energy-Based Medicine', cards:[
+      { id:'X-1', title:'Ablative & Fractional Lasers', brief:'CO₂ vs Er:YAG water-absorption diagram.',
         blocks:[{h:'Wavelengths',b:'CO₂ builds collagen through fractional columns; Er:YAG ablates very superficially.'},
                 {h:'Chromophore caution',b:'Lasers also heat melanin — real PIH and burn risk.'}]},
-      { id:'IX-2', title:'Radiofrequency Microneedling', brief:'RF needle-depth schematic sparing the epidermis.',
+      { id:'X-2', title:'Radiofrequency Microneedling', brief:'RF needle-depth schematic sparing the epidermis.',
         blocks:[{h:'Melanin-safe',b:'RF has <b>no chromophore</b> — resistive heating bypasses epidermal melanin (Morpheus8, Scarlet).'}]},
     ]},
-    { r:'X', t:'Combination Therapy', cards:[
-      { id:'X-1', title:'The Kabboura Protocol', brief:'Five-step protocol flow converging on restored tissue.',
+    { r:'XI', t:'Combination Therapy', cards:[
+      { id:'XI-1', title:'The Kabboura Protocol', brief:'Five-step protocol flow converging on restored tissue.',
         lead:'Structure before surface.',
         blocks:[{h:'The sequence',b:'Restore the barrier → rebuild structure → regenerate quality → refine pigment → maintain.'},
                 {h:'Read together',b:'Volume loss, pigment, laxity and dryness are assessed as one picture.'}]},
     ]},
-    { r:'XI', t:'The Future', cards:[
-      { id:'XI-1', title:'The Emerging Landscape', brief:'A helix, data lattice and regenerating tissue merging into light.',
-        media:[{key:'XI-1',brief:'A helix, data lattice and regenerating tissue merging into light.'},
-               {key:'XI-1b',brief:'NAD⁺ and cellular energy — the rationale, and the honest limit of it.'}],
+    { r:'XII', t:'The Future', cards:[
+      { id:'XII-1', title:'The Emerging Landscape', brief:'A helix, data lattice and regenerating tissue merging into light.',
+        media:[{key:'XII-1',brief:'A helix, data lattice and regenerating tissue merging into light.'},
+               {key:'XII-1b',brief:'NAD⁺ and cellular energy — the rationale, and the honest limit of it.'}],
         blocks:[{h:'Now',b:'AI-assisted assessment, 3D imaging, pigment genomics, established fat grafting.'},
                 {h:'Emerging',b:'Next-generation exosomes, ECM engineering, longevity science.'},
                 {h:'Caveat',b:'Heavy marketing — appraise carefully.'}]},
@@ -2979,6 +2983,7 @@ var qrcode = function() {
     'art/renders/06-home-care.webp',
     'art/renders/07-topicals.webp',
     'art/renders/08-regenerative-injectables.webp',
+    null,                                        // IX The Injectable Protocol — no render yet
     'art/renders/09-energy-based-medicine.webp',
     'art/renders/10-the-kabboura-protocol.webp',
     'art/renders/11-the-future.webp',
@@ -3080,7 +3085,7 @@ var qrcode = function() {
     hub.visible=true; hubInner.scale.set(instant?1:.9,instant?1:.9,1);
     gsap.to(hubInner.scale,{x:1,y:1,duration:instant?0:1.1,ease:'expo.out'});
     gsap.to(brand,{opacity:1,duration:instant?0:.8});
-    hubLbl.textContent='The Journey'; hubSub.textContent='Eleven chapters · select a numeral';
+    hubLbl.textContent='The Journey'; hubSub.textContent='Twelve chapters · select a numeral';
     gsap.to(hubc,{opacity:1,duration:instant?0:.9,delay:instant?0:.2});
     hubMatOpacity(0); gsap.to({v:0},{v:1,duration:instant?0:1.0,onUpdate:function(){hubMatOpacity(this.targets()[0].v);}});
     gsap.to(uphint,{opacity:1,duration:instant?0:.6,delay:instant?0:.5});
@@ -3109,7 +3114,7 @@ var qrcode = function() {
     gsap.to(hubInner.scale,{x:1,y:1,duration:instant?0:.9,ease:'expo.out'});
     gsap.to({v:0},{v:1,duration:instant?0:.7,onUpdate:function(){hubMatOpacity(this.targets()[0].v);}});
     gsap.to(camera.position,{z:BASE_Z,duration:instant?0:.9,ease:'expo.out'});
-    hubLbl.textContent='The Journey'; hubSub.textContent='Eleven chapters · select a numeral';
+    hubLbl.textContent='The Journey'; hubSub.textContent='Twelve chapters · select a numeral';
     gsap.to(hubc,{opacity:1,duration:instant?0:.7,delay:instant?0:.15});
     gsap.to(uphint,{opacity:1,duration:instant?0:.6,delay:instant?0:.25});
     hubdone.style.pointerEvents='auto'; updateHubDone(); gsap.to(hubdone,{opacity:1,duration:instant?0:.6,delay:instant?0:.3});
@@ -3142,7 +3147,7 @@ var qrcode = function() {
     hub.visible=true;
     gsap.to({v:0},{v:1,duration:instant?0:.7,onUpdate:function(){hubMatOpacity(this.targets()[0].v);}});
     gsap.to(camera.position,{z:BASE_Z,duration:instant?0:.9,ease:'expo.out'});
-    hubLbl.textContent='The Journey'; hubSub.textContent='Eleven chapters · select a numeral';
+    hubLbl.textContent='The Journey'; hubSub.textContent='Twelve chapters · select a numeral';
     gsap.to(hubc,{opacity:1,duration:instant?0:.7,delay:instant?0:.15});
     hubdone.style.pointerEvents='auto'; updateHubDone(); gsap.to(hubdone,{opacity:1,duration:instant?0:.6,delay:instant?0:.2});
     gsap.to(uphint,{opacity:1,duration:instant?0:.6,delay:instant?0:.25});
@@ -3227,7 +3232,7 @@ var qrcode = function() {
     hovered=h; document.body.style.cursor = h>=0?'pointer':'default';
     if(h>=0){ const n=nodes[h]; gsap.to(n.g.scale,{x:1.18,y:1.18,duration:.45,ease:'expo.out'}); gsap.to(n.ring.material,{opacity:1,duration:.4});
       hubLbl.style.opacity=0; setTimeout(()=>{ hubLbl.textContent=CH[h].t; hubSub.textContent='Chapter '+CH[h].r; hubLbl.style.opacity=1; },140);
-    } else { hubLbl.style.opacity=0; setTimeout(()=>{ hubLbl.textContent='The Journey'; hubSub.textContent='Eleven chapters · select a numeral'; hubLbl.style.opacity=1; },140); }
+    } else { hubLbl.style.opacity=0; setTimeout(()=>{ hubLbl.textContent='The Journey'; hubSub.textContent='Twelve chapters · select a numeral'; hubLbl.style.opacity=1; },140); }
   }
   let downXY=null;
   window.addEventListener('pointerdown',e=>{ downXY=[e.clientX,e.clientY]; });
