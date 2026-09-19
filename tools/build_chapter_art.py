@@ -1651,7 +1651,7 @@ SERIES = [
     ("03-why-patients-come.svg", "III", "Why Patients Come", "Three domains, one journey",
      "Physical, functional and psychological concern overlapping on one luminous "
      "centre, with the journey from silent concern to restoration opening beside them.",
-     None),
+     "renders/03-why-patients-come.webp"),
     ("04-clinical-assessment.svg", "IV", "Clinical Assessment", "What the eye has to separate",
      "One field read three ways - diffuse pigment, a sclerotic band, a fixed irregular "
      "lesion - and the one that must never be missed ringed in gold.",
@@ -1659,7 +1659,7 @@ SERIES = [
     ("05-treatment-pyramid.svg", "V", "The Treatment Pyramid", "Six tiers, climbed slowly",
      "Lifestyle, home care, topicals, injectables, energy, surgery. The ascent is "
      "dotted up the left; the apex is small because it is the exception.",
-     None),
+     "renders/05-treatment-pyramid.webp"),
     ("06-home-care.svg", "VI", "Home Care", "The barrier, and the cycle it interrupts",
      "Intact lipid lamellae, and the loop friction starts - shear, inflammation, "
      "melanocyte activation, pigment - with the barrier stopping two of its arms.",
