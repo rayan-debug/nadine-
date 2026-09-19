@@ -1680,7 +1680,7 @@ SERIES = [
     ("10-the-kabboura-protocol.svg", "X", "The Kabboura Protocol", "Five streams, one tissue",
      "Barrier, structure, regeneration, pigment and maintenance entering in order and "
      "braiding into a single restored field. Structure before surface.",
-     None),
+     "renders/10-the-kabboura-protocol.webp"),
     ("11-the-future.svg", "XI", "The Future", "Helix, lattice, light",
      "Genomics, machine-read data and regenerating tissue as one continuous movement.",
      None),

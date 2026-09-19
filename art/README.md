@@ -3,7 +3,7 @@
 Eleven coordinated plates, one per hub chapter, displayed in chapter order in
 [`index.html`](index.html).
 
-Each chapter has a **vector plate** here, and nine of them also have a
+Each chapter has a **vector plate** here, and ten of them also have a
 **render** in [`renders/`](renders/) — the painterly 1600×900 version of the same
 composition. The gallery shows them side by side.
 
@@ -18,10 +18,10 @@ composition. The gallery shows them side by side.
 | VII | Topicals | [`07-topicals.svg`](07-topicals.svg) | [`renders/07-topicals.webp`](renders/07-topicals.webp) |
 | VIII | Regenerative Injectables | [`08-regenerative-injectables.svg`](08-regenerative-injectables.svg) | [`renders/08-regenerative-injectables.webp`](renders/08-regenerative-injectables.webp) |
 | IX | Energy-Based Medicine | [`09-energy-based-medicine.svg`](09-energy-based-medicine.svg) | [`renders/09-energy-based-medicine.webp`](renders/09-energy-based-medicine.webp) |
-| X | The Kabboura Protocol | [`10-the-kabboura-protocol.svg`](10-the-kabboura-protocol.svg) | — |
+| X | The Kabboura Protocol | [`10-the-kabboura-protocol.svg`](10-the-kabboura-protocol.svg) | [`renders/10-the-kabboura-protocol.webp`](renders/10-the-kabboura-protocol.webp) |
 | XI | The Future | [`11-the-future.svg`](11-the-future.svg) | — |
 
-Chapters **X** and **XI** are vector-only for now.
+Chapter **XI** is vector-only for now.
 
 ## The system
 
