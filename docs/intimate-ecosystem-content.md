@@ -1,6 +1,6 @@
 # The Intimate Ecosystem — full text
 
-Every word in the hub, extracted from `index.html`. Twelve chapters, thirty-five cards.
+Every word in the hub, extracted from `index.html`. Twelve chapters, 29 cards.
 
 - **Lecture:** The Intimate Ecosystem — From Normal Anatomy to Regenerative Aesthetics
 - **Context:** International Masterclass · Regenerative Intimate Medicine
@@ -64,10 +64,11 @@ Hub label: **The Journey** · *Twelve chapters · select a numeral*
 | V | The Treatment Pyramid | 1 |
 | VI | Home Care | 2 |
 | VII | Topicals | 3 |
-| VIII | Regenerative Injectables | 6 |
-| IX | Energy-Based Medicine | 2 |
-| X | Combination Therapy | 1 |
-| XI | The Future | 1 |
+| VIII | Regenerative Injectables | 2 |
+| IX | The Injectable Protocol | 4 |
+| X | Energy-Based Medicine | 2 |
+| XI | Combination Therapy | 1 |
+| XII | The Future | 1 |
 
 
 ---
@@ -323,7 +324,12 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 <sub>Plate `VIII-1t` *no image yet — placeholder* · art brief: Injection map — superficial intradermal micro-papules across the pigmented external skin.</sub>
 
-### VIII-1c — The Triple Injectable Core
+
+---
+
+## IX · The Injectable Protocol
+
+### IX-1 — The Triple Injectable Core
 
 > *Three agents, three different points on one pathway.*
 
@@ -337,53 +343,53 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 **Be honest** — Off-label, with largely uncontrolled data; injectable glutathione is **not** a licensed lightening agent. Counsel accordingly.
 
-<sub>Plate `VIII-1c` *no image yet — placeholder* · art brief: Tranexamic acid, niacinamide and glutathione converging on the melanin pathway.</sub>
+<sub>Plate `IX-1` *no image yet — placeholder* · art brief: Tranexamic acid, niacinamide and glutathione converging on the melanin pathway.</sub>
 
-### VIII-1a — Aftercare & Course
+### IX-2 — Aftercare & Course
 
 **Afterwards** — Gentle compression — no vigorous massage.
 
 **Course** — Three sessions, four weeks apart, then reassess on **standardised photographs**.
 
-### VIII-2 — Scaffolds, Stimulators & Signals
+### IX-3 — Scaffolds, Stimulators & Signals
 
 **Scaffold & stimulate** — HA boosters hydrate; PLLA / CaHA build collagen — **labia majora only**.
 
 **Exosomes** — An active frontier.
 
-<sub>Plate `VIII-2` `images/VIII-2.webp` · art brief: Panel of HA boosters, biostimulators and an exosome caution flag.</sub>
+<sub>Plate `IX-3` `images/VIII-2.webp` · art brief: Panel of HA boosters, biostimulators and an exosome caution flag.</sub>
 
-### VIII-3 — Convergence & Sequencing
+### IX-4 — Convergence & Sequencing
 
 **Sequence, don’t stack** — Prime → stimulate → hydrate; energy first, biologic into primed tissue.
 
-<sub>Plate `VIII-3` `images/VIII-3.webp` · art brief: Signal + scaffold + structure converging on restored tissue.</sub>
+<sub>Plate `IX-4` `images/VIII-3.webp` · art brief: Signal + scaffold + structure converging on restored tissue.</sub>
 
 
 ---
 
-## IX · Energy-Based Medicine
+## X · Energy-Based Medicine
 
-### IX-1 — Ablative & Fractional Lasers
+### X-1 — Ablative & Fractional Lasers
 
 **Wavelengths** — CO₂ builds collagen through fractional columns; Er:YAG ablates very superficially.
 
 **Chromophore caution** — Lasers also heat melanin — real PIH and burn risk.
 
-<sub>Plate `IX-1` `images/IX-1.webp` · art brief: CO₂ vs Er:YAG water-absorption diagram.</sub>
+<sub>Plate `X-1` `images/IX-1.webp` · art brief: CO₂ vs Er:YAG water-absorption diagram.</sub>
 
-### IX-2 — Radiofrequency Microneedling
+### X-2 — Radiofrequency Microneedling
 
 **Melanin-safe** — RF has **no chromophore** — resistive heating bypasses epidermal melanin (Morpheus8, Scarlet).
 
-<sub>Plate `IX-2` *no image yet — placeholder* · art brief: RF needle-depth schematic sparing the epidermis.</sub>
+<sub>Plate `X-2` *no image yet — placeholder* · art brief: RF needle-depth schematic sparing the epidermis.</sub>
 
 
 ---
 
-## X · Combination Therapy
+## XI · Combination Therapy
 
-### X-1 — The Kabboura Protocol
+### XI-1 — The Kabboura Protocol
 
 > *Structure before surface.*
 
@@ -391,14 +397,14 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 **Read together** — Volume loss, pigment, laxity and dryness are assessed as one picture.
 
-<sub>Plate `X-1` `images/X-1.webp` · art brief: Five-step protocol flow converging on restored tissue.</sub>
+<sub>Plate `XI-1` `images/X-1.webp` · art brief: Five-step protocol flow converging on restored tissue.</sub>
 
 
 ---
 
-## XI · The Future
+## XII · The Future
 
-### XI-1 — The Emerging Landscape
+### XII-1 — The Emerging Landscape
 
 **Now** — AI-assisted assessment, 3D imaging, pigment genomics, established fat grafting.
 
@@ -406,9 +412,9 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 
 **Caveat** — Heavy marketing — appraise carefully.
 
-<sub>Plate `XI-1` `images/XII-1.webp` · art brief: A helix, data lattice and regenerating tissue merging into light.</sub>
+<sub>Plate `XII-1` `images/XII-1.webp` · art brief: A helix, data lattice and regenerating tissue merging into light.</sub>
 
-<sub>Plate `XI-1b` `images/XII-1b.webp` · art brief: NAD⁺ and cellular energy — the rationale, and the honest limit of it.</sub>
+<sub>Plate `XII-1b` `images/XII-1b.webp` · art brief: NAD⁺ and cellular energy — the rationale, and the honest limit of it.</sub>
 
 
 ---

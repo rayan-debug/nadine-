@@ -3,7 +3,7 @@
 
 Evaluates the BEATS and CH data structures in the page with node, then writes
 docs/intimate-ecosystem-content.md - the full text of the intro sequence, all
-twelve chapters and thirty-five cards, and the closing.
+every chapter and card, and the closing.
 """
 
 import json
@@ -105,9 +105,16 @@ def main():
     L = []
     w = L.append
 
+    # counts come from the page, so they cannot drift when chapters are split
+    WORDS = {11: "Eleven", 12: "Twelve", 13: "Thirteen"}
+    n_ch = len(chapters)
+    n_card = sum(len(c["cards"]) for c in chapters)
+    ch_word = WORDS.get(n_ch, str(n_ch))
+    hub_sub = f"{ch_word} chapters \u00b7 select a numeral"
+
     w("# The Intimate Ecosystem — full text\n")
     w("Every word in the hub, extracted from `index.html`. "
-      "Twelve chapters, thirty-five cards.\n")
+      f"{ch_word} chapters, {n_card} cards.\n")
     w("- **Lecture:** The Intimate Ecosystem — From Normal Anatomy to "
       "Regenerative Aesthetics")
     w("- **Context:** International Masterclass · Regenerative Intimate Medicine")
@@ -143,8 +150,8 @@ def main():
     w("---\n")
 
     # ---- the hub -------------------------------------------------------
-    w("## The hub — twelve chapters\n")
-    w("Hub label: **The Journey** · *Twelve chapters · select a numeral*\n")
+    w(f"## The hub — {ch_word.lower()} chapters\n")
+    w(f"Hub label: **The Journey** · *{hub_sub}*\n")
     w("| # | Chapter | Cards |")
     w("|---|---|---|")
     for c in chapters:
@@ -193,9 +200,9 @@ def main():
     for a, b in [("Loader", "The Intimate Ecosystem"),
                  ("Scroll hint", "Scroll to begin"),
                  ("Hub label", "The Journey"),
-                 ("Hub sublabel", "Twelve chapters · select a numeral"),
+                 ("Hub sublabel", hub_sub),
                  ("Return hint", "Scroll up to return"),
-                 ("Hub progress", "0 / 12 explored"),
+                 ("Hub progress", f"0 / {n_ch} explored"),
                  ("Finish button", "Finish · Thank You →"),
                  ("Viewer exit", "Hub ✕"),
                  ("Thank-you back", "↑ Return to the hub"),

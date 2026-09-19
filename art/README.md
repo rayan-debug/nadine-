@@ -3,7 +3,9 @@
 Eleven coordinated plates, one per hub chapter, displayed in chapter order in
 [`index.html`](index.html).
 
-Every chapter has both a **vector plate** here and a **render** in
+Eleven plates over twelve chapters: chapter IX, *The Injectable Protocol*, was
+split out of VIII after this series was drawn and has no plate of its own yet.
+Every other chapter has both a **vector plate** here and a **render** in
 [`renders/`](renders/) — the painterly 1600×900 version of the same composition.
 The gallery shows them side by side.
 
@@ -17,9 +19,9 @@ The gallery shows them side by side.
 | VI | Home Care | [`06-home-care.svg`](06-home-care.svg) | [`renders/06-home-care.webp`](renders/06-home-care.webp) |
 | VII | Topicals | [`07-topicals.svg`](07-topicals.svg) | [`renders/07-topicals.webp`](renders/07-topicals.webp) |
 | VIII | Regenerative Injectables | [`08-regenerative-injectables.svg`](08-regenerative-injectables.svg) | [`renders/08-regenerative-injectables.webp`](renders/08-regenerative-injectables.webp) |
-| IX | Energy-Based Medicine | [`09-energy-based-medicine.svg`](09-energy-based-medicine.svg) | [`renders/09-energy-based-medicine.webp`](renders/09-energy-based-medicine.webp) |
-| X | The Kabboura Protocol | [`10-the-kabboura-protocol.svg`](10-the-kabboura-protocol.svg) | [`renders/10-the-kabboura-protocol.webp`](renders/10-the-kabboura-protocol.webp) |
-| XI | The Future | [`11-the-future.svg`](11-the-future.svg) | [`renders/11-the-future.webp`](renders/11-the-future.webp) |
+| X | Energy-Based Medicine | [`09-energy-based-medicine.svg`](09-energy-based-medicine.svg) | [`renders/09-energy-based-medicine.webp`](renders/09-energy-based-medicine.webp) |
+| XI | The Kabboura Protocol | [`10-the-kabboura-protocol.svg`](10-the-kabboura-protocol.svg) | [`renders/10-the-kabboura-protocol.webp`](renders/10-the-kabboura-protocol.webp) |
+| XII | The Future | [`11-the-future.svg`](11-the-future.svg) | [`renders/11-the-future.webp`](renders/11-the-future.webp) |
 
 ## The system
 
