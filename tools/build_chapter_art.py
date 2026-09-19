@@ -1683,7 +1683,7 @@ SERIES = [
      "renders/10-the-kabboura-protocol.webp"),
     ("11-the-future.svg", "XI", "The Future", "Helix, lattice, light",
      "Genomics, machine-read data and regenerating tissue as one continuous movement.",
-     None),
+     "renders/11-the-future.webp"),
 ]
 
 
