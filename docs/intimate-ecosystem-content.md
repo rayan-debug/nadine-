@@ -64,7 +64,7 @@ Hub label: **The Journey** · *Twelve chapters · select a numeral*
 | V | The Treatment Pyramid | 1 |
 | VI | Home Care | 2 |
 | VII | Topicals | 3 |
-| VIII | Regenerative Injectables | 3 |
+| VIII | Regenerative Injectables | 6 |
 | IX | Energy-Based Medicine | 2 |
 | X | Combination Therapy | 1 |
 | XI | The Future | 1 |
@@ -304,6 +304,46 @@ Reactivate the tissue’s own biology and return it toward **homeostasis** — t
 **PN** — Higher-weight polynucleotides — a hydrating scaffold.
 
 <sub>Plate `VIII-1` `images/VIII-1.webp` · art brief: Luminous regenerative motif — fibroblasts, collagen and new microvessels in gold.</sub>
+
+### VIII-1t — PRP Technique · Hyperpigmentation
+
+> *Technique is the difference between a result and a complication.*
+
+**Prepare** — PRP in a sterile **closed system**, transferred into several 1 mL Luer-lock syringes.
+
+**Ready the field** — Topical anaesthetic for 20–30 minutes, removed completely, then antisepsis.
+
+**Needle** — A fresh **30–32G, 4 mm** mesotherapy needle per treatment zone — replace it the moment it blunts.
+
+**Place** — Superficial intradermal micro-papules, **0.05–0.1 mL** per point, **0.5–1 cm** apart, spread evenly over the pigmented external skin.
+
+**Stay out of** — Mucosa, visible vessels and the **clitoral neurovascular area**.
+
+**Endpoint** — Small, evenly distributed papules — no excessive blanching, no tissue distortion.
+
+<sub>Plate `VIII-1t` *no image yet — placeholder* · art brief: Injection map — superficial intradermal micro-papules across the pigmented external skin.</sub>
+
+### VIII-1c — The Triple Injectable Core
+
+> *Three agents, three different points on one pathway.*
+
+**Tranexamic acid** — Damps the plasmin-driven signalling that wakes the melanocyte.
+
+**Niacinamide** — Blocks **melanosome transfer** into the keratinocyte.
+
+**Glutathione** — Shifts melanogenesis away from eumelanin, and takes out the oxidative drive behind it.
+
+**Why combine** — Suppression at signal, synthesis **and** transfer — multi-pathway, not a single enzyme block.
+
+**Be honest** — Off-label, with largely uncontrolled data; injectable glutathione is **not** a licensed lightening agent. Counsel accordingly.
+
+<sub>Plate `VIII-1c` *no image yet — placeholder* · art brief: Tranexamic acid, niacinamide and glutathione converging on the melanin pathway.</sub>
+
+### VIII-1a — Aftercare & Course
+
+**Afterwards** — Gentle compression — no vigorous massage.
+
+**Course** — Three sessions, four weeks apart, then reassess on **standardised photographs**.
 
 ### VIII-2 — Scaffolds, Stimulators & Signals
 
