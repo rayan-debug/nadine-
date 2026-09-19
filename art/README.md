@@ -6,7 +6,7 @@ Eleven coordinated plates, one per hub chapter, displayed in chapter order in
 Eleven plates over twelve chapters: chapter IX, *The Injectable Protocol*, was
 split out of VIII after this series was drawn and has no plate of its own yet.
 Every other chapter has both a **vector plate** here and a **render** in
-[`renders/`](renders/) — the painterly 1600×900 version of the same composition.
+[`renders/`](renders/) — the painterly version of the same composition, at 3200×1800 (2× the canvas).
 The gallery shows them side by side.
 
 | # | Chapter | Vector plate | Render |
@@ -44,7 +44,7 @@ One atmosphere across all eleven:
 
 Every vector file is standalone and editable at 1600×900 — gradients, masks and
 groups survive into Illustrator, Affinity and Figma. The renders are WebP at the
-same 1600×900 canvas, so the two are drop-in interchangeable in a slide or on
+same 16:9 canvas at 2× (3200×1800), so the two are drop-in interchangeable in a slide or on
 the page.
 
 ## Rebuilding
