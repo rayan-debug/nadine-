@@ -1585,6 +1585,12 @@ HTML = """<!doctype html>
     margin:4px 0 0; font-size:11px; letter-spacing:.2em; text-transform:uppercase;
     color:var(--gold-d); font-weight:500;
   }
+  .pair { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .pair.one { grid-template-columns:1fr; max-width:none; }
+  .shot span {
+    display:block; margin-top:9px; font-size:9.5px; letter-spacing:.24em;
+    text-transform:uppercase; color:var(--warm); opacity:.8;
+  }
   .plate img {
     display:block; width:100%; height:auto; border:1px solid var(--line);
     border-radius:3px; background:var(--paper);
@@ -1602,6 +1608,7 @@ HTML = """<!doctype html>
     header { padding:56px 20px 28px; }
     .meta { gap:12px; } .num { min-width:38px; font-size:24px; }
     .plate { margin-bottom:64px; }
+    .pair { grid-template-columns:1fr; gap:26px; }
   }
   @media print {
     nav { display:none; } .plate { break-inside:avoid; margin-bottom:38px; }
@@ -1612,7 +1619,7 @@ HTML = """<!doctype html>
 <header>
   <p class="kicker">International Masterclass &middot; Regenerative Intimate Medicine</p>
   <h1>The Intimate Ecosystem</h1>
-  <p class="sub">Eleven coordinated chapter illustrations, in chapter order</p>
+  <p class="sub">Eleven coordinated chapter illustrations, in chapter order &middot; {{COUNT}}</p>
   <div class="rule"></div>
 </header>
 <nav>{{NAV}}</nav>
@@ -1628,49 +1635,70 @@ HTML = """<!doctype html>
 ALL = [ch1_mindset, ch2_anatomy, ch3_why, ch4_assessment, ch5_pyramid, ch6_home_care,
        ch7_topicals, ch8_injectables, ch9_energy, ch10_protocol, ch11_future]
 
-# file, numeral, chapter, plate title, what the plate is saying
+# file, numeral, chapter, plate title, what the plate is saying, rendered plate
+# (the painterly 1600x900 render, where one exists yet - None means the vector
+# plate is carrying the chapter on its own for now)
 SERIES = [
     ("01-the-mindset.svg", "I", "The Mindset", "The band of normal",
      "Seven forms differing in length, width, symmetry and tone - every one of them "
-     "inside a single unbroken span. There is no cut-off to draw."),
+     "inside a single unbroken span. There is no cut-off to draw.",
+     "renders/01-the-mindset.webp"),
     ("02-normal-anatomy.svg", "II", "Normal Anatomy", "The layered field",
      "Microbiome above the surface; keratinised epithelium thinning into mucosa; the "
      "basement membrane in gold with melanocytes ranged along it; collagen, elastin, "
-     "fibroblasts, vessels, nerves and fat beneath."),
+     "fibroblasts, vessels, nerves and fat beneath.",
+     "renders/02-normal-anatomy.webp"),
     ("03-why-patients-come.svg", "III", "Why Patients Come", "Three domains, one journey",
      "Physical, functional and psychological concern overlapping on one luminous "
-     "centre, with the journey from silent concern to restoration opening beside them."),
+     "centre, with the journey from silent concern to restoration opening beside them.",
+     None),
     ("04-clinical-assessment.svg", "IV", "Clinical Assessment", "What the eye has to separate",
      "One field read three ways - diffuse pigment, a sclerotic band, a fixed irregular "
-     "lesion - and the one that must never be missed ringed in gold."),
+     "lesion - and the one that must never be missed ringed in gold.",
+     "renders/04-clinical-assessment.webp"),
     ("05-treatment-pyramid.svg", "V", "The Treatment Pyramid", "Six tiers, climbed slowly",
      "Lifestyle, home care, topicals, injectables, energy, surgery. The ascent is "
-     "dotted up the left; the apex is small because it is the exception."),
+     "dotted up the left; the apex is small because it is the exception.",
+     None),
     ("06-home-care.svg", "VI", "Home Care", "The barrier, and the cycle it interrupts",
      "Intact lipid lamellae, and the loop friction starts - shear, inflammation, "
-     "melanocyte activation, pigment - with the barrier stopping two of its arms."),
+     "melanocyte activation, pigment - with the barrier stopping two of its arms.",
+     "renders/06-home-care.webp"),
     ("07-topicals.svg", "VII", "Topicals", "The pathway, and the four places it can be held",
      "Tyrosine to melanosome to keratinocyte, with enzyme, signal, transfer and "
-     "turnover marked as holds, over a gentle-to-never gradient."),
+     "turnover marked as holds, over a gentle-to-never gradient.",
+     "renders/07-topicals.webp"),
     ("08-regenerative-injectables.svg", "VIII", "Regenerative Injectables",
      "Depletion, activation, restoration",
      "A depleted grey matrix, the same field activating under a stimulus, and tissue "
-     "restored - dense collagen, new microvessels, held water."),
+     "restored - dense collagen, new microvessels, held water.",
+     "renders/08-regenerative-injectables.webp"),
     ("09-energy-based-medicine.svg", "IX", "Energy-Based Medicine", "The depth map",
      "Fractional columns, superficial ablation and insulated needles in the same "
-     "tissue - two of them lighting the epidermal melanin, one leaving it alone."),
+     "tissue - two of them lighting the epidermal melanin, one leaving it alone.",
+     "renders/09-energy-based-medicine.webp"),
     ("10-the-kabboura-protocol.svg", "X", "The Kabboura Protocol", "Five streams, one tissue",
      "Barrier, structure, regeneration, pigment and maintenance entering in order and "
-     "braiding into a single restored field. Structure before surface."),
+     "braiding into a single restored field. Structure before surface.",
+     None),
     ("11-the-future.svg", "XI", "The Future", "Helix, lattice, light",
-     "Genomics, machine-read data and regenerating tissue as one continuous movement."),
+     "Genomics, machine-read data and regenerating tissue as one continuous movement.",
+     None),
 ]
 
 
 def gallery():
     """The series, displayed in chapter order."""
     plates = []
-    for i, (f, num, chap, title, note) in enumerate(SERIES):
+    for i, (f, num, chap, title, note, render) in enumerate(SERIES):
+        load = "eager" if i < 2 else "lazy"
+        shots = []
+        if render:
+            shots.append(f'''<div class="shot"><img src="{render}" alt="{title}" '''
+                         f'''loading="{load}" width="1600" height="900"><span>Render</span></div>''')
+        shots.append(f'''<div class="shot"><img src="{f}" alt="{title}" '''
+                     f'''loading="{load}" width="1600" height="900">'''
+                     f'''<span>Vector plate</span></div>''')
         plates.append(f'''    <figure class="plate" id="{num.lower()}">
       <div class="meta">
         <span class="num">{num}</span>
@@ -1679,13 +1707,16 @@ def gallery():
           <p class="t">{title}</p>
         </div>
       </div>
-      <img src="{f}" alt="{title}" loading="{"eager" if i < 2 else "lazy"}" width="1600" height="900">
+      <div class="pair{'' if render else ' one'}">{"".join(shots)}</div>
       <figcaption>{note}</figcaption>
     </figure>''')
-    nav = "".join(f'<a href="#{n.lower()}">{n}</a>' for _, n, *_ in SERIES)
-    doc = HTML.replace("{{NAV}}", nav).replace("{{PLATES}}", "\n".join(plates))
+    nav = "".join(f'<a href="#{e[1].lower()}">{e[1]}</a>' for e in SERIES)
+    have = sum(1 for e in SERIES if e[5])
+    doc = (HTML.replace("{{NAV}}", nav)
+               .replace("{{PLATES}}", "\n".join(plates))
+               .replace("{{COUNT}}", f"{have} of {len(SERIES)} rendered"))
     (OUT / "index.html").write_text(doc)
-    print(f"  {'index.html':32s} {len(doc)/1024:6.1f} kB")
+    print(f"  {'index.html':32s} {len(doc)/1024:6.1f} kB  ({have} renders paired)")
 
 
 if __name__ == "__main__":

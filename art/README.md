@@ -3,19 +3,30 @@
 Eleven coordinated plates, one per hub chapter, displayed in chapter order in
 [`index.html`](index.html).
 
-| # | Chapter | File |
-|---|---|---|
-| I | The Mindset | [`01-the-mindset.svg`](01-the-mindset.svg) |
-| II | Normal Anatomy | [`02-normal-anatomy.svg`](02-normal-anatomy.svg) |
-| III | Why Patients Come | [`03-why-patients-come.svg`](03-why-patients-come.svg) |
-| IV | Clinical Assessment | [`04-clinical-assessment.svg`](04-clinical-assessment.svg) |
-| V | The Treatment Pyramid | [`05-treatment-pyramid.svg`](05-treatment-pyramid.svg) |
-| VI | Home Care | [`06-home-care.svg`](06-home-care.svg) |
-| VII | Topicals | [`07-topicals.svg`](07-topicals.svg) |
-| VIII | Regenerative Injectables | [`08-regenerative-injectables.svg`](08-regenerative-injectables.svg) |
-| IX | Energy-Based Medicine | [`09-energy-based-medicine.svg`](09-energy-based-medicine.svg) |
-| X | The Kabboura Protocol | [`10-the-kabboura-protocol.svg`](10-the-kabboura-protocol.svg) |
-| XI | The Future | [`11-the-future.svg`](11-the-future.svg) |
+Each chapter has a **vector plate** here, and seven of them also have a
+**render** in [`renders/`](renders/) — the painterly 1600×900 version of the same
+composition. The gallery shows them side by side.
+
+| # | Chapter | Vector plate | Render |
+|---|---|---|---|
+| I | The Mindset | [`01-the-mindset.svg`](01-the-mindset.svg) | [`renders/01-the-mindset.webp`](renders/01-the-mindset.webp) |
+| II | Normal Anatomy | [`02-normal-anatomy.svg`](02-normal-anatomy.svg) | [`renders/02-normal-anatomy.webp`](renders/02-normal-anatomy.webp) |
+| III | Why Patients Come | [`03-why-patients-come.svg`](03-why-patients-come.svg) | — |
+| IV | Clinical Assessment | [`04-clinical-assessment.svg`](04-clinical-assessment.svg) | [`renders/04-clinical-assessment.webp`](renders/04-clinical-assessment.webp) |
+| V | The Treatment Pyramid | [`05-treatment-pyramid.svg`](05-treatment-pyramid.svg) | — |
+| VI | Home Care | [`06-home-care.svg`](06-home-care.svg) | [`renders/06-home-care.webp`](renders/06-home-care.webp) |
+| VII | Topicals | [`07-topicals.svg`](07-topicals.svg) | [`renders/07-topicals.webp`](renders/07-topicals.webp) |
+| VIII | Regenerative Injectables | [`08-regenerative-injectables.svg`](08-regenerative-injectables.svg) | [`renders/08-regenerative-injectables.webp`](renders/08-regenerative-injectables.webp) |
+| IX | Energy-Based Medicine | [`09-energy-based-medicine.svg`](09-energy-based-medicine.svg) | [`renders/09-energy-based-medicine.webp`](renders/09-energy-based-medicine.webp) |
+| X | The Kabboura Protocol | [`10-the-kabboura-protocol.svg`](10-the-kabboura-protocol.svg) | — |
+| XI | The Future | [`11-the-future.svg`](11-the-future.svg) | — |
+
+One render is not placed yet:
+[`renders/unassigned-regeneration-arc.webp`](renders/unassigned-regeneration-arc.webp)
+— three circles running depleted grey → gold signal → luminous restored network.
+It reads as *Why Regenerative Medicine* (card I-4), but chapter VIII already has
+a more specific render, so it is parked until its chapter is decided. Rename it
+to `<nn>-<chapter>.webp` and add it to `SERIES` in the generator to place it.
 
 ## The system
 
@@ -36,14 +47,19 @@ One atmosphere across all eleven:
   orbit, the gold bead, the dashed line ending in a stop-bar for anything held
   or inhibited.
 
-Every file is a standalone, editable SVG at 1600×900 — gradients, masks and
-groups survive into Illustrator, Affinity and Figma.
+Every vector file is standalone and editable at 1600×900 — gradients, masks and
+groups survive into Illustrator, Affinity and Figma. The renders are WebP at the
+same 1600×900 canvas, so the two are drop-in interchangeable in a slide or on
+the page.
 
 ## Rebuilding
 
 ```sh
 python3 tools/build_chapter_art.py        # all eleven SVGs + index.html
 ```
+
+The renders are authored outside this repo and dropped into `renders/`; the
+`SERIES` table in the generator is what pairs each one with its chapter.
 
 The generator is `tools/build_chapter_art.py`; each chapter is one function, and
 the shared primitives (`ground`, `disc`, `glow`, `bead`, `strand`, `lamellae`,
