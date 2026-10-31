@@ -3,36 +3,44 @@
 **Beyond Volume: The Science, Precision & Safety of Labia Majora Hyaluronic Acid Augmentation**
 Dr. Nadeen Kabboura — Obstetrician-Gynecologist · Functional & Aesthetic Gynecology Trainer
 
-A 16-slide, 15-minute congress presentation, built as a scroll-driven interactive web page.
-Open [`index.html`](index.html) (or the GitHub Pages site) in a modern browser.
+A 16-slide, 15-minute congress presentation for the browser. Each slide is a fixed
+16:9 canvas (1920×1080) scaled to fit any screen, shown one at a time with animated
+transitions. Open [`index.html`](index.html) (or the GitHub Pages site) and press `F`
+for full screen.
 
 ## Presenting
 
-| Key | |
+| Control | |
 |---|---|
-| `↓` `→` `Space` `PageDown` | next slide |
-| `↑` `←` `PageUp` | previous slide |
+| `→` `↓` `PageDown` `Space`, scroll down, swipe | next slide |
+| `←` `↑` `PageUp`, scroll up, swipe back | previous slide |
 | `N` | speaker notes drawer — script, time window, word count and pace for the current slide |
 | click the clock / `T` | start–pause the talk timer / reset it |
-| `F` | fullscreen |
+| `F` | full screen |
+| `Home` / `End` | first / last slide |
 
-Scrolling works too; the rail on the right jumps to any slide.
+A presentation clicker works too (it sends `PageDown` / `PageUp`). The toolbar at the
+bottom hides while you present and comes back when you move the mouse. Every slide
+has its own link (`index.html#s7` opens slide 07).
+
+Interactive items are dropdowns: clicking one opens its detail directly underneath it,
+and opening another closes the first.
 
 ## Slides and timing (15:00)
 
 | # | Slide | Window | Interaction |
 |---|---|---|---|
 | 01 | The Majora Code | 0:00–0:30 | — |
-| 02 | The Clinical Dilemma | 0:30–1:00 | decision fork: pick a branch |
-| 03 | Anatomy Before Augmentation | 1:00–2:00 | toggle layers, vessels, nerves, lymphatics |
-| 04 | Why Contour Changes | 2:00–2:45 | contour morph by mechanism |
+| 02 | The Clinical Dilemma | 0:30–1:00 | five possible meanings of the request, as dropdowns |
+| 03 | Anatomy Before Augmentation | 1:00–2:00 | opening a layer isolates it in the diagram |
+| 04 | Why Contour Changes | 2:00–2:45 | opening a mechanism reshapes the contour |
 | 05 | Patient Selection | 2:45–4:00 | — |
-| 06 | The Science of HA | 4:00–5:00 | crosslink-density slider, property explorer |
-| 07 | Choosing the Right Product | 5:00–5:45 | selection funnel |
-| 08 | The Procedural Map | 5:45–7:00 | 11-step workflow |
+| 06 | The Science of HA | 4:00–5:00 | crosslink-density slider, property dropdowns |
+| 07 | Choosing the Right Product | 5:00–5:45 | funnel levels open as dropdowns |
+| 08 | The Procedural Map | 5:45–7:00 | 11-step workflow dropdowns |
 | 09 | Precision & the Stopping Point | 7:00–8:00 | correction slider with zones |
 | 10 | Complications | 8:00–9:00 | — |
-| 11 | The First 60 Seconds | 9:00–10:00 | audience poll + 60-second clock |
+| 11 | The First 60 Seconds | 9:00–10:00 | audience poll (answer opens under the choice) + 60-second clock |
 | 12 | The Differential | 10:00–11:00 | yes/no decision tree |
 | 13 | The Rescue Decision | 11:00–12:00 | — |
 | 14 | What Does the Evidence Say? | 12:00–13:00 | — |

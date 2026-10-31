@@ -22,22 +22,15 @@
   </filter>
 </svg>
 
-<div class="progress"><i id="prog"></i></div>
-<header class="bar">
-  <a class="brand" href="#s1"><i>M</i><b>The Majora Code</b></a>
-  <div class="bar-r">
-    <button class="pill" id="clock" title="Start / pause the talk timer (T resets)">00:00</button>
-    <button class="pill" id="notesBtn" aria-expanded="false">Notes<kbd>N</kbd></button>
-  </div>
-</header>
-<nav class="rail" id="rail" aria-label="Slides"></nav>
+<div class="rotate">Rotate your phone to landscape for the full slide.</div>
 
-<main>
+<div class="deck" id="deck">
+<div class="canvas" id="canvas">
 
 <!-- ============ 01 ============ -->
 <section class="slide hero" id="s1" data-n="01" data-title="The Majora Code" data-time="0:00–0:30" data-sec="30">
-  <div class="wash" data-seed="11" data-n="8" style="--x:76%;--y:54%;--w:64vw" data-par="-80"></div>
-  <svg class="sprig" data-seed="4" data-leaves="11" data-curl="38" style="right:6vw;bottom:4vh;--sw:170px"></svg>
+  <div class="wash" data-seed="11" data-n="8" style="--x:76%;--y:52%;--w:1150px"></div>
+  <svg class="sprig" data-seed="4" data-leaves="11" data-curl="38" style="right:110px;bottom:60px;--sw:220px"></svg>
   <div class="copy">
     <div class="num" data-r>01</div>
     <h1 data-r>The<br><em>Majora</em><br>Code<span class="ac">.</span></h1>
@@ -46,7 +39,7 @@
     <div class="presenter" data-r>Dr. Nadeen Kabboura<span>Obstetrician-Gynecologist · Functional &amp; Aesthetic Gynecology Trainer</span></div>
   </div>
   <figure class="art hero-art" data-r><svg id="heroSvg" viewBox="0 0 600 600" role="img" aria-label="Abstract layered tissue architecture inside a circular lens"></svg></figure>
-  <div class="scrollcue">Scroll</div>
+  <div class="hint">Scroll or press →</div>
   <div class="script">
     <p>Good morning, colleagues. Labia majora hyaluronic acid augmentation has moved quickly from a niche request to a routine consultation in many of our practices.</p>
     <p>The technique is simple to describe. The judgment behind it is not.</p>
@@ -56,29 +49,23 @@
 
 <!-- ============ 02 ============ -->
 <section class="slide" id="s2" data-n="02" data-title="The Clinical Dilemma" data-time="0:30–1:00" data-sec="30">
-  <div class="wash" data-seed="23" data-n="6" style="--x:84%;--y:70%;--w:46vw" data-par="-60"></div>
+  <div class="wash" data-seed="23" data-n="6" style="--x:92%;--y:84%;--w:800px"></div>
   <div class="copy">
     <div class="num" data-r>02</div>
     <h2 data-r>The Clinical<br><em>Dilemma</em>.</h2>
     <p class="lede" data-r>A patient asks for <span class="ac">“fuller labia majora.”</span><br>That is a request — not a diagnosis.</p>
     <p class="lede s" data-r>Individualized assessment and preservation of function guide every branch. Only one of them leads to filler.</p>
   </div>
-  <figure class="art" data-r>
-    <div class="fork">
-      <div class="fork-req card"><span class="kicker">The request</span><p>“I would like fuller labia majora.”</p></div>
-      <svg class="fork-lines" viewBox="0 0 100 500" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M0 250C55 250 45 50 100 50"/><path d="M0 250C55 250 45 150 100 150"/><path d="M0 250C55 250 45 250 100 250"/><path d="M0 250C55 250 45 350 100 350"/><path d="M0 250C55 250 45 450 100 450"/>
-      </svg>
-      <div class="fork-opts" id="fork">
-        <button class="opt" aria-pressed="false" data-d="<b>True volume loss</b>Adipose deflation with preserved skin quality. Filler may be one option among several — discuss alternatives.">True volume loss</button>
-        <button class="opt" aria-pressed="false" data-d="<b>Asymmetry</b>Compare sides at rest and in more than one position; ask about trauma or surgery. Document — correction may only be partial.">Asymmetry</button>
-        <button class="opt" aria-pressed="false" data-d="<b>Normal anatomical variation</b>Morphology within the wide normal range. Education and reassurance come before any intervention.">Normal variation</button>
-        <button class="opt" aria-pressed="false" data-d="<b>Tissue quality &amp; laxity</b>Thin, lax or atrophic skin. Volume does not correct laxity — reset expectations and consider alternatives.">Tissue quality</button>
-        <button class="opt" aria-pressed="false" data-d="<b>Underlying vulvar disorder</b>Dermatoses, infection, lesions, pain conditions. Diagnose and treat first — never fill an undiagnosed vulva.">Vulvar disorder</button>
-      </div>
+  <div class="art">
+    <div class="card req" data-r><span class="kicker">The request</span><p>“I would like fuller labia majora.”</p></div>
+    <div class="acc" data-acc data-r>
+      <div data-t="True volume loss">Adipose deflation with preserved skin quality. Filler may be one option among several — discuss alternatives.</div>
+      <div data-t="Asymmetry">Compare sides at rest and in more than one position; ask about trauma or surgery. Document — correction may only be partial.</div>
+      <div data-t="Normal variation">Morphology within the wide normal range. Education and reassurance come before any intervention.</div>
+      <div data-t="Tissue quality">Thin, lax or atrophic skin. Volume does not correct laxity — reset expectations and consider alternatives.</div>
+      <div data-t="Vulvar disorder">Dermatoses, infection, lesions, pain conditions. Diagnose and treat first — never fill an undiagnosed vulva.</div>
     </div>
-    <div class="out" id="forkOut" aria-live="polite">Select a branch to see what to look for and where it leads.</div>
-  </figure>
+  </div>
   <div class="script">
     <p>Picture the request we all hear: <em>“I would like fuller labia majora.”</em></p>
     <p>That sentence is not a diagnosis. Behind it may be true volume loss, asymmetry, a completely normal anatomical variant, poor tissue quality — or an untreated vulvar condition.</p>
@@ -87,33 +74,31 @@
 </section>
 
 <!-- ============ 03 ============ -->
-<section class="slide" id="s3" data-n="03" data-title="Anatomy Before Augmentation" data-time="1:00–2:00" data-sec="60">
-  <div class="wash" data-seed="31" data-n="6" data-tone="plum" style="--x:12%;--y:88%;--w:40vw" data-par="-50"></div>
+<section class="slide s-anat" id="s3" data-n="03" data-title="Anatomy Before Augmentation" data-time="1:00–2:00" data-sec="60">
+  <div class="wash" data-seed="31" data-n="6" data-tone="plum" style="--x:4%;--y:100%;--w:700px"></div>
   <div class="copy">
     <div class="num" data-r>03</div>
-    <h2 data-r>Anatomy<br>Before <em>Augmentation</em>.</h2>
-    <p class="lede" data-r>Map the layers, the supply and — above all — the variability.</p>
-    <div class="chips" id="layerChips" data-r>
-      <button class="chip" aria-pressed="true" data-l="">All layers</button>
-      <button class="chip" aria-pressed="false" data-l="skin">Skin</button>
-      <button class="chip" aria-pressed="false" data-l="fascia">Fascial layers</button>
-      <button class="chip" aria-pressed="false" data-l="fat">Adipose</button>
-      <button class="chip" aria-pressed="false" data-l="art">Arteries</button>
-      <button class="chip" aria-pressed="false" data-l="vein">Veins</button>
-      <button class="chip" aria-pressed="false" data-l="nerve">Nerves</button>
-      <button class="chip" aria-pressed="false" data-l="lymph">Lymphatics</button>
+    <h2 data-r>Anatomy Before<br><em>Augmentation</em>.</h2>
+    <div class="acc sm" id="layers" data-acc data-r>
+      <div data-t="Skin" data-l="skin">Hair-bearing, with sebaceous, apocrine and eccrine glands. Thickness varies — thin skin raises the risk of visible or palpable product.</div>
+      <div data-t="Fascial layers" data-l="fascia">A thin smooth-muscle and fibrous layer beneath the dermis; deeper, the membranous layer continuous with Colles’ fascia. Nomenclature varies between sources.</div>
+      <div data-t="Subcutaneous adipose" data-l="fat">Volume and distribution vary with the individual, age, weight and hormones. No universally accepted discrete compartment.</div>
+      <div data-t="Arteries" data-l="art">Anterior: external pudendal arteries (femoral). Posterior: posterior labial branches of the internal pudendal system. Course and depth vary; anastomoses exist.</div>
+      <div data-t="Veins" data-l="vein">Anteriorly to the external pudendal veins and great saphenous vein; posteriorly to internal pudendal tributaries. Plexuses vary.</div>
+      <div data-t="Nerves" data-l="nerve">Anterior labial nerves (ilioinguinal; genitofemoral genital branch). Posterior labial nerves (pudendal). Perineal branch of the posterior femoral cutaneous nerve laterally.</div>
+      <div data-t="Lymphatics" data-l="lymph">Predominantly to the superficial inguinal lymph nodes.</div>
     </div>
-    <div class="out" id="layerOut" aria-live="polite" data-r></div>
   </div>
   <figure class="art" data-r>
-    <svg class="anat" id="anatSvg" viewBox="0 0 780 470" role="img" aria-label="Schematic layered section of the labium majus"></svg>
+    <svg class="anat" id="anatSvg" viewBox="0 0 830 470" role="img" aria-label="Schematic layered section of the labium majus"></svg>
     <div class="legend">
       <span><i style="border-color:var(--wine)"></i>Arteries</span>
       <span><i style="border-color:var(--plum)"></i>Veins</span>
       <span><i style="border-color:var(--gold);border-top-style:dotted"></i>Nerves</span>
       <span><i style="border-color:var(--rose-2);border-top-style:dashed"></i>Lymphatics</span>
     </div>
-    <p class="note">Schematic, not to scale. Shows layers and variability — <b>not an injection map</b>.</p>
+    <div class="card" style="margin-top:24px;border-left:4px solid var(--wine)"><p><b style="color:var(--ink)">Variability is the rule.</b> Vessels and nerves do not respect a fixed depth — there is no universally guaranteed vascular-free plane.</p></div>
+    <p class="note">Schematic, not to scale. Shows layers and variability — not an injection map.</p>
   </figure>
   <div class="script">
     <p>Before we augment, we map. The labia majora are hair-bearing skin over a subcutaneous layer whose adipose content varies considerably between women and with age.</p>
@@ -125,12 +110,12 @@
 
 <!-- ============ 04 ============ -->
 <section class="slide" id="s4" data-n="04" data-title="Why Contour Changes" data-time="2:00–2:45" data-sec="45">
-  <div class="wash" data-seed="41" data-n="7" style="--x:86%;--y:30%;--w:44vw" data-par="-70"></div>
+  <div class="wash" data-seed="41" data-n="7" style="--x:96%;--y:10%;--w:760px"></div>
   <div class="copy">
     <div class="num" data-r>04</div>
     <h2 data-r>Why Contour<br><em>Changes</em>.</h2>
-    <ul class="dots mech-col" data-r>
-      <li>Age</li><li>Menopausal hormonal change</li><li>Weight loss</li><li>Constitutional morphology</li><li>Asymmetry</li><li>Post-procedural change</li>
+    <ul class="dots mech" data-r>
+      <li>Age</li><li>Menopausal change</li><li>Weight loss</li><li>Constitutional morphology</li><li>Asymmetry</li><li>Post-procedural change</li>
     </ul>
     <div class="row-badge" data-r>
       <div class="badge">Not every change is pathology.</div>
@@ -138,21 +123,19 @@
     </div>
   </div>
   <figure class="art" data-r>
-    <div class="card contour-card">
+    <div class="card">
       <span class="kicker">Contour profile · schematic</span>
-      <svg class="contour" viewBox="0 0 400 250" aria-hidden="true">
+      <svg class="contour" viewBox="0 0 400 230" aria-hidden="true">
         <line class="base" x1="10" y1="210" x2="390" y2="210"/>
         <path class="ghost" d="M20 210C80 210 110 70 200 70C290 70 320 210 380 210"/>
         <path class="live" id="contourPath" d="M20 210C80 210 110 70 200 70C290 70 320 210 380 210"/>
-        <text x="20" y="235">DASHED · REFERENCE CONTOUR</text>
       </svg>
-      <div class="chips" id="contourChips" style="margin-top:10px">
-        <button class="chip" aria-pressed="true" data-s="0">Reference</button>
-        <button class="chip" aria-pressed="false" data-s="1">Adipose deflation</button>
-        <button class="chip" aria-pressed="false" data-s="2">Skin laxity</button>
-        <button class="chip" aria-pressed="false" data-s="3">Constitutional</button>
+      <p class="note" style="margin:6px 0 18px">Dashed line · reference contour, not an ideal</p>
+      <div class="acc sm" id="contourAcc" data-acc>
+        <div data-t="Adipose deflation" data-s="1">Volume loss with preserved skin. Filler may partially address this mechanism.</div>
+        <div data-t="Skin laxity" data-s="2">Redundant, descending skin. Volume alone does not tighten — and may add weight.</div>
+        <div data-t="Constitutional morphology" data-s="3">A slender but normal variant. Education first; correction is not a medical necessity.</div>
       </div>
-      <div class="out" id="contourOut" aria-live="polite"></div>
     </div>
   </figure>
   <div class="script">
@@ -163,7 +146,7 @@
 
 <!-- ============ 05 ============ -->
 <section class="slide wide" id="s5" data-n="05" data-title="Patient Selection" data-time="2:45–4:00" data-sec="75">
-  <div class="wash" data-seed="51" data-n="6" style="--x:96%;--y:12%;--w:36vw" data-par="-40"></div>
+  <div class="wash" data-seed="51" data-n="6" style="--x:98%;--y:4%;--w:640px"></div>
   <div class="copy">
     <div>
       <div class="num" data-r>05</div>
@@ -176,7 +159,7 @@
       <div class="card" style="--c:var(--plum)" data-r><span class="kicker" style="color:var(--plum)">Appropriate</span><h3>Who &amp; why</h3>
         <ul class="dots"><li>Specific aesthetic concern</li><li>Realistic expectations</li><li>Normal vulvar examination</li><li>Understands alternatives &amp; uncertainty</li><li>Capacity for informed consent</li></ul></div>
       <div class="card" style="--c:var(--gold)" data-r><span class="kicker">Pause — resolve first</span><h3>Clinical flags</h3>
-        <ul class="dots"><li>Active infection</li><li>Inflammatory dermatoses (e.g. lichen sclerosus)</li><li>Suspicious lesion — diagnose, never fill</li><li>Previous filler, type unknown · prior surgery</li><li>Bleeding risk or anticoagulation</li><li>Allergy history · immunosuppression</li></ul></div>
+        <ul class="dots"><li>Active infection · inflammatory dermatoses</li><li>Suspicious lesion — diagnose, never fill</li><li>Previous filler of unknown type · prior surgery</li><li>Bleeding risk or anticoagulation</li><li>Allergy history · immunosuppression</li></ul></div>
       <div class="card" style="--c:var(--wine)" data-r><span class="kicker" style="color:var(--wine)">Defer or refer</span><h3>When not</h3>
         <ul class="dots"><li>Pregnancy or lactation</li><li>Unrealistic expectations</li><li>Body-image concerns — consider body dysmorphic disorder</li><li>Pressure from a partner or third party</li></ul></div>
     </div>
@@ -196,21 +179,19 @@
 
 <!-- ============ 06 ============ -->
 <section class="slide" id="s6" data-n="06" data-title="The Science of HA" data-time="4:00–5:00" data-sec="60">
-  <div class="wash" data-seed="61" data-n="7" data-tone="plum" style="--x:4%;--y:96%;--w:34vw" data-par="-60"></div>
+  <div class="wash" data-seed="61" data-n="7" data-tone="plum" style="--x:2%;--y:100%;--w:640px"></div>
   <div class="copy">
     <div class="num" data-r>06</div>
     <h2 data-r>The Science<br>of <em>HA</em>.</h2>
-    <p class="lede" data-r>The gel’s behaviour is engineered — and tissue-dependent.</p>
-    <div class="chips" id="haChips" data-r>
-      <button class="chip" aria-pressed="false" data-d="<b>Crosslinking</b>Chemical bridges between HA chains (commonly BDDE) slow enzymatic degradation and change how the gel behaves.">Crosslinking</button>
-      <button class="chip" aria-pressed="false" data-d="<b>Elastic modulus · G′</b>Firmness — resistance to deformation under load. A higher G′ resists compression; a lower G′ adapts and spreads.">Elastic modulus</button>
-      <button class="chip" aria-pressed="false" data-d="<b>Cohesivity</b>How well the gel holds together — influencing spread, integration and palpability.">Cohesivity</button>
-      <button class="chip" aria-pressed="false" data-d="<b>Water affinity</b>HA binds water; the gel may continue to hydrate after injection, contributing to early swelling in an oedema-prone region.">Water affinity</button>
-      <button class="chip" aria-pressed="false" data-d="<b>Tissue integration</b>How the gel distributes within host tissue — product-specific and not interchangeable.">Integration</button>
-      <button class="chip" aria-pressed="false" data-d="<b>Degradation</b>Gradual breakdown by endogenous hyaluronidases and oxidative processes. Duration varies with product and site.">Degradation</button>
-      <button class="chip" aria-pressed="false" data-d="<b>Reversibility</b>HA can be degraded by exogenous hyaluronidase — a key safety property, with real limits (Slide 13).">Reversibility</button>
+    <div class="acc sm" data-acc data-r>
+      <div data-t="Crosslinking">Chemical bridges between HA chains (commonly BDDE) slow enzymatic degradation and change how the gel behaves.</div>
+      <div data-t="Elastic modulus · G′">Firmness — resistance to deformation. A higher G′ resists compression; a lower G′ adapts and spreads.</div>
+      <div data-t="Cohesivity">How well the gel holds together — influencing spread, integration and palpability.</div>
+      <div data-t="Water affinity">HA binds water; the gel may keep hydrating after injection, adding to early swelling in an oedema-prone region.</div>
+      <div data-t="Tissue integration">How the gel distributes within host tissue — product-specific, not interchangeable.</div>
+      <div data-t="Degradation">Gradual breakdown by endogenous hyaluronidases and oxidative processes. Duration varies with product and site.</div>
+      <div data-t="Reversibility">Exogenous hyaluronidase degrades HA — a key safety property, with real limits (Slide 13).</div>
     </div>
-    <div class="out" id="haOut" aria-live="polite" data-r>Select a property.</div>
   </div>
   <figure class="art" data-r>
     <div class="card">
@@ -221,7 +202,7 @@
     </div>
     <div class="callout">
       <b>The vulva is not the face</b>
-      <p>Mobility and compression when sitting · friction and sexual activity · distinct skin and adipose · hormonal influence · oedema-prone tissue. Facial rheology data cannot be generalized automatically.</p>
+      <p>Mobility and compression when sitting · friction and sexual activity · distinct skin and adipose · hormonal influence · oedema-prone tissue. Facial rheology cannot be generalized automatically.</p>
     </div>
   </figure>
   <div class="script">
@@ -233,26 +214,26 @@
 
 <!-- ============ 07 ============ -->
 <section class="slide" id="s7" data-n="07" data-title="Choosing the Right Product" data-time="5:00–5:45" data-sec="45">
-  <div class="wash" data-seed="71" data-n="6" style="--x:10%;--y:20%;--w:38vw" data-par="-50"></div>
-  <svg class="sprig" data-seed="9" data-leaves="9" data-curl="-30" style="right:5vw;bottom:3vh;--sw:110px"></svg>
+  <div class="wash" data-seed="71" data-n="6" style="--x:4%;--y:6%;--w:640px"></div>
+  <svg class="sprig" data-seed="9" data-leaves="9" data-curl="-30" style="left:90px;bottom:70px;--sw:150px"></svg>
   <div class="copy">
     <div class="num" data-r>07</div>
     <h2 data-r>Choosing the<br>Right <em>Product</em>.</h2>
     <p class="lede" data-r>A neutral framework — no brands, no assumed approvals, no invented durability.</p>
-    <div class="out" id="tierOut" aria-live="polite" data-r>Select a level of the funnel.</div>
+    <p class="lede s" data-r>Select a level of the funnel.</p>
     <div class="tags" data-r><span class="tag op">Noncommercial selection framework</span></div>
   </div>
   <figure class="art" data-r>
-    <div class="funnel" id="funnel">
-      <button class="tier" style="--w:100%;--k:12%" data-d="<b>Labeling &amp; regulatory status</b>Is it labelled for this indication in my jurisdiction? If not, is off-label use justified, disclosed and consented? Facial approval does not imply vulvar approval.">Labeling &amp; regulatory status</button>
-      <button class="tier" style="--w:91%;--k:20%" data-d="<b>Formulation</b>HA concentration, crosslinking technology, anaesthetic content — matched to the intended placement.">Formulation</button>
-      <button class="tier" style="--w:82%;--k:30%" data-d="<b>Vulvar-specific data</b>Is there peer-reviewed vulvar evidence for this specific product — not the product family, not the face?">Vulvar-specific data</button>
-      <button class="tier" style="--w:73%;--k:42%" data-d="<b>Rheology</b>Firmness and cohesivity appropriate to the planned depth and tissue thickness.">Rheology</button>
-      <button class="tier dark" style="--w:64%;--k:56%" data-d="<b>Handling</b>Extrusion force, needle or cannula compatibility, predictability in your hands.">Handling</button>
-      <button class="tier dark" style="--w:55%;--k:70%" data-d="<b>Traceability</b>Lot labels recorded in the notes and given to the patient — every time.">Traceability</button>
-      <button class="tier dark" style="--w:46%;--k:86%" data-d="<b>Adverse-event evidence</b>What complications are reported for this product, and how does the manufacturer handle reporting?">Adverse-event evidence</button>
+    <div class="acc funnel" data-acc>
+      <div data-t="Labeling &amp; regulatory status" style="--w:100%;--k:12%">Is it labelled for this indication in my jurisdiction? If not, is off-label use justified, disclosed and consented? Facial approval does not imply vulvar approval.</div>
+      <div data-t="Formulation" style="--w:92%;--k:20%">HA concentration, crosslinking technology, anaesthetic content — matched to the intended placement.</div>
+      <div data-t="Vulvar-specific data" style="--w:84%;--k:30%">Is there peer-reviewed vulvar evidence for this specific product — not the product family, not the face?</div>
+      <div data-t="Rheology" style="--w:76%;--k:42%">Firmness and cohesivity appropriate to the planned depth and tissue thickness.</div>
+      <div data-t="Handling" class="dark" style="--w:68%;--k:56%">Extrusion force, needle or cannula compatibility, predictability in your hands.</div>
+      <div data-t="Traceability" class="dark" style="--w:60%;--k:70%">Lot labels recorded in the notes and given to the patient — every time.</div>
+      <div data-t="Adverse-event evidence" class="dark" style="--w:52%;--k:86%">What complications are reported for this product, and how is reporting handled?</div>
     </div>
-    <p class="funnel-end" style="text-align:center">If it fails at the top, marketing should not carry it to the bottom.</p>
+    <p class="funnel-end">If it fails at the top, marketing should not carry it to the bottom.</p>
   </figure>
   <div class="script">
     <p>So how do we choose a product — without a brand on this slide? First, labeling and regulatory status in your own jurisdiction; approval for the face does not imply approval for the vulva.</p>
@@ -262,40 +243,33 @@
 </section>
 
 <!-- ============ 08 ============ -->
-<section class="slide wide" id="s8" data-n="08" data-title="The Procedural Map" data-time="5:45–7:00" data-sec="75">
-  <div class="wash" data-seed="81" data-n="6" data-tone="plum" style="--x:95%;--y:90%;--w:40vw" data-par="-40"></div>
+<section class="slide s-proc" id="s8" data-n="08" data-title="The Procedural Map" data-time="5:45–7:00" data-sec="75">
+  <div class="wash" data-seed="81" data-n="6" data-tone="plum" style="--x:100%;--y:100%;--w:640px"></div>
   <div class="copy">
-    <div>
-      <div class="num" data-r>08</div>
-      <h2 data-r>The Procedural<br><em>Map</em>.</h2>
-    </div>
-    <p class="lede" data-r>A sequence, not an injection. Every step is a safety step — select one.</p>
+    <div class="num" data-r>08</div>
+    <h2 data-r>The Procedural<br><em>Map</em>.</h2>
+    <p class="lede" data-r>A sequence, not an injection. Every step is a safety step.</p>
+    <div class="card" data-r><span class="kicker">Needle</span>
+      <ul class="pm"><li class="p">Precise placement of small aliquots</li><li class="m">May increase risk of vessel penetration and bruising</li></ul>
+      <span class="kicker" style="margin-top:18px">Blunt cannula</span>
+      <ul class="pm"><li class="p">May reduce vessel penetration and bruising</li><li class="m">Does <b>not</b> eliminate intravascular injury</li></ul>
+      <p class="note">Comparative vulvar data are limited.</p></div>
+    <div class="card" data-r style="margin-top:18px"><span class="kicker">Published approaches</span>
+      <p>Entry points, planes, depths, gauge and volumes appear only in the Appendix, each attributed to its original publication — <i style="color:var(--mauve)">not universal, not interchangeable.</i></p></div>
   </div>
-  <div class="stage">
-    <div class="steps" id="steps" data-r>
-      <button class="step" aria-pressed="false" data-d="Indication, vulvar examination, morphology and contraindications."><i>1</i>Assessment</button>
-      <button class="step" aria-pressed="false" data-d="Aims, uncertainty, alternatives and complications — including vascular. Photography consent recorded separately."><i>2</i>Consent</button>
-      <button class="step" aria-pressed="false" data-d="Mark planned areas with the patient; record asymmetry and baseline."><i>3</i>Marking</button>
-      <button class="step" aria-pressed="false" data-d="Appropriate antisepsis for the vulvar region; aseptic technique throughout."><i>4</i>Antisepsis</button>
-      <button class="step" aria-pressed="false" data-d="Topical and/or local anaesthesia per product and practice — mindful of its effect on assessing tissue and pain."><i>5</i>Analgesia</button>
-      <button class="step" aria-pressed="false" data-d="Product, regulatory status in your jurisdiction, expiry and lot — recorded for traceability."><i>6</i>Product check</button>
-      <button class="step" aria-pressed="false" data-d="Stable, comfortable position with symmetric access and good light."><i>7</i>Positioning</button>
-      <button class="step" aria-pressed="false" data-d="Assess thickness and mobility. The plane follows a cited published approach — it is never assumed to be safe."><i>8</i>Tissue plane</button>
-      <button class="step" aria-pressed="false" data-d="Slow, low-pressure, small aliquots, with continuous observation of skin colour and the patient."><i>9</i>Placement</button>
-      <button class="step" aria-pressed="false" data-d="Symmetry, perfusion and contour. Stop at the conservative endpoint."><i>10</i>Reassess</button>
-      <button class="step" aria-pressed="false" data-d="Product, lot, volume, technique, endpoint, any event and the aftercare given."><i>11</i>Document</button>
-    </div>
-    <div class="two">
-      <div class="out" id="stepOut" aria-live="polite" style="margin:0" data-r>Select a step.</div>
-      <div class="card" data-r><span class="kicker">Needle</span>
-        <ul class="pm"><li class="p">Precise placement of small aliquots</li><li class="m">May increase risk of vessel penetration and bruising</li></ul>
-        <span class="kicker" style="margin-top:14px">Blunt cannula</span>
-        <ul class="pm"><li class="p">May reduce vessel penetration and bruising</li><li class="m">Does <b>not</b> eliminate intravascular injury</li></ul>
-        <p class="note" style="margin-top:8px">Comparative vulvar data are limited.</p></div>
-      <div class="card" data-r><span class="kicker">Published approaches</span>
-        <p>Entry points, planes, depths, gauge, volumes and patterns appear only in the Appendix — each attributed to its original publication.</p>
-        <p style="margin-top:10px;font:italic 400 16px var(--lora);color:var(--mauve)">Not universal. Not interchangeable between products or patients.</p>
-        <div class="tags"><span class="tag pub">Published approach — cite source</span></div></div>
+  <div class="art" data-r>
+    <div class="acc xs steps" data-acc>
+      <div data-t="Assessment" data-n="1">Indication, vulvar examination, morphology and contraindications.</div>
+      <div data-t="Consent" data-n="2">Aims, uncertainty, alternatives and complications — including vascular. Photography consent recorded separately.</div>
+      <div data-t="Marking" data-n="3">Mark planned areas with the patient; record asymmetry and baseline.</div>
+      <div data-t="Antisepsis" data-n="4">Appropriate antisepsis for the vulvar region; aseptic technique throughout.</div>
+      <div data-t="Analgesia" data-n="5">Topical and/or local anaesthesia per product and practice — mindful of its effect on assessing tissue and pain.</div>
+      <div data-t="Product verification" data-n="6">Product, regulatory status in your jurisdiction, expiry and lot — recorded for traceability.</div>
+      <div data-t="Positioning" data-n="7">Stable, comfortable position with symmetric access and good light.</div>
+      <div data-t="Tissue-plane assessment" data-n="8">Assess thickness and mobility. The plane follows a cited published approach — never assumed safe.</div>
+      <div data-t="Controlled placement" data-n="9">Slow, low-pressure, small aliquots, with continuous observation of skin colour and the patient.</div>
+      <div data-t="Reassessment" data-n="10">Symmetry, perfusion and contour. Stop at the conservative endpoint.</div>
+      <div data-t="Documentation" data-n="11">Product, lot, volume, technique, endpoint, any event and the aftercare given.</div>
     </div>
   </div>
   <div class="script">
@@ -307,13 +281,13 @@
 
 <!-- ============ 09 ============ -->
 <section class="slide" id="s9" data-n="09" data-title="Precision &amp; the Stopping Point" data-time="7:00–8:00" data-sec="60">
-  <div class="wash" data-seed="91" data-n="7" style="--x:82%;--y:20%;--w:42vw" data-par="-60"></div>
+  <div class="wash" data-seed="91" data-n="7" style="--x:96%;--y:4%;--w:700px"></div>
   <div class="copy">
     <div class="num" data-r>09</div>
     <h2 data-r>Precision &amp; the<br><em>Stopping Point</em>.</h2>
     <p class="lede" data-r>Precision is mostly restraint: conservative, staged, reassessed.</p>
     <table class="mini" data-r>
-      <thead><tr><th>Anatomy</th><th>Plan intensity</th><th>Consideration</th></tr></thead>
+      <thead><tr><th>Anatomy</th><th>Intensity</th><th>Consideration</th></tr></thead>
       <tbody>
         <tr><td>Mild deflation, good skin</td><td class="lv">●○○</td><td>Conservative single session</td></tr>
         <tr><td>Moderate deflation, good skin</td><td class="lv">●●○</td><td>Staged, small increments</td></tr>
@@ -325,20 +299,19 @@
     <div class="tags" data-r><span class="tag cx">Educational decision aid — not a validated score</span></div>
   </div>
   <figure class="art" data-r>
-    <div class="card contour-card">
-      <span class="kicker">Correction · conceptual</span>
-      <svg class="contour" viewBox="0 0 400 250" aria-hidden="true">
+    <div class="card">
+      <span class="kicker">Correction · conceptual — drag the slider</span>
+      <svg class="contour" viewBox="0 0 400 230" aria-hidden="true">
         <line class="base" x1="10" y1="210" x2="390" y2="210"/>
         <path class="ghost" d="M20 210C80 210 115 92 200 92C285 92 320 210 380 210"/>
         <path class="live" id="fillPath" d="M20 210C80 210 115 150 200 150C285 150 320 210 380 210"/>
-        <text x="20" y="235">DASHED · CONSERVATIVE TARGET</text>
       </svg>
       <label class="slider">Volume<input type="range" id="fill" min="0" max="100" value="12" aria-label="Correction amount"></label>
       <div class="gauge"></div>
       <div class="gauge-l"><span>Under</span><span>Target</span><span>Limit</span><span>Over</span></div>
-      <div class="out" id="fillOut" aria-live="polite"></div>
+      <div class="zone" id="fillOut" aria-live="polite"></div>
     </div>
-    <ul class="dots" style="margin-top:18px;font-size:14.5px">
+    <ul class="dots" style="margin-top:24px;font-size:20px">
       <li>Stop at the agreed conservative goal — oedema and hydration are still to come</li>
       <li>Stop for rising tension, blanching, visible or palpable product</li>
       <li>Disproportionate pain: stop and assess (Slide 11)</li>
@@ -353,24 +326,24 @@
 
 <!-- ============ 10 ============ -->
 <section class="slide wide" id="s10" data-n="10" data-title="Complications" data-time="8:00–9:00" data-sec="60">
-  <div class="wash" data-seed="101" data-n="6" data-tone="plum" style="--x:97%;--y:94%;--w:30vw" data-par="-40"></div>
+  <div class="wash" data-seed="101" data-n="6" data-tone="plum" style="--x:100%;--y:100%;--w:560px"></div>
   <div class="copy">
     <div>
       <div class="num" data-r>10</div>
       <h2 data-r>Complications:<br>What Can <em style="color:var(--wine)">Go Wrong</em>?</h2>
     </div>
-    <p class="lede" data-r>Organized by time of onset and phenotype. No incidence figures: the vulvar data do not support reliable estimates.</p>
+    <p class="lede" data-r>Organized by time of onset. No incidence figures: the vulvar data do not support reliable estimates.</p>
   </div>
   <div class="stage">
     <div class="phases">
-      <div class="phase" style="--c:var(--rose-2)" data-r><span class="when">Immediate</span><h3>Minutes – hours</h3>
+      <div class="card phase" style="--c:var(--rose-2)" data-r><span class="when">Immediate</span><h3>Minutes – hours</h3>
         <ul><li>Pain <span class="tag ev">Expected</span></li><li>Oedema <span class="tag ev">Expected</span></li><li>Ecchymosis <span class="tag ev">Expected</span></li><li>Haematoma <span class="tag op">Adverse event</span></li><li>Possible vascular compromise <span class="tag al">Emergency</span></li></ul></div>
-      <div class="phase" style="--c:var(--mauve)" data-r><span class="when">Early</span><h3>Days</h3>
+      <div class="card phase" style="--c:var(--mauve)" data-r><span class="when">Early</span><h3>Days</h3>
         <ul><li>Infection <span class="tag op">Adverse event</span></li><li>Asymmetry <span class="tag op">Adverse event</span></li><li>Superficial irregularity <span class="tag op">Adverse event</span></li><li>Overcorrection <span class="tag op">Adverse event</span></li></ul></div>
-      <div class="phase" style="--c:var(--wine)" data-r><span class="when">Delayed</span><h3>Weeks – months</h3>
-        <ul><li>Persistent nodules <span class="tag op">Adverse event</span></li><li>Inflammatory reactions <span class="tag op">Adverse event</span></li><li>Migration <span class="tag ex">Extrapolated</span></li><li>Infection-associated presentations <span class="tag ex">Extrapolated</span></li><li>Dissatisfaction <span class="tag op">Adverse event</span></li><li>Sensory or sexual discomfort <span class="tag ex">Extrapolated</span></li></ul></div>
+      <div class="card phase" style="--c:var(--wine)" data-r><span class="when">Delayed</span><h3>Weeks – months</h3>
+        <ul><li>Persistent nodules <span class="tag op">Adverse event</span></li><li>Inflammatory reactions <span class="tag op">Adverse event</span></li><li>Migration <span class="tag ex">Extrapolated</span></li><li>Infection-associated <span class="tag ex">Extrapolated</span></li><li>Dissatisfaction <span class="tag op">Adverse event</span></li><li>Sensory / sexual discomfort <span class="tag ex">Extrapolated</span></li></ul></div>
     </div>
-    <p class="note" data-r style="margin-top:14px"><b>Extrapolated</b> = limited vulvar reporting; risk principles drawn largely from facial filler experience. Documented-versus-extrapolated status for each event is confirmed against the Appendix evidence table.</p>
+    <p class="note" data-r><b>Extrapolated</b> = limited vulvar reporting; principles drawn largely from facial filler experience. Each tag is confirmed against the Appendix evidence table.</p>
   </div>
   <div class="script">
     <p>What can go wrong? Organize it by time. Immediately: pain, oedema, bruising, haematoma — and, rarely, vascular compromise. Early: infection, asymmetry, superficial irregularity, over-correction. Delayed: persistent nodules, inflammatory reactions, migration, infection-related presentations, dissatisfaction, and possible sensory or sexual discomfort.</p>
@@ -381,36 +354,35 @@
 
 <!-- ============ 11 ============ -->
 <section class="slide alert" id="s11" data-n="11" data-title="The First 60 Seconds" data-time="9:00–10:00" data-sec="60" data-dark>
-  <div class="wash" data-seed="111" data-n="6" data-tone="wine" style="--x:88%;--y:18%;--w:44vw;opacity:.55" data-par="-60"></div>
+  <div class="wash" data-seed="111" data-n="6" data-tone="wine" style="--x:96%;--y:4%;--w:760px;opacity:.5"></div>
   <div class="copy">
     <div class="num" data-r>11</div>
     <h2 data-r>The First<br><em>60 Seconds</em>.</h2>
     <div class="card scenario" data-r><span class="kicker">Scenario</span>
-      <p style="font-size:16.5px">Mid-injection, the patient reports sudden pain out of proportion to the procedure. You notice progressive dusky discoloration spreading from the site.</p></div>
+      <p style="font-size:24px">Mid-injection, the patient reports sudden pain out of proportion to the procedure. You notice progressive dusky discoloration spreading from the site.</p></div>
     <p class="q" data-r style="color:#F0B4C8">What is your immediate priority?</p>
   </div>
   <figure class="art" data-r>
-    <div class="poll" id="poll">
-      <button data-ok="0" data-v="Continuing adds product to a possibly compromised territory. Stop now."><b>A</b>Finish slowly to complete symmetry</button>
-      <button data-ok="1" data-v="<b>Correct.</b> Stop injecting immediately, then assess perfusion — colour, capillary refill, pattern, pain — and escalate."><b>B</b>Stop injecting and assess perfusion</button>
-      <button data-ok="0" data-v="Adjuncts never replace stopping, assessing and escalating. Observation alone loses time."><b>C</b>Warm compress and observe for 30 minutes</button>
-      <button data-ok="0" data-v="Imaging must never delay emergency management. Stop and assess first."><b>D</b>Arrange an ultrasound before acting</button>
+    <div class="acc sm poll" id="poll" data-acc>
+      <div data-t="Finish slowly to complete symmetry" data-n="A">Continuing adds product to a possibly compromised territory. <b style="display:inline;font:inherit;text-transform:none">Stop now — the answer is B.</b></div>
+      <div data-t="Stop injecting and assess perfusion" data-n="B" data-ok>Correct. Stop immediately, then assess colour, capillary refill, pattern and pain — and escalate.</div>
+      <div data-t="Warm compress and observe for 30 minutes" data-n="C">Adjuncts never replace stopping, assessing and escalating. Observation alone loses time. <b style="display:inline;font:inherit;text-transform:none">The answer is B.</b></div>
+      <div data-t="Arrange an ultrasound before acting" data-n="D">Imaging must never delay emergency management. <b style="display:inline;font:inherit;text-transform:none">Stop and assess first — the answer is B.</b></div>
     </div>
-    <div class="verdict" id="verdict" aria-live="polite"></div>
     <div class="clock">
       <div class="ring"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="46"/><circle class="fg" id="ringFg" cx="50" cy="50" r="46" pathLength="1"/></svg><span><span><b id="secs">60</b><small>SECONDS</small></span></span></div>
       <div>
         <ol class="seq" id="seq">
           <li data-t="0"><b>Stop</b>Stop injecting. Do not “finish the side”.</li>
           <li data-t="8"><b>Assess</b>Colour, capillary refill, pattern, pain.</li>
-          <li data-t="22"><b>Escalate</b>Call for help; activate your emergency protocol.</li>
-          <li data-t="36"><b>Rescue</b>For HA: hyaluronidase in the room, not the pharmacy.</li>
+          <li data-t="22"><b>Escalate</b>Call for help; emergency protocol.</li>
+          <li data-t="36"><b>Rescue</b>For HA: hyaluronidase in the room.</li>
           <li data-t="50"><b>Record</b>Time, product, lot, findings.</li>
         </ol>
         <button class="go" id="go">Start the 60 s</button>
       </div>
     </div>
-    <p class="note" style="color:#B9A2AE;margin-top:14px">Illustrative sequence — in practice actions overlap. A normal appearance in the first minute does <b style="color:#fff">not</b> exclude injury.</p>
+    <p class="note" style="color:#B9A2AE">Illustrative sequence — actions overlap in practice. A normal appearance in the first minute does <b style="color:#fff">not</b> exclude injury.</p>
   </figure>
   <div class="script">
     <p>Now let’s test ourselves. You are injecting. The patient reports sudden pain, out of proportion to the procedure, and you see progressive dusky discoloration spreading from the area. What is your immediate priority? <em>[Pause for the audience — about ten seconds.]</em></p>
@@ -421,23 +393,23 @@
 
 <!-- ============ 12 ============ -->
 <section class="slide" id="s12" data-n="12" data-title="The Differential" data-time="10:00–11:00" data-sec="60">
-  <div class="wash" data-seed="121" data-n="6" style="--x:90%;--y:85%;--w:40vw" data-par="-50"></div>
+  <div class="wash" data-seed="121" data-n="6" style="--x:100%;--y:100%;--w:700px"></div>
   <div class="copy">
     <div class="num" data-r>12</div>
-    <h2 data-r>The Differential<br>That <em>Changes Everything</em>.</h2>
+    <h2 data-r>The Differential<br>That <em>Changes<br>Everything</em>.</h2>
     <p class="lede" data-r>Ask the question that cannot wait first.</p>
     <div class="card" data-r><span class="kicker">High-frequency ultrasound</span>
       <ul class="pm"><li class="p">Localizes product; detects collections and abscess</li><li class="p">Doppler perfusion; may guide hyaluronidase</li><li class="m">Operator-dependent; not universally available</li><li class="m">Never delays emergency intervention</li></ul></div>
   </div>
-  <figure class="art tree" data-r>
-    <div class="card" id="tree">
+  <figure class="art" data-r>
+    <div class="card" style="padding:40px 44px">
       <div class="crumbs" id="crumbs"></div>
       <p class="tq" id="tq"></p>
       <div class="yn" id="yn"><button data-a="y">Yes</button><button data-a="n">No</button></div>
       <div class="result" id="tres"><span class="kicker">Working diagnosis</span><h3 id="tresT"></h3><p id="tresD"></p></div>
       <button class="again" id="treeAgain" hidden>↺ Start again</button>
     </div>
-    <p class="note" style="margin-top:12px">A teaching pathway for structured examination — it supports, never replaces, clinical judgment.</p>
+    <p class="note">A teaching pathway for structured examination — it supports, never replaces, clinical judgment.</p>
   </figure>
   <div class="script">
     <p>After the procedure, the question becomes: what am I looking at? Start with the finding that cannot wait. Disproportionate pain, blanching, livedo or dusky discolouration, delayed capillary refill — treat as suspected ischaemia, now.</p>
@@ -448,7 +420,7 @@
 
 <!-- ============ 13 ============ -->
 <section class="slide wide" id="s13" data-n="13" data-title="The Rescue Decision" data-time="11:00–12:00" data-sec="60">
-  <div class="wash" data-seed="131" data-n="6" data-tone="plum" style="--x:96%;--y:8%;--w:34vw" data-par="-40"></div>
+  <div class="wash" data-seed="131" data-n="6" data-tone="plum" style="--x:100%;--y:0%;--w:600px"></div>
   <div class="copy">
     <div>
       <div class="num" data-r>13</div>
@@ -458,9 +430,9 @@
   </div>
   <div class="stage">
     <div class="rescue">
-      <div class="card" style="--c:var(--wine)" data-r><span class="kicker" style="color:var(--wine)">Emergency</span><h3>Suspected vascular compromise</h3><p>Stop. Escalate urgently. Emergency protocol — for HA products, hyaluronidase without delay per local protocol and expert guidance.</p><p class="lim">Vulvar-specific dosing not established.</p></div>
-      <div class="card" style="--c:var(--mauve)" data-r><span class="kicker">HA-related</span><h3>Hyaluronidase principles</h3><p>Degrades HA; susceptibility varies by formulation. Often off-label. Hypersensitivity possible — take a history; follow local testing practice.</p><p class="lim">Dose, interval and endpoint unvalidated here.</p></div>
-      <div class="card" style="--c:var(--gold)" data-r><span class="kicker">Infection</span><h3>Suspected infection</h3><p>Examine; culture where possible; appropriate antimicrobials; drainage when indicated. Sequence any enzyme use with specialist input.</p><p class="lim">Vulvar-specific protocols lacking.</p></div>
+      <div class="card" style="--c:var(--wine)" data-r><span class="kicker" style="color:var(--wine)">Emergency</span><h3>Suspected vascular compromise</h3><p>Stop. Escalate urgently. Emergency protocol — for HA, hyaluronidase without delay per local protocol and expert guidance.</p><p class="lim">Vulvar-specific dosing not established.</p></div>
+      <div class="card" style="--c:var(--mauve)" data-r><span class="kicker">HA-related</span><h3>Hyaluronidase principles</h3><p>Degrades HA; susceptibility varies by formulation. Often off-label. Hypersensitivity possible — take a history; follow local testing practice.</p><p class="lim">Dose, interval and endpoint unvalidated.</p></div>
+      <div class="card" style="--c:var(--gold)" data-r><span class="kicker">Infection</span><h3>Suspected infection</h3><p>Examine; culture where possible; appropriate antimicrobials; drainage when indicated. Sequence enzyme use with specialist input.</p><p class="lim">Vulvar-specific protocols lacking.</p></div>
       <div class="card" style="--c:var(--plum)" data-r><span class="kicker" style="color:var(--plum)">Delayed</span><h3>Nodules</h3><p>Distinguish inflammatory from non-inflammatory; consider biofilm; ultrasound may help characterize.</p><p class="lim">Management largely extrapolated.</p></div>
       <div class="card" style="--c:var(--rose-2)" data-r><span class="kicker" style="color:var(--mauve)">Aesthetic</span><h3>Overcorrection</h3><p>Allow time for oedema and accommodation; targeted, conservative dissolution if persistent and HA-based.</p><p class="lim">Over-dissolution risk; limited data.</p></div>
     </div>
@@ -476,7 +448,7 @@
 
 <!-- ============ 14 ============ -->
 <section class="slide wide" id="s14" data-n="14" data-title="What Does the Evidence Say?" data-time="12:00–13:00" data-sec="60">
-  <div class="wash" data-seed="141" data-n="6" style="--x:2%;--y:92%;--w:34vw" data-par="-40"></div>
+  <div class="wash" data-seed="141" data-n="6" style="--x:0%;--y:100%;--w:600px"></div>
   <div class="copy">
     <div>
       <div class="num" data-r>14</div>
@@ -485,21 +457,19 @@
     <p class="lede" data-r>Appraised, not advertised. Unverified figures are not shown.</p>
   </div>
   <div class="stage">
-    <div class="tablewrap" data-r>
-      <table class="evt">
-        <thead><tr><th>Study</th><th>Design</th><th>n</th><th>Selection</th><th>Intervention</th><th>Follow-up</th><th>Outcomes · validated?</th><th>Adverse events</th><th>Limitations · COI</th></tr></thead>
-        <tbody>
-          <tr><td>ESOLANE · 2025</td><td>Prospective, multicentre</td><td><span class="pend">Verify</span></td><td><span class="pend">Verify</span></td><td><span class="pend">Verify</span></td><td><span class="pend">Verify</span></td><td><span class="pend">Verify</span></td><td><span class="pend">Verify</span></td><td><span class="pend">Verify</span></td></tr>
-          <tr><td>Randomized · 2026</td><td colspan="8"><span class="pend">Include only if independently verified</span> &nbsp;Otherwise omitted and reported as an evidence gap.</td></tr>
-        </tbody>
-      </table>
-    </div>
+    <table class="evt" data-r>
+      <thead><tr><th>Study</th><th>Design</th><th>n</th><th>Selection</th><th>Intervention</th><th>Follow-up</th><th>Outcomes · validated?</th><th>Adverse events</th><th>Limits · COI</th></tr></thead>
+      <tbody>
+        <tr><td>ESOLANE · 2025</td><td>Prospective, multicentre</td><td><span class="pend">Verify</span></td><td><span class="pend">Verify</span></td><td><span class="pend">Verify</span></td><td><span class="pend">Verify</span></td><td><span class="pend">Verify</span></td><td><span class="pend">Verify</span></td><td><span class="pend">Verify</span></td></tr>
+        <tr><td>Randomized · 2026</td><td colspan="8"><span class="pend">Include only if independently verified</span> &nbsp;Otherwise omitted and reported as an evidence gap.</td></tr>
+      </tbody>
+    </table>
     <div class="qs">
       <div class="card" style="--c:var(--plum)" data-r><b>Patient satisfaction</b><div class="meter"><i style="--v:70%"></i></div><p>The outcome most studies measure.</p></div>
       <div class="card" style="--c:var(--gold)" data-r><b>Functional efficacy</b><div class="meter"><i style="--v:18%"></i></div><p>Not established with validated outcomes.</p></div>
       <div class="card" style="--c:var(--wine)" data-r><b>Long-term safety</b><div class="meter"><i style="--v:12%"></i></div><p>Unknown beyond the follow-up studied.</p></div>
     </div>
-    <p class="note" data-r style="margin-top:12px">Bars show the relative weight of available evidence, qualitatively — not effect sizes. Gaps: comparative trials · standardized, validated outcomes · long-term safety · rescue data.</p>
+    <p class="note" data-r>Bars show the relative weight of available evidence, qualitatively — not effect sizes. Gaps: comparative trials · validated outcomes · long-term safety · rescue data.</p>
   </div>
   <div class="script">
     <p>What does the evidence actually say? The table follows a critical-appraisal structure: design, sample size, selection, intervention, follow-up, outcome measures and whether they are validated, adverse events, limitations and conflicts of interest.</p>
@@ -510,7 +480,7 @@
 
 <!-- ============ 15 ============ -->
 <section class="slide" id="s15" data-n="15" data-title="The Case That Tests Your Judgment" data-time="13:00–14:00" data-sec="60">
-  <div class="wash" data-seed="151" data-n="7" style="--x:90%;--y:96%;--w:40vw" data-par="-60"></div>
+  <div class="wash" data-seed="151" data-n="7" style="--x:100%;--y:100%;--w:700px"></div>
   <div class="copy">
     <div class="num" data-r>15</div>
     <h2 data-r>The Case That<br>Tests Your <em>Judgment</em>.</h2>
@@ -524,17 +494,16 @@
   </div>
   <figure class="art" data-r>
     <span class="kicker">What would you do?</span>
-    <div class="vote" id="vote">
-      <button aria-pressed="false" data-d="Defensible only if bleeding and visibility risks are explicitly addressed — a standard plan ignores both.">Proceed as planned <small>A</small></button>
-      <button aria-pressed="false" data-d="Reasonable: conservative volume, technique chosen to limit trauma, explicit bruising and haematoma counselling. Aspirin is not stopped without her cardiologist.">Modify the plan <small>B</small></button>
-      <button aria-pressed="false" data-d="Reasonable: thin tissue rewards small increments and review after accommodation.">Stage treatment <small>C</small></button>
-      <button aria-pressed="false" data-d="Defensible if she prefers — no treatment, or autologous fat grafting with its own risk profile.">Choose an alternative <small>D</small></button>
-      <button aria-pressed="false" data-d="Defensible if anything is unresolved: cardiology input, vulvar findings, or her own uncertainty.">Defer treatment <small>E</small></button>
+    <div class="acc sm" id="vote" data-acc>
+      <div data-t="Proceed as planned" data-n="A">Defensible only if bleeding and visibility risks are explicitly addressed — a standard plan ignores both.</div>
+      <div data-t="Modify the plan" data-n="B">Reasonable: conservative volume, technique chosen to limit trauma, explicit bruising and haematoma counselling. Aspirin is not stopped without her cardiologist.</div>
+      <div data-t="Stage treatment" data-n="C">Reasonable: thin tissue rewards small increments and review after accommodation.</div>
+      <div data-t="Choose an alternative" data-n="D">Defensible if she prefers — no treatment, or autologous fat grafting with its own risk profile.</div>
+      <div data-t="Defer treatment" data-n="E">Defensible if anything is unresolved: cardiology input, vulvar findings, or her own uncertainty.</div>
     </div>
-    <div class="out" id="voteOut" aria-live="polite">Vote, then reveal the reasoning.</div>
     <div class="card rationale" id="rationale">
       <span class="kicker">A defensible rationale</span>
-      <p>Many would <b>modify and stage</b>; an alternative or deferral is equally defensible if that is her informed choice. What is not defensible: stopping antiplatelet therapy unilaterally, or treating thin tissue to maximum volume in one session.</p>
+      <p>Many would <b>modify and stage</b>; an alternative or deferral is equally defensible if that is her informed choice. Not defensible: stopping antiplatelet therapy unilaterally, or filling thin tissue to maximum volume in one session.</p>
     </div>
   </figure>
   <div class="script">
@@ -546,8 +515,8 @@
 
 <!-- ============ 16 ============ -->
 <section class="slide" id="s16" data-n="16" data-title="The Final Code" data-time="14:00–14:45" data-sec="45">
-  <div class="wash" data-seed="161" data-n="8" style="--x:4%;--y:100%;--w:36vw" data-par="-60"></div>
-  <svg class="sprig" data-seed="3" data-leaves="10" data-curl="34" style="right:4vw;top:10vh;--sw:120px"></svg>
+  <div class="wash" data-seed="161" data-n="8" style="--x:0%;--y:100%;--w:660px"></div>
+  <svg class="sprig" data-seed="3" data-leaves="10" data-curl="34" style="right:80px;top:90px;--sw:150px"></svg>
   <div class="copy">
     <div class="num" data-r>16</div>
     <h2 data-r>The Final<br><em>Code</em>.</h2>
@@ -571,7 +540,7 @@
   </div>
 </section>
 
-<section class="slide final" id="s17" data-n="16" data-title="Closing" data-time="14:45–15:00" data-sec="15" data-dark>
+<section class="slide final" id="s17" data-n="16" data-title="Closing" data-time="14:45–15:00" data-sec="15" data-night>
   <div>
     <div class="line" data-r></div>
     <blockquote>
@@ -587,7 +556,24 @@
   </div>
 </section>
 
-</main>
+<div class="chrome" id="chrome">
+  <div class="brand"><i>M</i>The Majora Code</div>
+  <div class="who">Dr. Nadeen Kabboura</div>
+  <div class="count" id="count">01 <span>/ 16</span></div>
+  <div class="bar" id="bar"></div>
+</div>
+
+</div>
+</div>
+
+<nav class="tools" id="tools" aria-label="Presenter controls">
+  <button class="ar" id="prev" aria-label="Previous slide">←</button>
+  <button class="ar" id="next" aria-label="Next slide">→</button>
+  <span class="sep"></span>
+  <button id="clock" title="Start / pause the talk timer (T resets)">00:00</button>
+  <button id="notesBtn" aria-expanded="false">Notes<kbd>N</kbd></button>
+  <button id="fsBtn">Full screen<kbd>F</kbd></button>
+</nav>
 
 <aside class="drawer" id="drawer" aria-label="Speaker notes">
   <header>

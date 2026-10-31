@@ -136,16 +136,6 @@ $$('svg.sprig').forEach((s, i) => {
 })();
 
 /* ---------------- 03 anatomy: schematic layered section ---------------- */
-const LAYER_INFO = {
-  '': '<b>Variability is the rule</b>Vessels and nerves do not respect a fixed depth. There is no universally guaranteed vascular-free injection plane.',
-  skin: '<b>Skin</b>Hair-bearing, with sebaceous, apocrine and eccrine glands. Thickness varies — thin skin raises the risk of visible or palpable product.',
-  fascia: '<b>Fascial layers</b>A thin smooth-muscle and fibrous layer lies beneath the dermis; deeper, the membranous layer of superficial fascia is continuous with Colles’ fascia. Nomenclature varies between sources.',
-  fat: '<b>Subcutaneous adipose</b>Volume and distribution vary with the individual, age, weight and hormonal status. Terminal fibres of the round ligament reach this region. No universally accepted discrete compartment.',
-  art: '<b>Arterial supply</b>Anterior: external pudendal arteries (from the femoral artery). Posterior: posterior labial branches of the internal pudendal system (via the perineal artery). Course and depth vary; anastomoses exist.',
-  vein: '<b>Venous drainage</b>Anteriorly to the external pudendal veins and great saphenous vein; posteriorly to internal pudendal tributaries. Plexuses are variable.',
-  nerve: '<b>Sensory innervation</b>Anterior labial nerves (ilioinguinal; genital branch of genitofemoral). Posterior labial nerves (pudendal, via the perineal nerve). Perineal branch of the posterior femoral cutaneous nerve laterally.',
-  lymph: '<b>Lymphatic drainage</b>Predominantly to the superficial inguinal lymph nodes.'
-};
 (function anatomy() {
   const svg = $('#anatSvg'); if (!svg) return;
   svg.setAttribute('viewBox', '0 0 830 470');
@@ -261,68 +251,52 @@ const LAYER_INFO = {
   input.addEventListener('input', upd); upd();
 })();
 
-/* ---------------- generic single-select panels ---------------- */
-function selectable(container, items, out, { initial = -1, onPick } = {}) {
-  const pick = i => {
-    items.forEach((b, k) => b.setAttribute('aria-pressed', k === i ? 'true' : 'false'));
-    if (out) {
-      out.classList.add('swap');
-      setTimeout(() => { out.innerHTML = items[i].dataset.d; out.classList.remove('swap'); }, 160);
-    }
-    onPick && onPick(i);
-  };
-  items.forEach((b, i) => b.addEventListener('click', () => pick(i)));
-  if (initial >= 0) pick(initial);
-}
-// 02 fork
-const forkLines = $$('.fork-lines path');
-selectable($('#fork'), $$('#fork .opt'), $('#forkOut'), { onPick: i => forkLines.forEach((p, k) => p.classList.toggle('on', k === i)) });
-// 06 HA properties
-selectable($('#haChips'), $$('#haChips .chip'), $('#haOut'));
-// 07 funnel
-selectable($('#funnel'), $$('#funnel .tier'), $('#tierOut'));
-// 08 steps
-selectable($('#steps'), $$('#steps .step'), $('#stepOut'), {
-  onPick: () => {}
+/* ---------------- dropdowns: content opens under its button ---------------- */
+// Markup: <div class="acc" data-acc><div data-t="Title" [data-n]>body</div>…</div>
+$$('[data-acc]').forEach(acc => {
+  [...acc.children].forEach(src => {
+    const item = document.createElement('div');
+    item.className = 'acc-item' + (src.className ? ' ' + src.className : '');
+    item.style.cssText = src.style.cssText;
+    Object.assign(item.dataset, src.dataset);
+    delete item.dataset.t;
+    const n = src.dataset.n ? `<span class="n">${src.dataset.n}</span>` : '';
+    item.innerHTML = `<button class="acc-btn" aria-expanded="false">${n}<span class="t">${src.dataset.t}</span><span class="ar">→</span></button>`
+      + `<div class="acc-panel"><div class="acc-inner"><div class="acc-body">${src.innerHTML}</div></div></div>`;
+    src.replaceWith(item);
+  });
+  const items = [...acc.children];
+  items.forEach((item, i) => {
+    const btn = item.querySelector('.acc-btn');
+    btn.addEventListener('click', () => {
+      const open = !item.classList.contains('open');
+      items.forEach(x => { x.classList.remove('open'); x.querySelector('.acc-btn').setAttribute('aria-expanded', 'false'); });
+      if (open) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+      acc.dispatchEvent(new CustomEvent('pick', { detail: open ? item : null }));
+    });
+  });
 });
-$$('#steps .step').forEach(b => { b.dataset.d = `<b>${b.textContent.replace(/^\d+/, '').trim()}</b>${b.dataset.d}`; });
-// 15 vote
-selectable($('#vote'), $$('#vote button'), $('#voteOut'), { onPick: () => $('#rationale').classList.add('show') });
+const resetAcc = root => $$('.acc-item.open', root).forEach(x => x.querySelector('.acc-btn').click());
 
-// 03 layers
-(function layers() {
-  const svg = $('#anatSvg'), out = $('#layerOut'), chips = $$('#layerChips .chip');
-  const set = l => {
-    if (l) svg.dataset.focus = l; else delete svg.dataset.focus;
-    chips.forEach(c => c.setAttribute('aria-pressed', c.dataset.l === l ? 'true' : 'false'));
-    out.innerHTML = LAYER_INFO[l];
-  };
-  chips.forEach(c => c.addEventListener('click', () => set(c.dataset.l === svg.dataset.focus ? '' : c.dataset.l)));
-  set('');
-})();
+// 03 anatomy: an open layer isolates it in the diagram
+$('#layers').addEventListener('pick', e => {
+  const svg = $('#anatSvg');
+  if (e.detail) svg.dataset.focus = e.detail.dataset.l; else delete svg.dataset.focus;
+});
 
 // 04 contour morph
 (function contour() {
-  const path = $('#contourPath'), out = $('#contourOut'), chips = $$('#contourChips .chip');
+  const path = $('#contourPath');
   const D = [
     'M20 210C80 210 110 70 200 70C290 70 320 210 380 210',
     'M20 210C80 210 120 140 200 140C280 140 320 210 380 210',
     'M20 210C95 210 105 105 185 122C265 139 330 224 380 224',
     'M20 210C100 210 140 112 200 112C260 112 300 210 380 210'
   ];
-  const TXT = [
-    '<b>Reference</b>A schematic reference contour — not an ideal to achieve.',
-    '<b>Adipose deflation</b>Volume loss with preserved skin. Filler may partially address this mechanism.',
-    '<b>Skin laxity</b>Redundant, descending skin. Volume alone does not tighten — and may add weight.',
-    '<b>Constitutional morphology</b>A slender but normal variant. Education first; correction is not a medical necessity.'
-  ];
-  const set = i => {
-    path.style.d = `path("${D[i]}")`; path.setAttribute('d', D[i]);
-    chips.forEach((c, k) => c.setAttribute('aria-pressed', k === i ? 'true' : 'false'));
-    out.innerHTML = TXT[i];
-  };
-  chips.forEach((c, i) => c.addEventListener('click', () => set(i)));
-  set(0);
+  $('#contourAcc').addEventListener('pick', e => {
+    const d = D[e.detail ? +e.detail.dataset.s : 0];
+    path.style.d = `path("${d}")`; path.setAttribute('d', d);
+  });
 })();
 
 // 09 correction slider
@@ -349,28 +323,27 @@ selectable($('#vote'), $$('#vote button'), $('#voteOut'), { onPick: () => $('#ra
 
 // 11 poll + 60-second clock
 (function emergency() {
-  const btns = $$('#poll button'), verdict = $('#verdict');
-  const right = btns.find(b => b.dataset.ok === '1');
-  btns.forEach(b => b.addEventListener('click', () => {
-    btns.forEach(x => { x.classList.toggle('right', x === right); x.classList.toggle('wrong', x !== right); });
-    verdict.innerHTML = b === right ? b.dataset.v : b.dataset.v + '<br><br>' + right.dataset.v;
-  }));
+  const poll = $('#poll');
+  poll.addEventListener('pick', () => {
+    poll.classList.add('answered');
+    [...poll.children].forEach(x => x.classList.toggle('right', 'ok' in x.dataset) || x.classList.toggle('wrong', !('ok' in x.dataset)));
+  });
   const fg = $('#ringFg'), secs = $('#secs'), items = $$('#seq li'), go = $('#go');
   let raf = 0, t0 = 0;
   const draw = t => {
     fg.style.strokeDashoffset = String(1 - t / 60);
     secs.textContent = Math.max(0, Math.ceil(60 - t));
-    items.forEach(li => li.classList.toggle('on', t >= +li.dataset.t));
+    items.forEach(li => li.classList.toggle('on', t > 0 && t >= +li.dataset.t));
   };
   const tick = now => {
     const t = Math.min(60, (now - t0) / 1000); draw(t);
-    if (t < 60) raf = requestAnimationFrame(tick); else go.textContent = 'Reset';
+    if (t < 60) raf = requestAnimationFrame(tick); else { raf = 0; go.textContent = 'Reset'; }
   };
   go.addEventListener('click', () => {
-    if (raf || go.textContent === 'Reset') { cancelAnimationFrame(raf); raf = 0; draw(0); items.forEach(li => li.classList.remove('on')); go.textContent = 'Start the 60 s'; return; }
+    if (go.textContent !== 'Start the 60 s') { cancelAnimationFrame(raf); raf = 0; draw(0); go.textContent = 'Start the 60 s'; return; }
     t0 = performance.now(); go.textContent = 'Running…'; raf = requestAnimationFrame(tick);
   });
-  draw(0); items.forEach(li => li.classList.remove('on'));
+  draw(0);
 })();
 
 // 12 differential tree
@@ -410,59 +383,67 @@ selectable($('#vote'), $$('#vote button'), $('#voteOut'), { onPick: () => $('#ra
   show('q1');
 })();
 
-/* ---------------- scroll choreography ---------------- */
-const slides = $$('.slide');
-slides.forEach(s => {
-  $$('[data-r]', s).forEach((el, i) => el.style.setProperty('--d', Math.min(i * .09, .9).toFixed(2) + 's'));
-});
-const revealIO = new IntersectionObserver(es => es.forEach(e => {
-  if (e.isIntersecting) { e.target.classList.add('in'); revealIO.unobserve(e.target); }
-}), { threshold: .14 });
-slides.forEach(s => revealIO.observe(s));
-requestAnimationFrame(() => slides[0].classList.add('in'));
+// 15 vote: any choice reveals the overall rationale
+$('#vote').addEventListener('pick', e => { if (e.detail) $('#rationale').classList.add('show'); });
 
-// rail
-const rail = $('#rail');
-slides.filter(s => s.id !== 's17').forEach(s => {
-  const a = document.createElement('a');
-  a.href = '#' + s.id;
-  a.innerHTML = `<span>${s.dataset.n} · ${s.dataset.title}</span>`;
-  a.setAttribute('aria-label', `Slide ${s.dataset.n}: ${s.dataset.title}`);
-  rail.appendChild(a);
-});
-const dots = $$('a', rail);
+/* ---------------- deck ---------------- */
+const canvas = $('#canvas'), slides = $$('.slide');
+const fit = () => canvas.style.setProperty('--s', Math.min(innerWidth / 1920, innerHeight / 1080));
+addEventListener('resize', fit); fit();
 
-let current = 0;
-const setCurrent = i => {
+slides.forEach(s => $$('[data-r]', s).forEach((el, i) => el.style.setProperty('--d', (.15 + Math.min(i * .1, 1)).toFixed(2) + 's')));
+
+const chrome = $('#chrome'), count = $('#count'), bar = $('#bar');
+let current = -1;
+function show(i) {
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i === current) return;
+  const prev = slides[current];
+  if (prev) {
+    prev.classList.remove('active');
+    // let it fade, then reset so it animates again on the next visit
+    setTimeout(() => { if (!prev.classList.contains('active')) prev.classList.remove('in'); }, 950);
+  }
+  const s = slides[i];
   current = i;
-  const n = +slides[i].dataset.n - 1;
-  dots.forEach((d, k) => d.classList.toggle('on', k === n));
-  document.body.classList.toggle('on-dark', slides[i].hasAttribute('data-dark'));
+  s.classList.add('active');
+  requestAnimationFrame(() => requestAnimationFrame(() => s.classList.add('in')));
+  const n = +s.dataset.n;
+  count.innerHTML = `${s.dataset.n} <span>/ 16</span>`;
+  bar.style.width = (n / 16 * 100) + '%';
+  const dark = s.hasAttribute('data-dark'), night = s.hasAttribute('data-night');
+  chrome.classList.toggle('dark', dark);
+  chrome.classList.toggle('hide', night);
+  document.body.classList.toggle('on-dark', dark);
+  document.body.classList.toggle('on-night', night);
+  history.replaceState(null, '', '#' + s.id);
   if (drawer.classList.contains('open')) fillNotes();
-};
-const curIO = new IntersectionObserver(es => es.forEach(e => {
-  if (e.isIntersecting) setCurrent(slides.indexOf(e.target));
-}), { rootMargin: '-50% 0px -50% 0px' });
-slides.forEach(s => curIO.observe(s));
+}
+const next = () => show(current + 1), prev = () => show(current - 1);
 
-// progress + parallax
-const prog = $('#prog'), par = $$('[data-par]');
-let ticking = false;
-const onScroll = () => {
-  ticking = false;
-  const h = document.documentElement.scrollHeight - innerHeight;
-  prog.style.width = (h > 0 ? scrollY / h * 100 : 0) + '%';
-  if (reduced) return;
-  par.forEach(el => {
-    const r = el.parentElement.getBoundingClientRect();
-    if (r.bottom < -200 || r.top > innerHeight + 200) return;
-    const p = (r.top + r.height / 2 - innerHeight / 2) / innerHeight;
-    el.style.translate = `0 ${(p * +el.dataset.par).toFixed(1)}px`;
-  });
-};
-addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
-addEventListener('resize', onScroll);
-onScroll();
+// wheel / trackpad: one slide per gesture
+let wheelLock = 0, wheelAcc = 0;
+addEventListener('wheel', e => {
+  if (e.target.closest('.drawer')) return;
+  e.preventDefault();
+  const now = performance.now();
+  if (now < wheelLock) return;
+  wheelAcc += Math.abs(e.deltaY) > Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+  if (Math.abs(wheelAcc) > 40) { wheelAcc > 0 ? next() : prev(); wheelAcc = 0; wheelLock = now + 1100; }
+}, { passive: false });
+
+// touch swipe
+let tx = 0, ty = 0;
+addEventListener('touchstart', e => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, { passive: true });
+addEventListener('touchend', e => {
+  if (e.target.closest('.drawer, input')) return;
+  const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
+  if (Math.max(Math.abs(dx), Math.abs(dy)) < 50) return;
+  (Math.abs(dx) > Math.abs(dy) ? dx < 0 : dy < 0) ? next() : prev();
+}, { passive: true });
+
+$('#next').addEventListener('click', next);
+$('#prev').addEventListener('click', prev);
 
 /* ---------------- presenter tools ---------------- */
 const drawer = $('#drawer'), notesBtn = $('#notesBtn');
@@ -486,35 +467,43 @@ const toggleNotes = force => {
 notesBtn.addEventListener('click', () => toggleNotes());
 $('#dClose').addEventListener('click', () => toggleNotes(false));
 
+const fullscreen = () => { if (!document.fullscreenElement) document.documentElement.requestFullscreen?.(); else document.exitFullscreen?.(); };
+$('#fsBtn').addEventListener('click', fullscreen);
+
 // talk timer
 const clock = $('#clock');
 let tStart = 0, tAcc = 0, tRun = false;
 const fmt = ms => { const s = Math.floor(ms / 1000); return String(s / 60 | 0).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0'); };
 setInterval(() => { if (tRun) clock.textContent = fmt(tAcc + performance.now() - tStart); }, 250);
-const toggleClock = () => {
-  if (tRun) { tAcc += performance.now() - tStart; tRun = false; }
-  else { tStart = performance.now(); tRun = true; }
+clock.addEventListener('click', () => {
+  if (tRun) { tAcc += performance.now() - tStart; tRun = false; } else { tStart = performance.now(); tRun = true; }
   clock.classList.toggle('run', tRun);
-};
-clock.addEventListener('click', toggleClock);
+});
 
-// keyboard
-const go = i => { i = Math.max(0, Math.min(slides.length - 1, i)); slides[i].scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' }); };
+// toolbar hides while presenting, returns on mouse movement
+const tools = $('#tools');
+let idle = 0;
+const wake = () => { tools.classList.remove('idle'); clearTimeout(idle); idle = setTimeout(() => { if (!tools.matches(':hover')) tools.classList.add('idle'); }, 2500); };
+addEventListener('mousemove', wake); addEventListener('touchstart', wake, { passive: true }); wake();
+
+// keyboard and presentation clickers
 addEventListener('keydown', e => {
   if (e.metaKey || e.ctrlKey || e.altKey) return;
-  const tag = e.target.tagName, onRange = e.target.type === 'range', onBtn = tag === 'BUTTON';
+  const onRange = e.target.type === 'range', onBtn = e.target.tagName === 'BUTTON';
   switch (e.key) {
-    case 'ArrowDown': case 'PageDown': if (!onRange) { e.preventDefault(); go(current + 1); } break;
-    case 'ArrowUp': case 'PageUp': if (!onRange) { e.preventDefault(); go(current - 1); } break;
-    case 'ArrowRight': if (!onRange) { e.preventDefault(); go(current + 1); } break;
-    case 'ArrowLeft': if (!onRange) { e.preventDefault(); go(current - 1); } break;
-    case ' ': if (!onBtn && !onRange) { e.preventDefault(); go(current + (e.shiftKey ? -1 : 1)); } break;
-    case 'Home': e.preventDefault(); go(0); break;
-    case 'End': e.preventDefault(); go(slides.length - 1); break;
+    case 'ArrowRight': case 'ArrowDown': case 'PageDown': if (!onRange) { e.preventDefault(); next(); } break;
+    case 'ArrowLeft': case 'ArrowUp': case 'PageUp': if (!onRange) { e.preventDefault(); prev(); } break;
+    case ' ': if (!onBtn && !onRange) { e.preventDefault(); e.shiftKey ? prev() : next(); } break;
+    case 'Home': e.preventDefault(); show(0); break;
+    case 'End': e.preventDefault(); show(slides.length - 1); break;
     case 'n': case 'N': toggleNotes(); break;
     case 't': case 'T': tAcc = 0; tStart = performance.now(); clock.textContent = '00:00'; break;
-    case 'f': case 'F': if (!document.fullscreenElement) document.documentElement.requestFullscreen?.(); else document.exitFullscreen?.(); break;
+    case 'f': case 'F': fullscreen(); break;
     case 'Escape': toggleNotes(false); break;
   }
 });
+
+const fromHash = () => slides.findIndex(s => '#' + s.id === location.hash);
+addEventListener('hashchange', () => { const i = fromHash(); if (i >= 0) show(i); });
+show(Math.max(0, fromHash()));
 })();
