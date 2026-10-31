@@ -344,6 +344,11 @@ input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;bac
 .final .sig{margin-top:70px;font:500 15px var(--sans);letter-spacing:.32em;text-transform:uppercase;color:#9C8E77}
 .final .line{width:1px;height:90px;background:linear-gradient(transparent,var(--gold));margin:0 auto 54px}
 .final [data-r]{transition-duration:2s,2.2s}
+.minis{display:flex;gap:34px;justify-content:center;margin-top:56px}
+.minis a{display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;color:var(--gold-2);transition:transform .35s var(--ease)}
+.minis a:hover{transform:translateY(-3px)}
+.minis img{width:104px;height:104px;padding:7px;background:#F7EDE8;border-radius:8px;display:block}
+.minis span{font:600 12px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:#9C8E77}
 
 /* ---------- thank you · connect ---------- */
 .connect{grid-template-columns:1fr;place-items:center;text-align:center}
@@ -356,7 +361,9 @@ input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;bac
 .qrcard:hover{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 26px 54px rgba(110,60,90,.16)}
 .qrcard img{width:200px;height:200px;display:block}
 .qrcard .ql{font:600 16px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
-.qrcard .qv{font:400 17px/1.35 var(--sans);color:var(--muted);overflow-wrap:anywhere}
+.qrcard .qv{font:400 17px/1.35 var(--sans);color:var(--muted);overflow-wrap:anywhere;text-decoration:none}
+.qrcard,.qrcard *{color:inherit}
+.qrcard .ql{color:var(--gold)} .qrcard .qv{color:var(--muted)}
 .tnote{margin:40px 0 0;font-size:19px;color:var(--muted)}
 
 /* ---------- speaker notes ---------- */
@@ -513,3 +520,6 @@ html.flow .qrcard .ql{font-size:11px}
 html.flow .qrcard .qv{font-size:11.5px}
 html.flow .tnote{font-size:13px;margin-top:22px}
 html.flow .connect .sprig{display:none}
+html.flow .minis{gap:14px;margin-top:36px;flex-wrap:wrap}
+html.flow .minis img{width:64px;height:64px;padding:5px}
+html.flow .minis span{font-size:9px;letter-spacing:.16em}
