@@ -341,10 +341,10 @@ input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;bac
 .final blockquote{margin:0;font:400 76px/1.25 var(--serif);color:#F2E9D8}
 .final blockquote span{display:block}
 .final blockquote span+span{color:var(--gold-2);font-style:italic;margin-top:.35em}
-.final .sig{margin-top:70px;font:500 15px var(--sans);letter-spacing:.32em;text-transform:uppercase;color:#9C8E77}
+.final .sig{margin-top:44px;font:500 15px var(--sans);letter-spacing:.32em;text-transform:uppercase;color:#9C8E77}
 .final .line{width:1px;height:90px;background:linear-gradient(transparent,var(--gold));margin:0 auto 54px}
 .final [data-r]{transition-duration:2s,2.2s}
-.minis{display:flex;gap:34px;justify-content:center;margin-top:56px}
+.minis{display:flex;gap:30px;justify-content:center;margin-top:24px}
 .minis a{display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;color:var(--gold-2);transition:transform .35s var(--ease)}
 .minis a:hover{transform:translateY(-3px)}
 .minis img{width:104px;height:104px;padding:7px;background:#F7EDE8;border-radius:8px;display:block}
@@ -505,7 +505,7 @@ html.flow .letter span{font-size:15px}
 html.flow .letter::after{left:16px}
 html.flow .in .letter::after{width:calc(100% - 32px)}
 html.flow .final blockquote{font-size:clamp(28px,8vw,40px)}
-html.flow .final .sig{font-size:11px;margin-top:40px}
+html.flow .final .sig{font-size:11px;margin-top:26px}
 html.flow .final .line{height:60px;margin-bottom:34px}
 html.flow .tools{bottom:8px}
 html.flow .tools #fsBtn{display:none}
@@ -520,6 +520,6 @@ html.flow .qrcard .ql{font-size:11px}
 html.flow .qrcard .qv{font-size:11.5px}
 html.flow .tnote{font-size:13px;margin-top:22px}
 html.flow .connect .sprig{display:none}
-html.flow .minis{gap:14px;margin-top:36px;flex-wrap:wrap}
+html.flow .minis{gap:14px;margin-top:16px;flex-wrap:wrap}
 html.flow .minis img{width:64px;height:64px;padding:5px}
 html.flow .minis span{font-size:9px;letter-spacing:.16em}
