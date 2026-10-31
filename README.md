@@ -1,36 +1,76 @@
-# nadine-
+# The Majora Code
 
-Starting fresh: a new presentation, with a new design and new content, is coming.
-Nothing is published from this repo at the moment.
+**Beyond Volume: The Science, Precision & Safety of Labia Majora Hyaluronic Acid Augmentation**
+Dr. Nadeen Kabboura — Obstetrician-Gynecologist · Functional & Aesthetic Gynecology Trainer
 
-## What's here
+A 16-slide, 15-minute congress presentation, built as a scroll-driven interactive web page.
+Open [`index.html`](index.html) (or the GitHub Pages site) in a modern browser.
 
-- **[`reference/socials.md`](reference/socials.md)** — the social links and contact
-  details from the end of the previous version, kept to reuse in the new one.
-- **[`archive/v1-intimate-ecosystem/`](archive/v1-intimate-ecosystem/)** — the whole
-  previous version, kept for reference and not displayed.
+## Presenting
 
-## The previous version (archived)
-
-Archived on 2026-10-31. The last commit before the archive is **`221d139`**, so
-`git checkout 221d139` restores it exactly as it was.
-
-| Folder in the archive | What it was |
+| Key | |
 |---|---|
-| `index.html` | *The Intimate Ecosystem* — the scroll-driven web experience that was the live site: a film intro, a hub of twelve chapters, and a closing "Thank You" screen with the social QR codes. |
-| `art/` | Eleven wordless chapter illustrations (SVG plates at 1600×900) and their painterly renders, with a gallery page. See its `README.md`. |
-| `deck/` | *Tissue-Specific Intimate Medicine* — the 14-slide conference lecture: HTML deck, editable PowerPoint, PDF, slide PNGs, vector illustrations, references page, QR codes and fonts (Cormorant Garamond, Montserrat). See its `README.md`. |
-| `docs/` | The source content text the site and deck were written from. |
-| `images/` | The labelled chapter plates used on the site. |
-| `media/` | Film stills, the chapter video clips, the PRP film and the two conference photos. |
-| `tools/` | The Python build scripts for the deck, PPTX, illustrations, QR codes and exports. |
-| `README.md` | The previous top-level README. |
+| `↓` `→` `Space` `PageDown` | next slide |
+| `↑` `←` `PageUp` | previous slide |
+| `N` | speaker notes drawer — script, time window, word count and pace for the current slide |
+| click the clock / `T` | start–pause the talk timer / reset it |
+| `F` | fullscreen |
 
-Notes:
+Scrolling works too; the rail on the right jumps to any slide.
 
-- Everything moved together, so links between files inside the archive still work.
-- The build scripts in `tools/` expect to sit at the repo root; to rebuild the old
-  deck, check out commit `221d139` rather than running them from the archive.
-- The old deck's printed QR codes pointed to `rayan-debug.github.io/nadine-/` and
-  `.../deck/references.html`. Those addresses no longer show the old pages (the
-  archived copies sit under `/archive/v1-intimate-ecosystem/`).
+## Slides and timing (15:00)
+
+| # | Slide | Window | Interaction |
+|---|---|---|---|
+| 01 | The Majora Code | 0:00–0:30 | — |
+| 02 | The Clinical Dilemma | 0:30–1:00 | decision fork: pick a branch |
+| 03 | Anatomy Before Augmentation | 1:00–2:00 | toggle layers, vessels, nerves, lymphatics |
+| 04 | Why Contour Changes | 2:00–2:45 | contour morph by mechanism |
+| 05 | Patient Selection | 2:45–4:00 | — |
+| 06 | The Science of HA | 4:00–5:00 | crosslink-density slider, property explorer |
+| 07 | Choosing the Right Product | 5:00–5:45 | selection funnel |
+| 08 | The Procedural Map | 5:45–7:00 | 11-step workflow |
+| 09 | Precision & the Stopping Point | 7:00–8:00 | correction slider with zones |
+| 10 | Complications | 8:00–9:00 | — |
+| 11 | The First 60 Seconds | 9:00–10:00 | audience poll + 60-second clock |
+| 12 | The Differential | 10:00–11:00 | yes/no decision tree |
+| 13 | The Rescue Decision | 11:00–12:00 | — |
+| 14 | What Does the Evidence Say? | 12:00–13:00 | — |
+| 15 | The Case That Tests Your Judgment | 13:00–14:00 | audience vote + rationale |
+| 16 | The Final Code + closing line | 14:00–15:00 | — |
+
+Each slide's spoken script lives in its `<div class="script">` in `index.html`; the
+notes drawer reads it from there and flags any slide whose word count is too dense
+for its time (> 155 wpm). Current scripts run at 84–130 wpm, leaving room for
+audience pauses.
+
+## Design
+
+From the design template: blush ivory `#F7EDE8`, rose `#E8B8C1` / `#DA95A8`, mauve
+`#AE6E8C`, plum `#6F5771`, antique gold `#B8914A`; wine `#7E2D4B` is reserved for
+complication and emergency content, and the closing slide is near-black and gold.
+Typefaces: Playfair Display (headings), Lora (quotes, notes), Montserrat (body).
+Watercolour washes, gold botanicals and all diagrams are original SVG generated in
+[`assets/js/main.js`](assets/js/main.js); styles are in [`assets/css/style.css`](assets/css/style.css).
+
+## Before the congress — open items
+
+The brief forbids invented evidence, so these are deliberately left for verification
+rather than filled in:
+
+- **Slide 14** — ESOLANE (2025) cells are marked *Verify*: add sample size, selection,
+  intervention, follow-up, outcomes, adverse events, limitations and COI from the
+  original publication. Add a 2026 randomized study only if independently verified.
+- **Slide 10** — confirm the *documented* vs *extrapolated* tag on each complication
+  against the sources.
+- **Slide 08** — published approaches (entry points, planes, volumes) are referred to
+  an appendix that still has to be written, each with its original citation.
+- **Slide 03** — specialist anatomical review of the schematic and its labels.
+- Not yet produced from the brief: editable PowerPoint, appendix slides, reference
+  list with DOI/PMID, source/permission register, QC checklist and rehearsal sheet.
+
+## Also in this repo
+
+- [`reference/socials.md`](reference/socials.md) — contact links kept from the previous version.
+- [`archive/v1-intimate-ecosystem/`](archive/v1-intimate-ecosystem/) — the previous
+  presentation, archived and not displayed (last commit before archiving: `221d139`).
