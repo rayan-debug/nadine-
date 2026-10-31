@@ -23,6 +23,9 @@ A presentation clicker works too (it sends `PageDown` / `PageUp`). The toolbar a
 bottom hides while you present and comes back when you move the mouse. Every slide
 has its own link (`index.html#s7` opens slide 07).
 
+On phones (and other small screens) the slides stack and scroll instead, with the
+same content, animations and dropdowns at a readable size.
+
 Interactive items are dropdowns: clicking one opens its detail directly underneath it,
 and opening another closes the first.
 

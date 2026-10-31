@@ -395,36 +395,64 @@ slides.forEach(s => $$('[data-r]', s).forEach((el, i) => el.style.setProperty('-
 
 const chrome = $('#chrome'), count = $('#count'), bar = $('#bar');
 let current = -1;
-function show(i) {
+// Phones and short screens get a stacked, scrolling layout instead of the scaled canvas
+const flowMQ = matchMedia('(max-width: 900px), (max-height: 520px)');
+const isFlow = () => document.documentElement.classList.contains('flow');
+
+function mark(i) {
+  current = i;
+  const s = slides[i];
+  count.innerHTML = `${s.dataset.n} <span>/ 16</span>`;
+  bar.style.width = (+s.dataset.n / 16 * 100) + '%';
+  const dark = s.hasAttribute('data-dark'), night = s.hasAttribute('data-night');
+  chrome.classList.toggle('dark', dark);
+  chrome.classList.toggle('hide', night);
+  document.body.classList.toggle('on-dark', dark && !isFlow());
+  document.body.classList.toggle('on-night', night && !isFlow());
+  history.replaceState(null, '', '#' + s.id);
+  if (drawer.classList.contains('open')) fillNotes();
+}
+function show(i, force) {
   i = Math.max(0, Math.min(slides.length - 1, i));
-  if (i === current) return;
+  if (isFlow()) { slides[i].scrollIntoView({ behavior: 'smooth' }); return; }
+  if (i === current && !force) return;
   const prev = slides[current];
-  if (prev) {
+  if (prev && prev !== slides[i]) {
     prev.classList.remove('active');
     // let it fade, then reset so it animates again on the next visit
     setTimeout(() => { if (!prev.classList.contains('active')) prev.classList.remove('in'); }, 950);
   }
   const s = slides[i];
-  current = i;
   s.classList.add('active');
   requestAnimationFrame(() => requestAnimationFrame(() => s.classList.add('in')));
-  const n = +s.dataset.n;
-  count.innerHTML = `${s.dataset.n} <span>/ 16</span>`;
-  bar.style.width = (n / 16 * 100) + '%';
-  const dark = s.hasAttribute('data-dark'), night = s.hasAttribute('data-night');
-  chrome.classList.toggle('dark', dark);
-  chrome.classList.toggle('hide', night);
-  document.body.classList.toggle('on-dark', dark);
-  document.body.classList.toggle('on-night', night);
-  history.replaceState(null, '', '#' + s.id);
-  if (drawer.classList.contains('open')) fillNotes();
+  mark(i);
 }
+
+// stacked mode: reveal each slide as it scrolls into view, and track the one in the middle
+const revealIO = new IntersectionObserver(es => es.forEach(e => { if (isFlow() && e.isIntersecting) e.target.classList.add('in'); }), { threshold: .12 });
+const centerIO = new IntersectionObserver(es => es.forEach(e => { if (isFlow() && e.isIntersecting) mark(slides.indexOf(e.target)); }), { rootMargin: '-50% 0px -50% 0px' });
+slides.forEach(s => { revealIO.observe(s); centerIO.observe(s); });
+
+function applyMode() {
+  const flow = flowMQ.matches;
+  document.documentElement.classList.toggle('flow', flow);
+  if (flow) {
+    slides.forEach(s => s.classList.remove('active'));
+    document.body.classList.remove('on-dark', 'on-night');
+    const target = slides[Math.max(0, current)];
+    requestAnimationFrame(() => target.scrollIntoView());
+  } else {
+    slides.forEach(s => s.classList.remove('in', 'active'));
+    show(Math.max(0, current), true);
+  }
+}
+flowMQ.addEventListener('change', applyMode);
 const next = () => show(current + 1), prev = () => show(current - 1);
 
 // wheel / trackpad: one slide per gesture
 let wheelLock = 0, wheelAcc = 0;
 addEventListener('wheel', e => {
-  if (e.target.closest('.drawer')) return;
+  if (isFlow() || e.target.closest('.drawer')) return;
   e.preventDefault();
   const now = performance.now();
   if (now < wheelLock) return;
@@ -436,7 +464,7 @@ addEventListener('wheel', e => {
 let tx = 0, ty = 0;
 addEventListener('touchstart', e => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, { passive: true });
 addEventListener('touchend', e => {
-  if (e.target.closest('.drawer, input')) return;
+  if (isFlow() || e.target.closest('.drawer, input')) return;
   const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
   if (Math.max(Math.abs(dx), Math.abs(dy)) < 50) return;
   (Math.abs(dx) > Math.abs(dy) ? dx < 0 : dy < 0) ? next() : prev();
@@ -505,5 +533,6 @@ addEventListener('keydown', e => {
 
 const fromHash = () => slides.findIndex(s => '#' + s.id === location.hash);
 addEventListener('hashchange', () => { const i = fromHash(); if (i >= 0) show(i); });
-show(Math.max(0, fromHash()));
+current = Math.max(0, fromHash());
+if (flowMQ.matches) applyMode(); else show(current, true);
 })();
