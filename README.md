@@ -12,8 +12,8 @@ Nothing is published from this repo at the moment.
 
 ## The previous version (archived)
 
-Archived on 2026-10-31. It is also tagged in git as **`v1-intimate-ecosystem`**, so
-`git checkout v1-intimate-ecosystem` restores it exactly as it was.
+Archived on 2026-10-31. The last commit before the archive is **`221d139`**, so
+`git checkout 221d139` restores it exactly as it was.
 
 | Folder in the archive | What it was |
 |---|---|
@@ -30,7 +30,7 @@ Notes:
 
 - Everything moved together, so links between files inside the archive still work.
 - The build scripts in `tools/` expect to sit at the repo root; to rebuild the old
-  deck, check out the `v1-intimate-ecosystem` tag rather than running them from the archive.
+  deck, check out commit `221d139` rather than running them from the archive.
 - The old deck's printed QR codes pointed to `rayan-debug.github.io/nadine-/` and
   `.../deck/references.html`. Those addresses no longer show the old pages (the
   archived copies sit under `/archive/v1-intimate-ecosystem/`).
