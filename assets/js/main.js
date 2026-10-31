@@ -478,12 +478,13 @@ const drawer = $('#drawer'), notesBtn = $('#notesBtn');
 function fillNotes() {
   const s = slides[current], script = $('.script', s);
   const words = script.textContent.replace(/\[[^\]]*\]/g, '').trim().split(/\s+/).length;
-  const sec = +s.dataset.sec, wpm = Math.round(words / sec * 60);
-  $('#dMeta').textContent = `Slide ${s.dataset.n} · ${s.dataset.time} · ${sec} s · ${words} words`;
+  const sec = +s.dataset.sec, wpm = sec ? Math.round(words / sec * 60) : 0;
+  $('#dMeta').textContent = sec ? `Slide ${s.dataset.n} · ${s.dataset.time} · ${sec} s · ${words} words` : s.dataset.time;
   $('#dTitle').innerHTML = s.dataset.title;
   const pace = $('#dPace');
   pace.textContent = wpm > 155 ? `${wpm} wpm · dense for its time` : `${wpm} wpm · rehearsable`;
   pace.className = 'pace ' + (wpm > 155 ? 'hi' : 'ok');
+  if (!sec) pace.textContent = 'untimed';
   $('#dBody').innerHTML = script.innerHTML;
 }
 const toggleNotes = force => {

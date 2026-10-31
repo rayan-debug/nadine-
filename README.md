@@ -49,6 +49,7 @@ and opening another closes the first.
 | 14 | What Does the Evidence Say? | 12:00–13:00 | — |
 | 15 | The Case That Tests Your Judgment | 13:00–14:00 | audience vote + rationale |
 | 16 | The Final Code + closing line | 14:00–15:00 | — |
+| — | Thank You · Connect | after 15:00, for Q&A | Snapchat, Instagram, WhatsApp and email QR cards (tap to open) |
 
 Each slide's spoken script lives in its `<div class="script">` in `index.html`; the
 notes drawer reads it from there and flags any slide whose word count is too dense
@@ -82,6 +83,7 @@ rather than filled in:
 
 ## Also in this repo
 
-- [`reference/socials.md`](reference/socials.md) — contact links kept from the previous version.
+- [`reference/socials.md`](reference/socials.md) — the contact links from the previous version, now on the
+  Thank You slide. The QR codes are static SVGs in [`assets/qr/`](assets/qr/).
 - [`archive/v1-intimate-ecosystem/`](archive/v1-intimate-ecosystem/) — the previous
   presentation, archived and not displayed (last commit before archiving: `221d139`).
