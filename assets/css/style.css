@@ -350,22 +350,6 @@ input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;bac
 .minis img{width:104px;height:104px;padding:7px;background:#F7EDE8;border-radius:8px;display:block}
 .minis span{font:600 12px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:#9C8E77}
 
-/* ---------- thank you · connect ---------- */
-.connect{grid-template-columns:1fr;place-items:center;text-align:center}
-.thanks{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center}
-.thanks h2{font-size:110px;margin:18px 0 22px}
-.tname{font:500 40px var(--serif);color:var(--ink)}
-.tsub{font:italic 400 24px var(--lora);color:var(--mauve);margin-top:8px}
-.qrow{display:flex;gap:30px;justify-content:center;margin-top:60px}
-.qrcard{width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:28px 22px 24px;background:rgba(255,253,252,.9);border:1px solid var(--line);border-radius:10px;text-decoration:none;box-shadow:0 18px 40px rgba(110,60,90,.08);transition:transform .35s var(--ease),border-color .3s,box-shadow .35s}
-.qrcard:hover{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 26px 54px rgba(110,60,90,.16)}
-.qrcard img{width:200px;height:200px;display:block}
-.qrcard .ql{font:600 16px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
-.qrcard .qv{font:400 17px/1.35 var(--sans);color:var(--muted);overflow-wrap:anywhere;text-decoration:none}
-.qrcard,.qrcard *{color:inherit}
-.qrcard .ql{color:var(--gold)} .qrcard .qv{color:var(--muted)}
-.tnote{margin:40px 0 0;font-size:19px;color:var(--muted)}
-
 /* ---------- speaker notes ---------- */
 .drawer{position:fixed;left:0;right:0;bottom:0;z-index:70;max-height:46vh;overflow:auto;background:#FFFAF8;border-top:1px solid var(--gold);box-shadow:0 -24px 60px rgba(60,30,50,.14);transform:translateY(102%);visibility:hidden;transition:transform .5s var(--ease),visibility 0s .5s;padding:20px clamp(18px,5vw,90px) 70px;font-size:16px}
 .drawer.open{transform:none;visibility:visible;transition:transform .5s var(--ease)}
@@ -509,17 +493,8 @@ html.flow .final .sig{font-size:11px;margin-top:26px}
 html.flow .final .line{height:60px;margin-bottom:34px}
 html.flow .tools{bottom:8px}
 html.flow .tools #fsBtn{display:none}
-html.flow .connect{min-height:100svh;align-content:center}
-html.flow .thanks h2{font-size:clamp(44px,13vw,64px);margin:12px 0 14px}
-html.flow .tname{font-size:24px}
-html.flow .tsub{font-size:15px}
-html.flow .qrow{flex-wrap:wrap;gap:12px;margin-top:30px}
-html.flow .qrcard{width:calc(50% - 6px);padding:16px 10px 14px;gap:8px}
-html.flow .qrcard img{width:min(120px,100%);height:auto}
-html.flow .qrcard .ql{font-size:11px}
-html.flow .qrcard .qv{font-size:11.5px}
-html.flow .tnote{font-size:13px;margin-top:22px}
-html.flow .connect .sprig{display:none}
-html.flow .minis{gap:14px;margin-top:16px;flex-wrap:wrap}
-html.flow .minis img{width:64px;height:64px;padding:5px}
-html.flow .minis span{font-size:9px;letter-spacing:.16em}
+html.flow .final{padding:56px 22px 72px}
+html.flow .minis{display:grid;grid-template-columns:repeat(2,auto);justify-content:center;gap:16px 26px;margin-top:18px}
+html.flow .minis a{gap:6px}
+html.flow .minis img{width:72px;height:72px;padding:5px;border-radius:6px}
+html.flow .minis span{font-size:9px;letter-spacing:.18em}
