@@ -208,7 +208,9 @@ $$('svg.sprig').forEach((s, i) => {
   // orientation
   const o = S('g', {}, svg);
   S('path', { d: 'M22 60V420M16 72l6-12 6 12M16 408l6 12 6-12', stroke: '#B8914A', fill: 'none', 'stroke-width': 1 }, o);
-  T(o, 12, 240, 'SUPERFICIAL → DEEP', 'o', { transform: 'rotate(-90 12 240)', 'text-anchor': 'middle' });
+  // rotated text reads bottom-to-top, so anchor each word at its own end of the arrow
+  T(o, 12, 84, 'SUPERFICIAL', 'o', { transform: 'rotate(-90 12 84)', 'text-anchor': 'end' });
+  T(o, 12, 396, 'DEEP', 'o', { transform: 'rotate(-90 12 396)', 'text-anchor': 'start' });
   // labels with leaders
   const labels = [
     ['skin', 70, yAt(der, X1) - 30, 'Skin', 'hair-bearing · glands'],
